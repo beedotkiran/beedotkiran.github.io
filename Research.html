@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Pocketing 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130128
+
+-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Research</title>
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700%7COpen+Sans:400,600,700" rel="stylesheet" type="text/css" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" /><!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]--></head><body>
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			
+			<div id="menu">
+				<ul>
+					<li class="active"><a href="index.html" title="">Homepage</a></li>
+					<li><a href="#" title="">Research</a></li>
+					<li><a href="CV.html" title="">CV</a></li>
+					<li><a href="pub.html" title="">Publications</a></li>
+		
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="page" class="container"><div id="content"><div id="box1">
+
+<h3 style="color: rgb(51, 204, 150) ; " align="center">Review : Deep learning for Video Anomaly Detection (DL-VAD) </h3><br />
+<img style="width: 380px; height: 245px;" src="images/VideoAnomalyFormulation.png" ALIGN="left"/>
+[<a href="VideoAnomaly.html">Read More</a>] Videos represent the primary source of information for surveillance applications and are available in large amounts but in most cases contain little or no annotation for supervised learning. This article reviews the state-of-the-art deep learning based methods for video anomaly detection and categorizes them based on the type of model and criteria of detection. We also perform simple studies to understand the different approaches and provide the criteria of evaluation for spatio-temporal anomaly detection.<br><br>
+<br CLEAR=”left” />
+
+<h3 style="color: rgb(51, 204, 150) ; " align="center">Random Forests Pruning : A Study </h3><br />
+<img style="width: 380px; height: 245px;" src="images/forest_pruning.png" ALIGN="right"/>
+
+	[<a href="forest.html">Read More</a>] [<a href="https://github.com/beedotkiran/randomforestpruning-ismm-2017">git</a>]
+	 Random forests perform bootstrap-aggregation by sampling the training samples with replacement. This enables the evaluation of out-of-bag error which serves as a internal cross-validation mechanism. Our motivation lies in using the unsampled training samples to improve each decision tree in the ensemble. We study the effect of using the out-of-bag samples to improve the generalization error first of the decision trees and second the random forest by post-pruning. A preliminary empirical study on four UCI repository datasets show consistent decrease in the size of the forests without considerable loss in accuracy. <br />
+<br CLEAR=”left” />
+
+<h3 style="color: rgb(51, 204, 150) ; " align="center">Time series anomalies detection</h3><br />
+
+<img style="width: 380px; height: 200px;" src="images/pca_plot_intime.png" ALIGN="right"/>
+[<a href="Anomaly.html">Read More</a>], [<a href="https://github.com/beedotkiran/AnomalyDetection">git</a>]
+We develop a multi-scale streaming anomaly score that takes into account a family of window sizes, making the algorithm scale invariant across a different types of time series with varying pseudo-periodic structure. We explore different aggregation methods of the multi-scale anomaly score to obtain a final anomaly score. We evaluate the performance on the Yahoo! and Numenta Anomaly Benchmark(NAB) datasets. Scattering 1-D : 
+[<a href="https://github.com/beedotkiran/librosa/blob/scattering_transform/librosa/core/scattering.py">git</a>]
+[<a href="https://github.com/beedotkiran/scattering_1d_python/blob/master/scattering_PD_example.ipynb">Nb</a>]<br /> 
+
+<br CLEAR=”left” />
+
+<h3 style="color: rgb(51, 204, 150) ; " align="center">Tumor detection in Hyperspectral images </h3><br />
+
+<img style="width: 440px; height: 180px;" src="images/h2nmfHierarchySeg02.png" ALIGN="left"/>
+[<a href="HierarchRank2NMF_InvivoBrain.html">Read More</a>][<a href="http://helicoid.eu/">EU project</a>]
+Hyperspectral images of high spatial and spectral resolutions are employed to perform of brain tissue segmentation for visualization of in-vivo images. We use hierarchical non-negative matrix factorization H2NMF to identify the pure- pixel spectral signatures of blood, brain tissues, tumor and other in-scene materials. A review of medical Hyperspectral Imaging 
+is provided.
+<br />
+<br CLEAR=”left” />
+<br />
+<h3 style="color: rgb(51, 204, 150) ; " align="center">Braids and energetic lattices</h3><br /> 
+
+<img style="width: 400px; height: 267px;" alt="" src="images/HierchieVSTresse.png" ALIGN="left"/> [<a href="Braids.html">Read More</a>] 
+Finding the optimal subtree, or optimal cut from a hierarchy is a combinatorially complex problem. Dynamic programming was used to calculate a greedy solution. The provisional optimum of the DP under uniqueness is formulated as a lattice. We expand the solution space from hierarchy to braids. The largest partition family that preserves the energetic ordering and thus the DP substructure is defined. Practically provide an intuitive way to combine multiple information sources in multivariate problems, and accomodating for ground truth and machine segmentation variation.
+<br />
+<br CLEAR="left" />
+<br />
+<h3 style="color: rgb(51, 204, 150) ; " align="center">Multilabel optmization on hierarchies of segmentations </h3><br />
+<ul>
+	<li>Study on energy minimization on hierarchies advised by <a href="https://www.frank-r-schmidt.de/">Frank R. Schmidt</a></li>
+	<li> Ref: 
+	Minimizing Energies with Hierarchical Costs [<a href="http://www.psi.toronto.edu/~andrew/papers/ijcv2012hierarchical.pdf">pdf</a>]
+	Interactive Segmentation with Super-Labels [<a href="http://www.frank-r-schmidt.de/Publications/2011/DGSVB11/DGSVB11.pdf">pdf</a>]</li>
+<img style="width: 360px; height: 267px;" alt="" src="images/Hierarchy_multilabel_ex.png">
+<img style="width: 360px; height: 267px;" alt="" src="images/block_hierarchy.png">
+	<li>Improve hierarchies of segmentations using Multi-label optimization [<a href="http://vision.csd.uwo.ca/code/">link</a>]</li>
+</ul>
+	
+<br CLEAR="left" />
+<h3 style="color: rgb(51, 204, 150) ; " align="center">Hierarchies and optimization : References Compilation </h3><br />
+During my thesis, i compiled references citing different problems involing hierarchical structure
+across different domains : computer vision, networks and graph theory, optimization theory, wavelets and others.
+This is informal blog and i used it mainly as a self-reminder for certain references. 
+<a href="https://sites.google.com/site/hierarchiesandoptimization/">Hierarchies and Optimization</a>
+<br />
+<br />
+
+</div></div><br />
+</body></html>
