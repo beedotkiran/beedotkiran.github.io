@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title></title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Home</div>
+<div class="menu-item"><a href="index.html">Index</a></div>
+<div class="menu-item"><a href="CV.html">CV</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="thesis.html">Thesis</a></div>
+<div class="menu-item"><a href="research.html">Older&nbsp;work</a></div>
+<div class="menu-item"><a href="current.html">Current&nbsp;work</a></div>
+<div class="menu-category">Publications</div>
+<div class="menu-item"><a href="conference.html">Conferences</a></div>
+<div class="menu-item"><a href="journals.html">Journals</a></div>
+<div class="menu-item"><a href="workshops.html">Workshops</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-category">References</div>
+<div class="menu-item"><a href="drlad.html">DRLAD</a></div>
+<div class="menu-item"><a href="lidarad.html">LiDARAD</a></div>
+</td>
+<td id="layout-content">
+<h1>B Ravi Kiran &ndash; Technical Lead, ML, Navya</h1>
+<h2>Review - Deep learning for Video Anomaly Detection (DL-VAD)</h2>
+<table class="imgtable"><tr><td>
+<img src="images/VideoAnomalyFormulation.png" alt="VAD" width="400px" height="320px" />&nbsp;</td>
+<td align="left"><p>Videos represent the primary source of information for surveillance applications and are available in 
+large amounts but in most cases contain little or no annotation for supervised learning. This article reviews 
+the state-of-the-art deep learning based methods for video anomaly detection and categorizes them based on the 
+type of model and criteria of detection. We also perform simple studies to understand the different approaches 
+and provide the criteria of evaluation for spatio-temporal anomaly detection. 
+<a href="https://beedotkiran.github.io/VideoAnomaly.html">Read More</a></p>
+</td></tr></table>
+<h2>Random Forests Pruning - A Study </h2>
+<table class="imgtable"><tr><td>
+<img src="images/forest_pruning.png" alt="VAD" width="600px" height="320px" />&nbsp;</td>
+<td align="left"><p>Random forests perform bootstrap-aggregation by sampling the training samples with replacement. 
+This enables the evaluation of out-of-bag error which serves as a internal cross-validation mechanism. 
+Our motivation lies in using the unsampled training samples to improve each decision tree in the ensemble. 
+We study the effect of using the out-of-bag samples to improve the generalization error first of the decision 
+trees and second the random forest by post-pruning. A preliminary empirical study on four UCI repository 
+datasets show consistent decrease in the size of the forests without considerable loss in accuracy. </p>
+</td></tr></table>
+<h2>Time series anomalies detection</h2>
+<table class="imgtable"><tr><td>
+<img src="images/pca_plot_intime.png" alt="timeseriesAD" width="600px" height="320px" />&nbsp;</td>
+<td align="left"><p>We develop a multi-scale streaming anomaly score that takes into account a family of window sizes, 
+making the algorithm scale invariant across a different types of time series with varying pseudo-periodic 
+structure. We explore different aggregation methods of the multi-scale anomaly score to obtain a final 
+anomaly score. We evaluate the performance on the Yahoo! and Numenta Anomaly Benchmark(NAB) datasets. </p>
+<ul>
+<li><p>Scattering 1-D</p>
+</li>
+</ul>
+</td></tr></table>
+<h2>Tumor detection in Hyperspectral images </h2>
+<table class="imgtable"><tr><td>
+<img src="images/h2nmfHierarchySeg02.png" alt="h2nmfseg" width="600px" height="320px" />&nbsp;</td>
+<td align="left"><p>Hyperspectral images of high spatial and spectral resolutions are employed to perform of brain tissue 
+segmentation for visualization of in-vivo images. We use hierarchical non-negative matrix factorization 
+H2NMF to identify the pure- pixel spectral signatures of blood, brain tissues, tumor and other 
+in-scene materials. A review of medical Hyperspectral Imaging is provided. </p>
+</td></tr></table>
+<h2>Braids and energetic lattices</h2>
+<table class="imgtable"><tr><td>
+<img src="images/HierchieVSTresse.png" alt="braids" width="600px" height="320px" />&nbsp;</td>
+<td align="left"><p>Finding the optimal subtree, or optimal cut from a hierarchy is a combinatorially complex problem. 
+Dynamic programming was used to calculate a greedy solution. The provisional optimum of the DP under 
+uniqueness is formulated as a lattice. We expand the solution space from hierarchy to braids. 
+The largest partition family that preserves the energetic ordering and thus the DP substructure is defined. 
+Practically provide an intuitive way to combine multiple information sources in multivariate problems, 
+and accomodating for ground truth and machine segmentation variation. </p>
+<ul>
+<li><p>Read More</p>
+</li>
+</ul>
+</td></tr></table>
+<h2>Multilabel optmization on hierarchies of segmentations </h2>
+<table class="imgtable"><tr><td>
+<img src="images/Hierarchy_multilabel_ex.png" alt="braids" width="600px" height="450px" />&nbsp;</td>
+<td align="left"><ul>
+<li><p>Study on energy minimization on hierarchies advised by <a href="https://www.frank-r-schmidt.de/">Frank R. Schmidt</a></p>
+<ul>
+<li><p>Optimize over hierarchies of segmentations using Multi-label optimization using parent-child hierarchical costs </p>
+</li></ul>
+</li>
+<li><p>Preliminary Results and problem formulation : <a href="https://beedotkiran.github.io/Multi-labelingOptimizationOnHierarchiesResults43.pdf">slides</a></p>
+</li>
+<li><p>References: </p>
+<ul>
+<li><p>Minimizing Energies with Hierarchical Costs <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.447.1419&amp;rep=rep1&amp;type=pdf">pdf</a> </p>
+</li>
+<li><p>Interactive Segmentation with Super-Labels <a href="https://www.frank-r-schmidt.de/Publications/2011/DGSVB11/DGSVB11.pdf">pdf</a></p>
+</li>
+</ul>
+
+</li>
+</ul>
+</td></tr></table>
+<h2>Bibliography &amp; References </h2>
+<table class="imgtable"><tr><td>
+<img src="images/pyramids_mf_serra.png" alt="braids" width="600px" height="450px" />&nbsp;</td>
+<td align="left"><p><a href="https://sites.google.com/view/hierarchies-opt-bibliography/home">List of references during my PhD</a></p>
+</td></tr></table>
+<div id="footer">
+<div id="footer-text">
+Page generated 2019-12-26 18:02:33 CET, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,152 @@
+# jemdoc: menu{MENU}{example.html}
+
+= Streaming multi-scale anomaly detection
+
+- Datasets : [https://github.com/numenta/NAB NAB], [https://webscope.sandbox.yahoo.com/catalog.php?datatype=s&did=70 Yahoo!]
+- [http://cap2017.imag.fr/" CAp 2017] [https://arxiv.org/abs/1706.06910 article], 
+[https://beedotkiran.github.io/poster_cap2017.pdf poster],
+[https://beedotkiran.github.io/slides_anomaly.pdf slides], 
+[https://github.com/beedotkiran/AnomalyDetection git]
+
+== Problem setup
+~~~
+- $x(t)$ are observations over time $t$ where new data arrives over time $t$.
+- Problem : Window of $x(t)$, i.e. $[t:t-p+1]$ which ``deviates'' from normal behavior.
+- Motivation : How to become invariant to window-size/scale of pseudo-periodic structure in $x(t)$ ?
+- Solution : Track correlations of principal subspace at various scales 
+~~~
+
+== Methodology
+- At $t$ we build multiple lag-embeddings of series $x(t)$ at size $p$ : $X_t^p = [x_{t}, x_{t-1}, \ldots, x_{t-p+1}]^T \in \mathbb{R}^p$.
+- Given $X^p \in \mathbb{R}^{T \times p}$, $\mathbf{w}_p$ is defined as 1-D projection capturing most of the energy of samples :
+
+~~~ 
+$ \mathbf{w}_p = \arg\min_{\|\mathbf{w}\|=1} \sum^T_{t=1} \| X_{t}^p - (\mathbf{w}\mathbf{w}^T)X_t^p \|^2 $
+~~~
+
+       
+We update the principal directions at each lag $\mathbf{w}_p$ to maximize the variance
+captured by $\mathbf{w}_p \mathbf{w}_p^T$. An example of a 2-d lag matrix embedding
+with the principal directions are provided : 
+
+=== Time Series
+~~~
+{}{img_left}{images/pca_plot_TS.png}{pca plot}{250}{250}
+~~~
+
+=== PCA embedding of sliding windows in two dimensions
+~~~
+{}{img_left}{images/pca_plot_intime.png}{alt text}{550}{250}
+~~~
+
+Colormap shows the increasing time instant $t$ at which new samples $x(t)$, and thus lag-vectors $X_t^2$ arrive.
+~~~
+{}{img_left}{images/viridis.png}{colormap}{800}{20}
+~~~
+
+=== Global glow for Multi-scale Anomaly detection 
+~~~
+{}{img_left}{images/anomaly_global_flow.png}{colormap}{700}{360}
+~~~
+Dotted lines represent the hierarchical approximation of principal directions $\mathbf{w}_p$ for scale $p$, based on paper.
+
+== Least correlated Scale Vs 2nd Iteration of Streaming PCA
+
+=== Detector performance (AUC) Vs Avg. Reconstruction error
+
+==== Streaming PCA on multi-scale Lag-matrix $\| \pmb{\alpha}_t \|^2 $
+~~~
+{}{img_left}{images/B2-multiscale-lagmatrixNorm.png}{AUCVsErr}{300}{210}
+~~~
+
+~~~
+{}{img_left}{images/B3-multiscale-lagmatrixNorm.png}{AUCVsErr}{300}{210}
+~~~
+
+~~~
+{}{img_left}{images/B3-multiscale-lagmatrixNorm.png}{AUCVsErr}{300}{210}
+~~~
+
+==== 2nd Iteration of streaming PCA on multi-scale Lag-matrix $\| \widetilde{\pmb{\alpha}_t} - \pmb{\alpha}_t\|^2$
+
+~~~
+{}{img_left}{images/B2-multiscale-lagmatrixNorm-PCA.png}{AUCVsErr}{300}{210}
+~~~
+
+~~~
+{}{img_left}{images/B3-multiscale-lagmatrixNorm-PCA.png}{AUCVsErr}{300}{210}
+~~~
+
+~~~
+{}{img_left}{images/B3-multiscale-lagmatrixNorm-PCA.png}{AUCVsErr}{300}{210}
+~~~
+
+- Representation : Multi-scale lagmatrix
+- Aggregation methods : Least correlated scale, Norm of multi-scale anomaly score, Norm of reconstruction error of anomaly scores.
+- Each point in each scatterplot corresponds to a time series from dataset B2, B3, B4 in Yahoo!.
+
+=  Non-linear features for predictive model based anomaly detection
+
+In second study, we study the performance of scattering transform representation of 
+time series for the purpose of time series prediction using auto-regressive models. 
+We use the prediction error for the purpose of anomaly and change point detection. 
+We also compare our performance with a simple representation of the time series window 
+created by evaluating concatenating non-linear functions of the window at the current 
+time instant with scattering transform representation. The two types of features that we 
+study in the report. 
+
+- Simple features on moving window $w$ by the embedding 
+~~~
+$\mathbf{x} = 
+\{\min(x_{1:T}), \max(x_{1:T}), \text{avg}(x_{1:T}), \text{std}(x_{1:T}), \text{TV}(x_{1:T})\}$  where $\mathbf{x} \in \mathbb{R}^5$
+~~~
+
+and TV$(w)$ is the digital version of the total variation of the series $\sum^T_{t=1} |x_t - x_{t+1}|$.
+
+- Scattering transform $S x$ of signal $x$
+
+We train the following linear predictors to evaluate the variance scaled prediction error
+as anomaly score : 
+
+- Scalar and Vector Autoregressive Models (AR, VAR) 
+- AR and VAR models on PCA transformed features. (PCR, PC-VAR)
+
+(Results coming up shortly) 
+
+= Reading List 
+
+== Multiscale Anomaly detection
+- Multi-scale anomaly detection algorithm based on infrequent pattern of time series 2006 [http://dl.acm.org/citation.cfm?id=1343331 link]
+- Optimal Multi-scale Patterns in Time Series Streams 2006 [http://www.cs.cmu.edu/~spapadim/pdf/msbasis_sigmod06.pdf pdf]
+- Streaming Pattern Discovery in Multiple Time-Series 2005 (SPIRIT) [http://www.vldb2005.org/program/paper/thu/p697-papadimitriou.pdf pdf]
+- Real-Time Anomaly Detection for Streaming Analytics [https://arxiv.org/pdf/1607.02480.pdf pdf]
+- Combining Filtering and Statistical Methods for Anomaly Detection [https://www.usenix.org/legacy/event/imc05/tech/full_papers/soule/soule.pdf pdf]
+- ASAP: A Streaming Operator for Smoothing Time Series Visualizations
+- Generic and Scalable Framework for Automated Time-series Anomaly Detection KDD 2015 [https://s.yimg.com/ge/labs/v2/uploads/kdd2015.pdf pdf]
+- Measuring predictability using multiscale embedding 1996 [http://ieeexplore.ieee.org/document/548345/ link]
+- Derivative Delay Embedding: Online Modeling of Streaming Time Series 2016 [https://arxiv.org/abs/1609.07540 pdf]
+- Joakim & Mallat. "Deep scattering spectrum."Trans. on Signal Processing (2014) [https://arxiv.org/pdf/1304.6763.pdf pdf].
+
+== Subspace Tracking and Sketching
+- B. Yang. Projection approximation subspace tracking 1995 (PAST-D algorithm)
+- Online PCA with Spectral Bounds 2015 [https://edoliberty.github.io/papers/opca2.pdf pdf]
+- Online PCA in High Dimension: Which Algorithm to Choose? 2015 [https://arxiv.org/abs/1511.03688 pdf]
+- Structure Discovery in Nonparametric Regression by Compositional Kernel Search ICML 2013 [https://www.cs.toronto.edu/~rgrosse/icml2013-gp.pdf pdf]
+- Modeling Time Series & Sequences: Learning Representations & Making Predictions (2015) [http://dukespace.lib.duke.edu/dspace/handle/10161/11362 thesis]
+
+== Others
+- LOF: Identifying Density-Based Local Outliers 2000 [https://pdfs.semanticscholar.org/f4cc/bb6bf6026ca73570de89b3fa75e873b4384c.pdf?_ga=1.231854169.715348362.1490227835 pdf]
+- Incremental Local Outlier Detection for Data Streams 2007 [https://www.researchgate.net/publication/4250603_Incremental_Local_Outlier_Detection_for_Data_Streams pdf]
+- Machine Learning for Sequential Data: A Review [http://web.engr.oregonstate.edu/~tgd/publications/mlsd-ssspr.pdf pdf]
+- How to Evaluate the Quality of Unsupervised Anomaly Detection Algorithms? 2015 [https://arxiv.org/pdf/1607.01152.pdf pdf]
+- Robust Multivariate Autoregression for Anomaly Detection in Dynamic Product Ratings 2014 [http://www.cs.cmu.edu/~sguennem/publications/WWW2014.pdf pdf]
+- Time delay neural network [[https://en.wikipedia.org/wiki/Time_delay_neural_network Wiki]
+
+== Workshops and Conferences on anomaly detection
+- NIPS Time series workshop [2015], [2016]
+- Workshop on Outlier Detection, Description KDD-ODD: 
+    -- [http://outlier-analytics.org/odd16kdd/ 2016] 
+    -- [http://outlier-analytics.org/odd15kdd/ 2014] 
+    -- [http://outlier-analytics.org/odd14kdd/ 2013] 
+    -- [http://outlier-analytics.org/odd13kdd/ 2013]
+- ICML 2016 Anomaly Detection Workshop [https://sites.google.com/site/icmlworkshoponanomalydetection/accepted-papers 2013]

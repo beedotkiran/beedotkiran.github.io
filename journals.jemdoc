@@ -1,0 +1,21 @@
+# jemdoc: menu{MENU}{example.html}
+
+= B Ravi Kiran -- Technical Lead, ML, Navya
+
+== Journals
+
+- An overview of deep learning based methods for unsupervised and semi-supervised anomaly detection in videos. Journal of Imaging (2018) Kiran, B., Dilip Thomas, and Ranjith Parakkal [https://www.mdpi.com/2313-433X/4/2/36/pdf pdf]. 
+
+- An Intraoperative Visualization System Using Hyperspectral Imaging to Aid in Brain Tumor Delineation, H. Fabelo et. al. [www.mdpi.com/1424-8220/18/2/430/pdf pdf], Sensors, MDPI, Jan 2018.
+
+- Spatio-spectral classification of hyperspectral images for brain cancer detection during surgical operations, H. Fabelo et al. PLOS ONE 2018 [https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0193721 link]
+
+- Intra-operative hyperspectral imaging for brain tumour detection and delineation: Current progress on the HELICoid project, S Kabwama, et. al., Journal of Surgery 2016
+
+- Fusions of ground truths & hierarchies, B Ravi Kiran, J. Serra, Pattern Recognition. Letters 2014. [www.sciencedirect.com/science/article/pii/S0167865514001457 link] 
+
+- Global-local optimizations by hierarchical cuts & climbing B Ravi Kiran, J. Serra, Pattern Recognition 2014. [https://www.sciencedirect.com/science/article/abs/pii/S0031320313002161?via%3Dihub link]
+
+== In Preparartion
+
+- Deep Reinforcement Learning for Autonomous Driving: A Survey *Expected 2020*

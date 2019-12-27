@@ -1,0 +1,71 @@
+# jemdoc: menu{MENU}{example.html}
+
+= B Ravi Kiran -- Technical Lead, ML, Navya
+
+== Nov'18 - Now ML-DL Technical Lead, Navya
+- Deep learning for vision tasks
+- 3D Deep learning for pointcloud processing
+- Multi-task learning architectures for AD
+- Real time deployment
+- Reinforcement learning for decision making
+
+== Jan'18 - Oct'18 R&D Engineer, ML-DL-RL for ADAS, AKKA Technologies
+- Deep (visual) Reinforcement learning for autonomous driving [Co-Advised Victor Talpaert]
+- Lidar for obstale avoidance and tracking [Co-advised Masters]
+- Lidar based Prior maps for autonomous driving [Co-advised Luis Roldao]
+
+== May'17 - Dec'17 Consultant in Vision & deep learning at UncannyVision
+- Focus : Video representation learning for anomaly detection
+- Models & Approaches : 
+    -- Autoencoders (Convolutional, Contractive, Spatio-temporal, C3D), 
+    -- Predictive models(ConvLSTM, Linear predictors), 
+    -- Generative models(GANs, VAEs)
+
+== Oct'16 - Aug'17 Temp. professor (ATER), CRISTAL lab, Université Lille 3
+- Teaching : Machine learning, Dimension reduction & reccomendation systems [https://beedotkiran.github.io/MLcourse_Lille3/ slides]
+- Focus : 
+    -- [https://beedotkiran.github.io/Anomaly.html Streaming Multiscale Anomaly detection], 
+    -- [https://beedotkiran.github.io/forest.html Random Forests Pruning] 
+
+== Dec'15 - Nov'16 Post-doc, DATA-ENS Paris - ThalesAlenia Space
+- Problem : Streaming Time-series anomaly detection
+- Focus : Scattering transform and time series analysis 
+
+== Nov'14- Nov'15 Post-doc, Mines-ParisTech, Centre de Robotique(CAOR)
+- *Advirsors* : Jesus Angulo (CMM), Bogdan Stanciulescu (CAOR)
+- [HeliCoid] : Real-time classification of hyper-spectral images for brain tumor detection.
+- Focus : Non-Negative Matrix factorization (NMF), Unmixing, Unsupervised hierarchical clustering. 
+
+== Oct'11- Oct'14 PhD computer science, A3SI-LIGM UMR 8049, ESIEE, Paris
+- *Advisor* : [http://www.cmm.mines-paristech.fr/~serra/aaccueil.htm Jean Serra] 
+- *Co-encadrant* : [https://perso.esiee.fr/~coustyj/ Jean Cousty] 
+- Energetic-Lattice based optimization and generalization of hierarchies to [https://beedotkiran.github.io/Braids.html Braids]
+- GIS project: C. Voiron & Pierre-Alain Mannoni, UMR-ESPACE Dept. Geography, Sophia-Antipolis
+- Prix de thèse d'Université Paris-Est 2015 en Mathématiques et STIC 
+[https://www.univ-paris-est.fr/ecoles-doctorales/ecole-doctorale-mathematiques-et-stic-mstic/l-ed-mstic/prix-et-distinctions/ Link]
+
+== Mar'11-Jun'11 Intern, A3SI-LIGM, ESIEE, Paris, France
+- *Advisor* : Jean Serra, Problems : Tutorial on morphological operators in PINK (python).
+
+== Feb'10-Feb'11 Research Assistant, Computer Vision and AI Lab, IISc , Bangalore
+- *Advisor* : K.R.Ramakrishnan
+- Road and lane segmentation for autonomous vehicles.
+- Real-time background subtraction on surveillance videos.
+- MindTree Project : Motion segmentation in video surveillance videos.
+
+== Aug'08 - Feb'10 Software Design Engineer, Texas Instruments, Bangalore, India.
+- Embedded programming : experience on ARM (C) and DSP (BIOS)
+- Block based image processing on multi-core systems /White Paper/
+
+
+== Teaching (~300 Hours)
+- PhD 2011-2014 (~100 Hrs) : (Master 2-LIGM) Mathematical Morphology (2012-13, 2013-14) [https://www.youtube.com/playlist?list=PLfvrQApXiNsVtByxU_uMgWAsn9E4xx-gq videos], (Master-ESIEE) MorphoGraph, J. Cousty (2012-13, 2013-14), [https://perso.esiee.fr/~coustyj/EnglishMorphoGraph/ Link]
+- ATER 2016-2017 (~192 Hrs) : TD : Advanced data mining, Machine learning [https://beedotkiran.github.io/MLcourse_Lille3/ slides]
+
+= Skills
+== Languages, Tools
+    - TensforFlow & Keras
+    - Python, Matlab, R, C, C++, Latex, Git/SVN
+    - Pandas, Scikit-learn, Scikit-image, statsmodels
+== Domain knowledge
+    - Deep learning, Image/Video Processing, Computer vision, Machine learning, Time series analysis, Mathematical Morphology, Signal Processing, Graph Theory

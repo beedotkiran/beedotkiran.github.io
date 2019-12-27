@@ -1,407 +1,234 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-
-<script type="text/javascript" async src="MathJax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title></title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    processEscapes: true
-  }
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Anomalies</title>
-
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700%7COpen+Sans:400,600,700" rel="stylesheet" type="text/css" />
-<link href="default.css" rel="stylesheet" type="text/css" media="all" /><!--[if IE 6]>
-<link href="default_ie6.css" rel="stylesheet" type="text/css" />
-<![endif]--></head><body>
-<div id="wrapper">
-	<div id="header-wrapper">
-		<div id="header" class="container">
-
-<div id="menu">
-				
+<!-- End MathJax -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Home</div>
+<div class="menu-item"><a href="index.html">Index</a></div>
+<div class="menu-item"><a href="CV.html">CV</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="thesis.html">Thesis</a></div>
+<div class="menu-item"><a href="research.html">Older&nbsp;work</a></div>
+<div class="menu-item"><a href="current.html">Current&nbsp;work</a></div>
+<div class="menu-category">Publications</div>
+<div class="menu-item"><a href="conference.html">Conferences</a></div>
+<div class="menu-item"><a href="journals.html">Journals</a></div>
+<div class="menu-item"><a href="workshops.html">Workshops</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-category">References</div>
+<div class="menu-item"><a href="drlad.html">DRLAD</a></div>
+<div class="menu-item"><a href="https://github.com/beedotkiran/Lidar_For_AD_references/blob/master/README.md">LiDARAD</a></div>
+</td>
+<td id="layout-content">
+<h1>Streaming multi-scale anomaly detection</h1>
 <ul>
-  <li><a href="index.html" title="">Homepage</a></li>
-  <li><a href="Research.html" title="">Research</a></li>
-  <li><a href="CV.html" title="">CV</a></li>
-  <li><a href="pub.html" title="">Publications</a></li>
+<li><p>Datasets : <a href="https://github.com/numenta/NAB" target=&ldquo;blank&rdquo;>NAB</a>, <a href="https://webscope.sandbox.yahoo.com/catalog.php?datatype=s&amp;did=70" target=&ldquo;blank&rdquo;>Yahoo!</a></p>
+</li>
+<li><p><a href="http://cap2017.imag.fr/"" target=&ldquo;blank&rdquo;>CAp 2017</a> <a href="https://arxiv.org/abs/1706.06910" target=&ldquo;blank&rdquo;>article</a>, 
+<a href="https://beedotkiran.github.io/poster_cap2017.pdf" target=&ldquo;blank&rdquo;>poster</a>,
+<a href="https://beedotkiran.github.io/slides_anomaly.pdf" target=&ldquo;blank&rdquo;>slides</a>, 
+<a href="https://github.com/beedotkiran/AnomalyDetection" target=&ldquo;blank&rdquo;>git</a></p>
+</li>
 </ul>
-
-			</div>
-		</div>
-	</div>
-	<div id="page" class="container">
-<div style="text-align: center;">
-		</div>
-<div id="content">
-<div style="text-align: center;">
-			</div>
-
-
-<h1 style="color: rgb(51, 204, 255);">Streaming multi-scale anomaly detection</h1> 
-<br />
-
-<h3> Datasets : <a href ="https://github.com/numenta/NAB" >NAB</a>, <a href="https://webscope.sandbox.yahoo.com/catalog.php?datatype=s&did=70">Yahoo!</a>
-
-[<a href="http://cap2017.imag.fr/">CAp 2017</a>][<a href="https://arxiv.org/abs/1706.06910">pdf</a>]
-[<a href="https://beedotkiran.github.io/poster_cap2017.pdf">poster</a>]
-[<a href="https://beedotkiran.github.io/slides_anomaly.pdf">slides</a>] 
-[<a href="https://github.com/beedotkiran/AnomalyDetection">git</a>]
-</h3>
-<br />
-
+<h2>Problem setup</h2>
+<div class="infoblock">
+<div class="blockcontent">
 <ul>
-<li>$x(t)$ are observations over time $t$ where new data arrives over time $t$.</li>
-<li>Problem : Window of $x(t)$, i.e. $[t:t-p+1]$ which ``deviates'' from normal behavior.</li>
-<li>Motivation : How to become invariant to window-size/scale of pseudo-periodic structure in $x(t)$ ?</li>
+<li><p>\(x(t)\) are observations over time \(t\) where new data arrives over time \(t\).</p>
+</li>
+<li><p>Problem : Window of \(x(t)\), i.e. \([t:t-p+1]\) which &lsquo;&lsquo;deviates&rsquo;&rsquo; from normal behavior.</p>
+</li>
+<li><p>Motivation : How to become invariant to window-size/scale of pseudo-periodic structure in \(x(t)\) ?</p>
+</li>
+<li><p>Solution : Track correlations of principal subspace at various scales </p>
+</li>
 </ul>
-<!-- <h3 style="color: rgb(190, 170, 170);" align="center">Global flow of multi-scale streaming anomaly detection </h3>  -->
-At $t$ we build multiple lag-embeddings of series $x(t)$ at size $p$ : $X_t^p = [x_{t}, x_{t-1}, \ldots, x_{t-p+1}]^T \in \mathbb{R}^p$.
-<br>
-Given $X^p \in \mathbb{R}^{T \times p}$, $\mathbf{w}_p$ is 
-  defined as 1-D projection capturing most of the energy of samples :
-
-\begin{equation*}
-       \mathbf{w}_p = \arg\min_{\|\mathbf{w}\|=1} \sum^T_{t=1} 
-       \| X_{t}^p - (\mathbf{w}\mathbf{w}^T)X_t^p \|^2
-\end{equation*}
-
-We update the principal directions at each lag $\mathbf{w}_p$ to maximize the variance
-captured by $\mathbf{w}_p \mathbf{w}_p^T$. An example of a 2-d lag matrix embedding
-with the principal directions are provided : 
-
-<br />
-<center><img src="images/pca_plot_intime.png" alt="Time-Series" style="width:550px;height:250px;">
-<img src="images/pca_plot_TS.png" alt="Time-Series" style="width:250px;height:250px;"></center>
-<center><img src="images/viridis.png" alt="Time-Series" style="width:800px;height:20px;"></center>
-Colormap shows the increasing time instant $t$ at which new samples $x(t)$, and thus lag-vectors $X_t^2$ arrive.
-<br />
-
-
-<br />
-<center><img src="images/anomaly_global_flow.png" alt="Time-Series" style="width:700px;height:360px;"></center>
-Dotted lines represent the hierarchical approximation of principal directions $\mathbf{w}_p$ for scale $p$, based on 
-[<a href="dl.acm.org/citation.cfm?id=1343331">link</a>].
-<br />
-
-<h3 style="color: rgb(190, 170, 170);" align="center">Least correlated Scale Vs 2nd Iteration of 
-Streaming PCA</h3> 
-<center>Detector performance (AUC) Vs Avg. Reconstruction error</center>
-<br />
-<center><span style="font-weight: bold; ; color: teal;"> 
-Streaming PCA on multi-scale Lag-matrix $\| \pmb{\alpha}_t \|^2 $</span></center>
-<img src="images/B2-multiscale-lagmatrixNorm.png" alt="AUCVsErr" style="width:260px;height:180px;">
-<img src="images/B3-multiscale-lagmatrixNorm.png" alt="AUCVsErr" style="width:260px;height:180px;">
-<img src="images/B3-multiscale-lagmatrixNorm.png" alt="AUCVsErr" style="width:260px;height:180px;">
-<br />
-<center><span style="font-weight: bold; ; color: green;"> 
-2nd Iteration of streaming PCA on multi-scale Lag-matrix $\| \widetilde{\pmb{\alpha}_t} - \pmb{\alpha}_t\|^2$</span></center>
-<img src="images/B2-multiscale-lagmatrixNorm-PCA.png" alt="AUCVsErr" style="width:260px;height:180px;">
-<img src="images/B3-multiscale-lagmatrixNorm-PCA.png" alt="AUCVsErr" style="width:260px;height:180px;">
-<img src="images/B3-multiscale-lagmatrixNorm-PCA.png" alt="AUCVsErr" style="width:260px;height:180px;">
-<br/>
-
+</div></div>
+<h2>Methodology</h2>
 <ul>
-	<li>Representation : Multi-scale lagmatrix</li>
-	<li>Aggregation methods : Least correlated scale, Norm of multi-scale anomaly score, Norm of reconstruction error of anomaly scores.</li>
-	<li>Each point in each scatterplot corresponds to a time series from dataset B2, B3, B4 in Yahoo!.</li>
+<li><p>At \(t\) we build multiple lag-embeddings of series \(x(t)\) at size \(p\) : \(X_t^p = [x_{t}, x_{t-1}, \ldots, x_{t-p+1}]^T \in \mathbb{R}^p\).</p>
+</li>
+<li><p>Given \(X^p \in \mathbb{R}^{T \times p}\), \(\mathbf{w}_p\) is defined as 1-D projection capturing most of the energy of samples :</p>
+</li>
 </ul>
-
-
- <table style="width:100%">
-<center><span style="font-size:1.3em; font-weight: bold; ; color: teal; line-height:0%"> 
-Multi-scale score-Norm $\| \pmb{\alpha}_t \|^2 $ (PC=1)</span></center>
-  <tr>
-  	<th>Method</th>
-    <th>Bench 1</th>
-    <th>Bench 2</th>
-    <th>Bench 3</th>
-    <th>Bench 4</th>
-    <th>NAB</th>
-  </tr>
-  <tr>
-    <td>fixed-scale</td>
-    <td>$0.828\pm 0.240$</td>
-    <td>$0.835\pm 0.180$</td>
-    <td>$0.614\pm 0.108$</td>
-    <td>$0.568\pm 0.160$</td>
-    <td>$0.815\pm 0.238$</td>
-  </tr>
-  <tr>
-    <td> fixed-scale-haar</td>
-	<td>  $0.826\pm 0.238$ </td>
-	<td>  $0.878\pm 0.143$ </td>
-	<td>  $0.617\pm 0.115$ </td>
-	<td>  $0.576\pm 0.157$ </td>
-	<td>  $0.812\pm 0.232$ </td>
-  <tr>
-  <tr>
-  	<td>  multiscale-lagmatrix </td>    
-	<td>  $0.884\pm 0.232$ </td>
-	<td>  $0.978\pm 0.057$ </td>
-	<td>  $0.816\pm 0.092$ </td>
-	<td>  $0.696\pm 0.157$ </td>
-	<td>  $0.879\pm 0.199$ </td>
-  </tr>
-  <tr>
-	<td> hierarchical-approx </td>
-	<td>  $0.871\pm 0.236$ </td>
-	<td>  <mark>$0.997\pm 0.002$ </mark></td>
-	<td>  $0.980\pm 0.025$ </td>
-	<td>  <mark>$0.897\pm 0.104$</mark></td>
-	<td>  <mark>$0.900\pm 0.189$</mark></td>
-</tr>
-<tr>
-<td> multiscale-haar  </td>
-<td> <mark> $0.906\pm 0.231$ </mark></td>
-<td>  $0.989\pm 0.019$ </td>
-<td> <mark> $0.992\pm 0.019$ </mark></td>
-<td>  $0.892\pm 0.126$ </td>
-<td>  $0.892\pm 0.198$ </td>
-</tr>  
-</table> 
-
-<table style="width:100%">
-<center><span style="font-size:1.3em; font-weight: bold; ; color: green; line-height:0%"> 
-PCA on multi-scale score $\| \widetilde{\pmb{\alpha}_t} - \pmb{\alpha}_t\|^2$ (PC=1)</span></center>
-<tr>
-  	<th>Method</th>
-    <th>Bench 1</th>
-    <th>Bench 2</th>
-    <th>Bench 3</th>
-    <th>Bench 4</th>
-    <th>NAB</th>
-  </tr>
-<tr>
-<td> fixed-scale </td>           
-<td>  $0.632\pm 0.264$ </td>
-<td>  $0.754\pm 0.206$ </td>
-<td>  $0.533\pm 0.124$ </td>
-<td>  $0.525\pm 0.133$ </td>
-<td>  $0.700\pm 0.247$ </td>
-</tr>
-<tr>
-<td> fixed-scale-haar </td>      
-<td>  $0.649\pm 0.251$ </td>
-<td>  $0.723\pm 0.194$ </td>
-<td>  $0.514\pm 0.110$ </td>
-<td>  $0.522\pm 0.129$ </td>
-<td>  $0.699\pm 0.244$ </td>
-</tr>
-<tr>
-<td> multiscale-lagmatrix  </td>
-<td> <mark> $0.895\pm 0.218$</mark> </td>
-<td>  $0.997\pm 0.006$ </td>
-<td> <mark> $0.993\pm 0.017$ </mark></td>
-<td> <mark> $0.959\pm 0.063$ </mark></td>
-<td> <mark> $0.891\pm 0.194$ </mark></td>
-</tr>
-
-
-<tr>
-<td> hierarchical-approx </td>
-<td>  $0.859\pm 0.233$ </td>
-<td> <mark> $0.997\pm 0.002$ </mark> </td>
-<td>  $0.961\pm 0.071$ </td>
-<td>  $0.895\pm 0.108$ </td>
-<td>  $0.884\pm 0.204$ </td>
-</tr>
-
-<tr>
-<td>  multiscale-haar </td>       
-<td>  $0.888\pm 0.219$ </td>
-<td>  $0.988\pm 0.031$ </td>
-<td>  $0.956\pm 0.059$ </td>
-<td>  $0.898\pm 0.106$ </td>
-<td>  $0.886\pm 0.178$ </td>
-</tr>
-
-</table> 
- <table style="width:100%">
- <center><span style="font-size:1.3em; font-weight: bold; ; color: orange; line-height:0%"> 
-Least correlated scale $\alpha_t^{j^\ast} $ where $ j^\ast = {\arg\min}_j~ \sum_i (\pmb{\alpha}^T \pmb{\alpha})_{ji}$ (PC=1)</span></center>
- 
-<tr>
-  	<th>Method</th>
-    <th>Bench 1</th>
-    <th>Bench 2</th>
-    <th>Bench 3</th>
-    <th>Bench 4</th>
-    <th>NAB</th>
-  </tr>
-  
-    <tr>
-    <td> fixed-scale       </td>
-    <td>  $0.828\pm 0.240$ </td>
-    <td>  $0.835\pm 0.180$ </td>
-    <td>  $0.614\pm 0.108$ </td>
-    <td>  $0.568\pm 0.160$ </td>
-    <td>  $0.815\pm 0.238$ </td>
-    </tr>
-    
-    <tr>
-    <td> fixed-scale-haar  </td>
-    <td>  $0.826\pm 0.238$ </td>
-    <td>  $0.878\pm 0.143$ </td>
-    <td>  $0.617\pm 0.115$ </td>
-    <td>  $0.576\pm 0.157$ </td>
-    <td>  $0.812\pm 0.232$ </td>
-    </tr>
-
-    <tr>
-    <td> multiscale-lagmatrix</td>
-    <td>  $0.816\pm 0.238$ </td>
-    <td>  $0.773\pm 0.236$ </td>
-    <td>  $0.993\pm 0.017$ </td>
-    <td>  $0.964\pm 0.055$ </td>
-    <td>  $0.885\pm 0.196$ </td>
-    </tr>
-
-    <tr>
-    <td> hierarchical-approx </td>
-    <td>  $0.816\pm 0.238$ </td>
-    <td>  $0.773\pm 0.236$ </td>
-    <td> <mark> $0.993\pm 0.017$ </mark></td>
-    <td> <mark> $0.964\pm 0.055$ </mark></td>
-    <td>  $0.885\pm 0.196$ </td>
-    </tr>
-
-    <tr>
-    <td> multiscale-haar </td>        
-    <td> <mark> $0.832\pm 0.238$ </mark></td>
-    <td> <mark> $0.997\pm 0.007$ </mark></td>
-    <td>  $0.799\pm 0.120$ </td>
-    <td>  $0.817\pm 0.123$ </td>
-    <td> <mark> $0.886\pm 0.183$ </mark></td>
-    </tr>
-</table> 
-
-<br />
-
-<br />
-<br />
-<h1 style="color: rgb(51, 204, 150);"> Non-linear features for predictive model based 
-anomaly detection</h1>
-<br />
- In second study, we study the performance of scattering transform representation of time series for the 
- purpose of time series prediction using auto-regressive models. We use the prediction error for the 
- purpose of anomaly and change point detection. We also compare our performance with a simple 
- representation of the time series window created by evaluating concatenating non-linear functions 
- of the window at the current time instant with scattering transform representation.
-The two types of features that we study in the report.
+<div class="infoblock">
+<div class="blockcontent">
+<p>\( \mathbf{w}_p = \arg\min_{\|\mathbf{w}\|=1} \sum^T_{t=1} \| X_{t}^p - (\mathbf{w}\mathbf{w}^T)X_t^p \|^2 \)</p>
+</div></div>
+<p>We update the principal directions at each lag \(\mathbf{w}_p\) to maximize the variance
+captured by \(\mathbf{w}_p \mathbf{w}_p^T\). An example of a 2-d lag matrix embedding
+with the principal directions are provided : </p>
+<h3>Time Series</h3>
+<table class="imgtable"><tr><td>
+<img src="images/pca_plot_TS.png" alt="pca plot" width="250px" height="250px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<h3>PCA embedding of sliding windows in two dimensions</h3>
+<table class="imgtable"><tr><td>
+<img src="images/pca_plot_intime.png" alt="alt text" width="550px" height="250px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p>Colormap shows the increasing time instant \(t\) at which new samples \(x(t)\), and thus lag-vectors \(X_t^2\) arrive.</p>
+<table class="imgtable"><tr><td>
+<img src="images/viridis.png" alt="colormap" width="800px" height="20px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<h3>Global glow for Multi-scale Anomaly detection </h3>
+<table class="imgtable"><tr><td>
+<img src="images/anomaly_global_flow.png" alt="colormap" width="700px" height="360px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<h2>Least correlated Scale Vs 2nd Iteration of Streaming PCA</h2>
+<h3>Detector performance (AUC) Vs Avg. Reconstruction error</h3>
+<h4>Streaming PCA on multi-scale Lag-matrix \(\| \pmb{\alpha}_t \|^2 \)</h4>
+<table class="imgtable"><tr><td>
+<img src="images/B2-multiscale-lagmatrixNorm.png" alt="AUCVsErr" width="300px" height="210px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/B3-multiscale-lagmatrixNorm.png" alt="AUCVsErr" width="300px" height="210px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/B3-multiscale-lagmatrixNorm.png" alt="AUCVsErr" width="300px" height="210px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<h4>2nd Iteration of streaming PCA on multi-scale Lag-matrix \(\| \widetilde{\pmb{\alpha}_t} - \pmb{\alpha}_t\|^2\)</h4>
+<table class="imgtable"><tr><td>
+<img src="images/B2-multiscale-lagmatrixNorm-PCA.png" alt="AUCVsErr" width="300px" height="210px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/B3-multiscale-lagmatrixNorm-PCA.png" alt="AUCVsErr" width="300px" height="210px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/B3-multiscale-lagmatrixNorm-PCA.png" alt="AUCVsErr" width="300px" height="210px" />&nbsp;</td>
+<td align="left"></td></tr></table>
 <ul>
-<li>Simple features on moving window $w$ by the embedding $\mathbf{x} = 
-\{\min(x_{1:T}), \max(x_{1:T}), \text{avg}(x_{1:T}), \text{std}(x_{1:T}), \text{TV}(x_{1:T})\}$.
-Where $\mathbf{x} \in \mathbb{R}^5$ and TV$(w)$ is the digital version 
-of the total variation of the series $\sum^T_{t=1} |x_t - x_{t+1}|$.</li>
-<li>Scattering transform $S x$ of signal $x$</li>
+<li><p>Representation : Multi-scale lagmatrix</p>
+</li>
+<li><p>Aggregation methods : Least correlated scale, Norm of multi-scale anomaly score, Norm of reconstruction error of anomaly scores.</p>
+</li>
+<li><p>Each point in each scatterplot corresponds to a time series from dataset B2, B3, B4 in Yahoo!.</p>
+</li>
 </ul>
-
-<!-- The scattering transform provides a locally translation invariant representation of 
-signals [anden2014deep] that analyze the different 
-scales of signal. The scattering transform up to the second order for a signal $x$ is defined as:
-
-\begin{equation*}
-S x = \left\{ S_0 x, S_1 x(\lambda_1), S_2 x(\lambda_1, \lambda_2 ) \right\}, 
-\forall \lambda_1 \in \Lambda_1,  \lambda_2 \in \Lambda_2,  
-\end{equation*}
-
-where 
-\begin{eqnarray*}
-S_0 x = x \star \phi \\
-% U_0 x = |x \star \psi_{\lambda_1} | \\
-S_1 x(\lambda_1) = |x \star \psi_{\lambda_1} | \star \phi \\
-% U_1 x = ||x \star \psi_{\lambda_1} |  \star \psi_{\lambda_2}|\\
-S_2 x(\lambda_1, \lambda_2 ) = ||x \star \psi_{\lambda_1} |  \star \psi_{\lambda_2}| \star \phi
-\end{eqnarray*} -->
-
-
-We train the following linear predictors to evaluate the variance scaled prediction error
-as anomaly score : 
+<h1>Non-linear features for predictive model based anomaly detection</h1>
+<p>In second study, we study the performance of scattering transform representation of 
+time series for the purpose of time series prediction using auto-regressive models. 
+We use the prediction error for the purpose of anomaly and change point detection. 
+We also compare our performance with a simple representation of the time series window 
+created by evaluating concatenating non-linear functions of the window at the current 
+time instant with scattering transform representation. The two types of features that we 
+study in the report. </p>
 <ul>
-  <li>Scalar and Vector Autoregressive Models (AR, VAR) </li>
-  <li>AR and VAR models on PCA transformed features. (PCR, PC-VAR)</li>
-</ul> 
-
-(Results coming up shortly)
-
-<br />
-<br />
-<h1 style="color: rgb(150, 0, 150);">Reading List :</h1> 
-<br />
-<h3> Multiscale Anomaly detection </h3> 
-<ul>
-<li>Multi-scale anomaly detection algorithm based on infrequent pattern of time series 2006
-[<a href="http://dl.acm.org/citation.cfm?id=1343331" target="_blank">link</a>] </li>
-<li>Optimal Multi-scale Patterns in Time Series Streams 2006
-[<a href="http://www.cs.cmu.edu/~spapadim/pdf/msbasis_sigmod06.pdf" target="_blank">pdf</a>] </li>
-<li>Streaming Pattern Discovery in Multiple Time-Series 2005 (SPIRIT)
-[<a href="http://www.vldb2005.org/program/paper/thu/p697-papadimitriou.pdf" target="_blank">pdf</a>] </li>
-<li>Real-Time Anomaly Detection for Streaming Analytics
-[<a href="https://arxiv.org/pdf/1607.02480.pdf" target="_blank">pdf</a>]</li>
-<li>Combining Filtering and Statistical Methods for Anomaly Detection
-[<a href="https://www.usenix.org/legacy/event/imc05/tech/full_papers/soule/soule.pdf">pdf</a>] </li>
-<li>ASAP: A Streaming Operator for Smoothing Time Series Visualizations</li>
-<li>Generic and Scalable Framework for Automated Time-series Anomaly Detection KDD 2015 
-[<a href="https://s.yimg.com/ge/labs/v2/uploads/kdd2015.pdf" target="_blank">pdf</a>] </li>
-<li>Measuring predictability using multiscale embedding 1996 [<a href="http://ieeexplore.ieee.org/document/548345/">link</a>]</li>
-<li>Derivative Delay Embedding: Online Modeling of Streaming Time Series 2016 [<a href="https://arxiv.org/abs/1609.07540">pdf</a>]</li>
-<li>Joakim & Mallat. "Deep scattering spectrum."Trans. on Signal Processing (2014).</li>
+<li><p>Simple features on moving window \(w\) by the embedding </p>
+</li>
 </ul>
-
-<h3> Subspace Tracking and Sketching </h3> 
+<div class="infoblock">
+<div class="blockcontent">
+<p>\(\mathbf{x} = 
+\{\min(x_{1:T}), \max(x_{1:T}), \text{avg}(x_{1:T}), \text{std}(x_{1:T}), \text{TV}(x_{1:T})\}\)  where \(\mathbf{x} \in \mathbb{R}^5\)</p>
+</div></div>
+<p>and TV\((w)\) is the digital version of the total variation of the series \(\sum^T_{t=1} |x_t - x_{t+1}|\).</p>
 <ul>
-<li>B. Yang. Projection approximation subspace tracking 1995 (PAST-D algorithm) </li>
-<li>Online PCA with Spectral Bounds 2015 [<a href="https://edoliberty.github.io/papers/opca2.pdf" target="_blank">pdf</a>]</li>
-<li>Online PCA in High Dimension: Which Algorithm to Choose? 2015
-[<a href="https://arxiv.org/abs/1511.03688" target="_blank">pdf</a>]</li>
-<li>Structure Discovery in Nonparametric Regression by Compositional Kernel Search ICML 2013
-[<a href="https://www.cs.toronto.edu/~rgrosse/icml2013-gp.pdf" target="_blank">pdf</a>] </li>
-<li>Modeling Time Series & Sequences: Learning Representations & Making Predictions (2015)
-[<a href="http://dukespace.lib.duke.edu/dspace/handle/10161/11362" target="_blank">thesis</a>] </li>
+<li><p>Scattering transform \(S x\) of signal \(x\)</p>
+</li>
 </ul>
-<h3> Others </h3> 
+<p>We train the following linear predictors to evaluate the variance scaled prediction error
+as anomaly score : </p>
 <ul>
-<li>LOF: Identifying Density-Based Local Outliers 2000 
-[<a href="https://pdfs.semanticscholar.org/f4cc/bb6bf6026ca73570de89b3fa75e873b4384c.pdf?_ga=1.231854169.715348362.1490227835" target="_blank">pdf</a>] </li>
-<li>Incremental Local Outlier Detection for Data Streams 2007 
-[<a href="https://www.researchgate.net/publication/4250603_Incremental_Local_Outlier_Detection_for_Data_Streams" target="_blank">pdf</a>] </li>
-<li>Machine Learning for Sequential Data: A Review 
-[<a href="http://web.engr.oregonstate.edu/~tgd/publications/mlsd-ssspr.pdf" target="_blank">pdf</a>] </li>
-<li>How to Evaluate the Quality of Unsupervised Anomaly Detection Algorithms? 2015
-[<a href="https://arxiv.org/pdf/1607.01152.pdf" target="_blank">pdf</a>] </li>
-<li>Robust Multivariate Autoregression for Anomaly Detection in Dynamic Product Ratings 2014
-[<a href="http://www.cs.cmu.edu/~sguennem/publications/WWW2014.pdf" target="_blank">pdf</a>] </li>
-<li>Time delay neural network
-[[<a href="https://en.wikipedia.org/wiki/Time_delay_neural_network" target="_blank">Wiki</a>]</li>
+<li><p>Scalar and Vector Autoregressive Models (AR, VAR) </p>
+</li>
+<li><p>AR and VAR models on PCA transformed features. (PCR, PC-VAR)</p>
+</li>
 </ul>
-<h3>Workshops and Conferences on anomaly detection </h3> 
+<p>(Results coming up shortly) </p>
+<h1>Reading List </h1>
+<h2>Multiscale Anomaly detection</h2>
 <ul>
-<li>NIPS Time series workshop  
-[<a href="https://sites.google.com/site/nipsts2015/accepted-papers" target="_blank">2015</a>],
-[<a href="https://sites.google.com/site/nipsts2016/accepted-papers" target="_blank">2016</a>] </li>
-<li>Workshop on Outlier Detection, Description KDD-ODD:
-[<a href="http://outlier-analytics.org/odd16kdd/" target="_blank">2016</a>]
-[<a href="http://outlier-analytics.org/odd15kdd/" target="_blank">2014</a>]
-[<a href="http://outlier-analytics.org/odd14kdd/" target="_blank">2013</a>]
-[<a href="http://outlier-analytics.org/odd13kdd/" target="_blank">2013</a>] </li>
-<li>ICML 2016 Anomaly Detection Workshop
-[<a href="https://sites.google.com/site/icmlworkshoponanomalydetection/accepted-papers" target="_blank">2013</a>] </li>
+<li><p>Multi-scale anomaly detection algorithm based on infrequent pattern of time series 2006 <a href="http://dl.acm.org/citation.cfm?id=1343331" target=&ldquo;blank&rdquo;>link</a></p>
+</li>
+<li><p>Optimal Multi-scale Patterns in Time Series Streams 2006 <a href="http://www.cs.cmu.edu/~spapadim/pdf/msbasis_sigmod06.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Streaming Pattern Discovery in Multiple Time-Series 2005 (SPIRIT) <a href="http://www.vldb2005.org/program/paper/thu/p697-papadimitriou.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Real-Time Anomaly Detection for Streaming Analytics <a href="https://arxiv.org/pdf/1607.02480.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Combining Filtering and Statistical Methods for Anomaly Detection <a href="https://www.usenix.org/legacy/event/imc05/tech/full_papers/soule/soule.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>ASAP: A Streaming Operator for Smoothing Time Series Visualizations</p>
+</li>
+<li><p>Generic and Scalable Framework for Automated Time-series Anomaly Detection KDD 2015 <a href="https://s.yimg.com/ge/labs/v2/uploads/kdd2015.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Measuring predictability using multiscale embedding 1996 <a href="http://ieeexplore.ieee.org/document/548345/" target=&ldquo;blank&rdquo;>link</a></p>
+</li>
+<li><p>Derivative Delay Embedding: Online Modeling of Streaming Time Series 2016 <a href="https://arxiv.org/abs/1609.07540" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Joakim &amp; Mallat. &ldquo;Deep scattering spectrum.&rdquo;Trans. on Signal Processing (2014) <a href="https://arxiv.org/pdf/1304.6763.pdf" target=&ldquo;blank&rdquo;>pdf</a>.</p>
+</li>
 </ul>
-<font size="-1">
-</font>
-
-<br />
-	</div>
+<h2>Subspace Tracking and Sketching</h2>
+<ul>
+<li><p>B. Yang. Projection approximation subspace tracking 1995 (PAST-D algorithm)</p>
+</li>
+<li><p>Online PCA with Spectral Bounds 2015 <a href="https://edoliberty.github.io/papers/opca2.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Online PCA in High Dimension: Which Algorithm to Choose? 2015 <a href="https://arxiv.org/abs/1511.03688" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Structure Discovery in Nonparametric Regression by Compositional Kernel Search ICML 2013 <a href="https://www.cs.toronto.edu/~rgrosse/icml2013-gp.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Modeling Time Series &amp; Sequences: Learning Representations &amp; Making Predictions (2015) <a href="http://dukespace.lib.duke.edu/dspace/handle/10161/11362" target=&ldquo;blank&rdquo;>thesis</a></p>
+</li>
+</ul>
+<h2>Others</h2>
+<ul>
+<li><p>LOF: Identifying Density-Based Local Outliers 2000 <a href="https://pdfs.semanticscholar.org/f4cc/bb6bf6026ca73570de89b3fa75e873b4384c.pdf?_ga=1.231854169.715348362.1490227835" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Incremental Local Outlier Detection for Data Streams 2007 <a href="https://www.researchgate.net/publication/4250603_Incremental_Local_Outlier_Detection_for_Data_Streams" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Machine Learning for Sequential Data: A Review <a href="http://web.engr.oregonstate.edu/~tgd/publications/mlsd-ssspr.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>How to Evaluate the Quality of Unsupervised Anomaly Detection Algorithms? 2015 <a href="https://arxiv.org/pdf/1607.01152.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Robust Multivariate Autoregression for Anomaly Detection in Dynamic Product Ratings 2014 <a href="http://www.cs.cmu.edu/~sguennem/publications/WWW2014.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Time delay neural network <a href="[https://en.wikipedia.org/wiki/Time_delay_neural_network" target=&ldquo;blank&rdquo;>Wiki</a></p>
+</li>
+</ul>
+<h2>Workshops and Conferences on anomaly detection</h2>
+<ul>
+<li><p>NIPS Time series workshop <a href="2015" target=&ldquo;blank&rdquo;>2015</a>, <a href="2016" target=&ldquo;blank&rdquo;>2016</a></p>
+</li>
+<li><p>Workshop on Outlier Detection, Description KDD-ODD: </p>
+<ul>
+<li><p><a href="http://outlier-analytics.org/odd16kdd/" target=&ldquo;blank&rdquo;>2016</a> </p>
+</li>
+<li><p><a href="http://outlier-analytics.org/odd15kdd/" target=&ldquo;blank&rdquo;>2014</a> </p>
+</li>
+<li><p><a href="http://outlier-analytics.org/odd14kdd/" target=&ldquo;blank&rdquo;>2013</a> </p>
+</li>
+<li><p><a href="http://outlier-analytics.org/odd13kdd/" target=&ldquo;blank&rdquo;>2013</a></p>
+</li></ul>
+</li>
+<li><p>ICML 2016 Anomaly Detection Workshop <a href="https://sites.google.com/site/icmlworkshoponanomalydetection/accepted-papers" target=&ldquo;blank&rdquo;>2013</a></p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2019-12-27 18:35:40 CET, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
-</body></html>
- 
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,93 @@
+# jemdoc: menu{MENU}{example.html}
+
+= Hyperspectral imaging for tumor detection
+
+Hyperspectral images of high spatial and spectral resolutions are employed to perform the 
+challenging task of brain tissue characterization and subsequent segmentation for visualization 
+of in-vivo images. Each pixel is a high-dimensional spectrum. Working on the hypothesis 
+of pure-pixels on account of high spectral resolution, we perform unsupervised clustering by 
+hierarchical non-negative matrix factorization to identify the pure- pixel spectral signatures 
+of blood, brain tissues, tumor and other materials. This subspace clustering was further used to 
+train a random forest for subsequent classification of test set images constituent of in-vivo 
+and ex-vivo images. Unsupervised hierarchical clustering helps visualize tissue structure in in-vivo 
+test images and provides a inter-operative tool for surgeons. The study also provides a preliminary 
+study of the classification and sources of errors, eg specularity.
+
+== Global overview
+
+- HSI of brain tissue surface using VNIR camera (800 bands x 1000 px x 1000 px )
+- Manual material dictionary building by hand picked windows containing pure-pixels
+- Unsupervised hier. clustering (H2NMF) to obtain the best rank-1 approx. within each cluster.
+- Learning subspace clustering by Random Forest classifier
+
+~~~
+{}{img_left}{images/globalFlowTile.png}{Global overview of segmentation process}{800}{533}
+~~~
+
+== Hierarchical segmentation by [https://sites.google.com/site/nicolasgillis/code H2NMF] for joint unmixing & segmentation
+The H2NMF algorithms aims at using the pure-pixel assumption for non-negative matrix factorization.
+The algorithms performs clustering as well as spectral-unmixing iteratively. Once a flat cluster is obtained
+the H2NMF uses the Non-negative Least Squares (NNLS) to solve for the abundances/coefficients.
+The goal is to evaluate a rank-2 approximation of the input pixel-set (vectors) and find a division
+that is trade-off between low approximation error and a balanced 2-cluster. 
+
+The cluster to be split next shall maximize : 
+
+\(
+\text{next}-k = \arg\min_\mathcal{K} \sigma_1^2(X[:,\mathcal{K}^1]) + \sigma_1^2(X[:,\mathcal{K}^2]) - \sigma_1^2(X[:,\mathcal{K}])
+\)
+
+so as to produce the steepest decrease in the approximation error. This step is repeated recursively $r-1$ times, 
+thus leading to $r$-clusters. 
+
+The subsets/clusters created are now further divided until a good rank-1 matrix approximation are achieved at the leaves.
+Thus the H2NMF algorithm is trying to segment the hyperspectral image to achieve the best rank-1
+approximation of each segment w.r.t to its first principal component.
+
+~~~
+{}{img_left}{images/h2nmfHierarchySeg02.png}{hierarchy}{600}{250}
+~~~
+Plots above, showing the variation of the rank-2 svd approximation error and variation of MSRA 
+
+== MSRA 
+Representative pure-pixels are ones with minimal Mean removed spectral angle(MRSA) w.r.t $u_k$
+
+\(
+    phi(\mathbf{x},\mathbf{y}) = \frac{1}{\pi} \arccos \bigg( \frac{(x - \bar{x})^T(y - \bar{y})}{\| x - \bar{x}\|^2 \| y - \bar{y} \|^2}\bigg) \in [0,1]
+\)
+
+Abundances are evaluated by Non-negative least squares (NNLS).
+
+~~~
+{}{img_left}{images/h2nmf_errors.png}{hierarchy}{600}{300}
+~~~
+
+== Preprocessing tools for hyperspectral images
+- Cropping to region of interest manually to reduce image size 
+- Spectral and spatial repeatibility tests to evaluate camera quality. 
+[http://dx.doi.org/10.1080/01431160412331291288 Ref1], [http://dx.doi.org/10.1109/IGARSS.2000.857215 Ref2]   
+- Locating specular reflections by the [http://dx.doi.org/10.1109/WHISPERS.2012.6874301 RX-anomaly detector ]
+- Noise estimation and camera calibration  
+ 
+
+
+==  Publications and Slides
+
+
+- Brain tissue discovery and classification in HSI, Université de Strasbourg, 
+http://icube-miv.unistra.fr/en/index.php/Home" target="_blank Icube-MIV, [slides_hyperspectral.pdf Slides ]
+- Unsupervised clustering of hyperspectral images of brain tissues by
+hierarchical non-negative matrix factorization, In Proceedings of the 9th International Joint Conference on Biomedical Engineering Systems and Technologies - Vol. 2: 
+[http://www.bioimaging.biostec.org/" BIOIMAGING 2016] , pages 77-84, 
+Bangalore Ravi Kiran, Bogdan Stanciulescu and Jesus Angulo, 
+[H2NMF_BrainPoster.pdf Poster][https://hal.archives-ouvertes.fr/hal-01280453/document HAL] 
+- End-member extraction in hyper-spectral images for brain tumor localization, ROMOPTO 2015, 
+B Ravi Kiran, Bogdan Stanciulescu, and Jesus Angulo, [ROMOPTO2015poster.pdf Poster] 
+
+==  References 
+- Learning from weakly representative data and applications in spectral image analysis 
+[https://repository.tudelft.nl/islandora/object/uuid%3A28328015-1288-4f03-9fb8-1baa84b5c9e4 link]
+- Deep Learning for Land-cover Classification in Hyperspectral Images [https://kgpml.github.io/Hyperspectral/ link]
+- Going Deeper with Contextual CNN for Hyperspectral Image Classification [https://arxiv.org/pdf/1604.03519v3.pdf pdf]
+- Discriminative Autoencoders for Small Targets Detection 2014 [https://hal.archives-ouvertes.fr/hal-00996305/document pdf]
+- Learning cross-spectral similarity measures with deep convolutional neural networks [https://www.cv-foundation.org/openaccess/content_cvpr_2016_workshops/w9/papers/Aguilera_Learning_Cross-Spectral_Similarity_CVPR_2016_paper.pdf pdf]

@@ -1,0 +1,86 @@
+# jemdoc: menu{MENU}{example.html}
+
+= B Ravi Kiran -- Technical Lead, ML, Navya
+
+== International Conferences
+
+- Rejection-Cascade of Gaussians: Real-time adaptive background subtraction framework *NCVPRIG 2019*, 
+B Ravi Kiran, Arindam Das, Senthil Yogamani [https://arxiv.org/abs/1705.09339 pdf], 
+[DeepRejectionCascade_NCVPRIG2019_Poster.pdf poster]
+
+- Exploring applications of deep reinforcement learning for real-world autonomous driving systems, 
+V. Talpaert, I. Sobh, B Ravi Kiran, P. Mannion, Senthil Y., Ahmad E.S, P. Perez 
+*VISAPP 2019* [https://arxiv.org/abs/1901.01536 pdf]
+
+- Prior 3D-Maps and Real-time Obstacle Detection for Autonomous Driving: A Review, 
+B Ravi Kiran, L. Roldao, B. Irastorza, R. Verastegui, S. Suss, Senthil Y., V. Talpaert, 
+A. Lepoutre, G. Trehard, *ECCVW 2018, AutoNUE* [https://arxiv.org/abs/1809.11036 pdf]
+
+- Multi-scale streaming anomalies detection for time series *CAp 2017* 
+[https://arxiv.org/abs/1706.06910 pdf], [https://beedotkiran.github.io/poster_cap2017.pdf Poster], 
+[https://beedotkiran.github.io/slides_anomaly.pdf Slides]
+
+- Cost-complexity pruning of random forests, B Ravi Kiran, J. Serra, 
+[https://arxiv.org/abs/1703.05430 pdf],  
+[pruning_posterISMM2017.pdf poster], 
+[https://github.com/beedotkiran/randomforestpruning-ismm-2017 git] *ISMM 2017*
+
+- A Novel Framework for Brain Cancer Detection based on Spatial-Spectral Hyperspectral Image Classification, H. Fabelo, et al. (4th author) *DCIS 2016*
+
+- Spatio-Spectral Classification of Hyperspectral Images based on Supervised and Unsupervised Methods for 
+Brain Cancer Detection, S. Ortega et al. (3rd author) *DCIS 2016*
+
+- Digitization of partitions and tessellations, J. Serra and B. Ravi Kiran, *DGCI 2016* 
+[https://hal.archives-ouvertes.fr/hal-01306414 HAL], 
+[https://hal.archives-ouvertes.fr/hal-01306414/file/Serra_Kiran_DGCI2016.pdf Slides]
+
+- Unsupervised clustering of hyperspectral images of brain tissues by hierarchical non-negative matrix factorization,
+B Ravi Kiran, B. Stanciulescu, [http://cmm.ensmp.fr/~angulo/ J. Angulo], *BIOIMAGING 2016* ,
+[H2NMF_BrainPoster.pdf Poster][https://hal.archives-ouvertes.fr/hal-01280453/document pdf] 
+
+- Tumor localization in HSI, *ROMOPTO 2015*, B Ravi Kiran, B. Stanciulescu, & J. Angulo
+
+- Braids Of partitions, B Ravi Kiran, J. Serra, *ISMM 2015*.[https://hal.archives-ouvertes.fr/hal-01134114/document pdf]
+[ISMM2015_BraidsOfPartitions.pdf Slides]
+
+- Constrained Optimization on Hierarchies & Braids, J. Serra, B Ravi Kiran *ISMM 2015*. [PosterISMM2015.pdf Poster],
+[https://hal.archives-ouvertes.fr/hal-01134115/document pdf]
+
+- Energetic lattice for continuous hierarchies, J. Serra, B Ravi Kiran, *ICIP 2014*,
+[https://hal.archives-ouvertes.fr/file/index/docid/947218/filename/HOP_Lagrange03.pdf Report], 
+[https://hal.archives-ouvertes.fr/hal-00802978/ pdf]
+
+- Scale Space Operators on Hierarchies [https://hal.archives-ouvertes.fr/hal-00802447/ pdf], 
+[https://perso.esiee.fr/~kiranr/GT_SSVM2013.pdf Poster] B Ravi Kiran, Jean Serra, *SSVM 2013*
+
+- Ground truth energies for Hierarchies [https://hal.archives-ouvertes.fr/hal-00802453/ pdf], 
+[https://perso.esiee.fr/~kiranr/GT_ISMM2013Poster_01.pdf Poster] B. Ravi Kiran, Jean Serra, *ISMM 2013*
+
+- Optima on Hierarchies of Partitions [https://hal.archives-ouvertes.fr/hal-00802457/ pdf] 
+Jean Serra, B. Ravi Kiran, *ISMM 2013*
+
+- Global constraints on hierarchical segmentation, B.R. Kiran, J.Serra, J.Cousty, 
+[https://beedotkiran.github.io/ClimbingECCV2012_Preprint.pdf pdf] *ECCVW'12 HiPOT*
+
+- Hierarchies and climbing energies, J. Serra, B Ravi Kiran, J. Cousty, 
+CIARP 2012 [https://beedotkiran.github.io/ClimbingPyramids_CIARP2012_Preprint.pdf pdf]
+
+- Climbing on Pyramids, J. Serra, B. Ravi Kiran, ESIEE 2012 March, [https://arxiv.org/abs/1204.5383 Tech. Report].
+
+- Automatic Summarization Of Broadcast Cricket s, Y Senthil Kumar, Sunil Kumar Gupta, 
+B Ravi Kiran, K R Ramakrishnan, C. Bhattacharyya *ISCE 2011* [http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=5973819 link]
+
+- Parallelizing Connectivity-Based Image Processing Operators in a Multi-Core Environment - 
+Anoop K P, B Ravi Kiran and Y Senthil Kumar, *ICCSP 2011*. [https://ieeexplore.ieee.org/document/5739306 link]
+
+- An Improved Connected Component Labeling by Recursive Label Propagation - Using Divide & Conquer Approach, 
+B Ravi Kiran, Y Senthil Kumar, Anoop K P, K R Ramakrishnan, *NCC 2011* 
+[https://sites.google.com/site/beedotkiran/RecursiveCCL.pdf?attredirects=0 pdf]
+
+- Non-block based image processing framework for Multi-core embedded systems, 
+B Ravi Kiran, Y Senthil Kumar, KP Anoop; Embedded Systems Conference India 2009 
+[https://sites.google.com/site/beedotkiran/ESC_India09_Paper_B_Ravi_Kiran.pdf?attredirects=0 pdf]
+
+== Working Papers
+- *Working* The Theory of Braids and Energetic Lattices and Constrained Optimization by Disseminated Energy, Jean Serra, B Ravi Kiran.
+[https://hal.archives-ouvertes.fr/hal-01532880/ part-1], [https://hal.archives-ouvertes.fr/hal-01538632/ part-2] 

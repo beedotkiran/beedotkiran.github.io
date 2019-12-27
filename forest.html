@@ -1,174 +1,169 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-
-<script type="text/javascript" async src="MathJax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title></title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    processEscapes: true
-  }
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Forest pruning</title>
-
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700%7COpen+Sans:400,600,700" rel="stylesheet" type="text/css" />
-<link href="default.css" rel="stylesheet" type="text/css" media="all" /><!--[if IE 6]>
-<link href="default_ie6.css" rel="stylesheet" type="text/css" />
-<![endif]--></head><body>
-<div id="wrapper">
-	<div id="header-wrapper">
-		<div id="header" class="container">
-
-<div id="menu">
-				
+<!-- End MathJax -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Home</div>
+<div class="menu-item"><a href="index.html">Index</a></div>
+<div class="menu-item"><a href="CV.html">CV</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="thesis.html">Thesis</a></div>
+<div class="menu-item"><a href="research.html">Older&nbsp;work</a></div>
+<div class="menu-item"><a href="current.html">Current&nbsp;work</a></div>
+<div class="menu-category">Publications</div>
+<div class="menu-item"><a href="conference.html">Conferences</a></div>
+<div class="menu-item"><a href="journals.html">Journals</a></div>
+<div class="menu-item"><a href="workshops.html">Workshops</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-category">References</div>
+<div class="menu-item"><a href="drlad.html">DRLAD</a></div>
+<div class="menu-item"><a href="https://github.com/beedotkiran/Lidar_For_AD_references/blob/master/README.md">LiDARAD</a></div>
+</td>
+<td id="layout-content">
+<h1>Cost-complexity pruning of random forests <a href="http://cmm.ensmp.fr/ismm2017/" target=&ldquo;blank&rdquo;>ISMM 2017</a></h1>
+<p><a href="https://arxiv.org/abs/1703.05430" target=&ldquo;blank&rdquo;>Article</a>, 
+<a href="https://beedotkiran.github.io/pruning_posterISMM2017.pdf" target=&ldquo;blank&rdquo;>poster</a>, 
+<a href="https://github.com/beedotkiran/randomforestpruning-ismm-2017" target=&ldquo;blank&rdquo;>git</a></p>
 <ul>
-  <li><a href="index.html" title="">Homepage</a></li>
-  <li><a href="Research.html" title="">Research</a></li>
-  <li><a href="CV.html" title="">CV</a></li>
-  <li><a href="pub.html" title="">Publications</a></li>
+<li><p>We studied cost-complexity pruning of decision trees in bagged trees, random forest 
+and extremely randomized trees. In our experiments we observe a reduction in the size 
+of the forest which is dependent on the distribution of points in the dataset. 
+ETs and RFs were shown to perform better than BTs, and were observed to provide a 
+larger set of subtrees to cross-validate. </p>
+</li>
 </ul>
-
-			</div>
-		</div>
-	</div>
-	<div id="page" class="container">
-<div style="text-align: center;">
-		</div>
-<div id="content">
-<div style="text-align: center;">
-			</div>
-
-
-<h1 style="color: rgb(100, 100, 255);">Cost-Compleixty Pruning with Out-of-Bag Samples</h1> 
-<br />
-
-<p style="color:gray"> Cost-complexity pruning of random forests, B Ravi Kiran, J. Serra
-<a href="http://cmm.ensmp.fr/ismm2017/" target="-blank">ISMM 2017</a>
-	[<a href="https://arxiv.org/abs/1703.05430" target="-blank">pdf</a>]
-	[<a href="pruning_posterISMM2017.pdf" target="-blank">poster</a>]
-	[<a href="https://github.com/beedotkiran/randomforestpruning-ismm-2017">git</a>]</p>
-
-We studied cost-complexity pruning of decision trees in bagged trees, random forest and extremely randomized trees. In our 
-experiments we observe a reduction in the size of the forest which is dependent on the 
-distribution of points in the dataset. ETs and RFs were shown to perform better than BTs, 
-and were observed to provide a larger set of subtrees to cross-validate. <br />
-
-Our study shows that the out-of-bag samples can be a possible candidate to set
-the cost-complexity parameter and thus an determine the best subtree for all DTs within ensemble. 
-This combines the two ideas originally introduced by Breiman OOB estimates (1996) and bagging 
-predictors (2001), while using the internal cross-validation OOB score of random forests
-to set the optimal cost-complexity parameters for each tree.
-
-<center><b><font color="orange"> Random forest Out-Of-Bag (OOB) Samples </font></b> </center>
-<br />
-<center><img src="images/block_diag_pruning.png" alt="AUCVsErr" style="width:600px;height:220px;"></center>
-<br />
-
-Figure shows the bagging procedure, OOB samples and its use for cost-complexity pruning on 
+<ul>
+<li><p>Our study shows that the out-of-bag samples can be a possible candidate to set the 
+cost-complexity parameter and thus an determine the best subtree for all DTs within ensemble. 
+This combines the two ideas originally introduced by Breiman OOB estimates (1996) and 
+bagging predictors (2001), while using the internal cross-validation OOB score of random forests 
+to set the optimal cost-complexity parameters for each tree. </p>
+</li>
+</ul>
+<h2>Random forest Out-Of-Bag (OOB) Samples</h2>
+<table class="imgtable"><tr><td>
+<img src="images/block_diag_pruning.png" alt="block_diag_pruning" width="600px" height="220px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p>Figure shows the bagging procedure, OOB samples and its use for cost-complexity pruning on 
 each decision tree in the ensemble. In the study we evaluate the optimal subtree by evaluating
-the cross-validation error over the OOB samples $Z_\text{OOB}^i := Z\setminus Z_i$  associated with each tree $i$.
+the cross-validation error over the OOB samples \(Z_\text{OOB}^i := Z\setminus Z_i\)  associated with each tree \(i\).
 This reuses the randomized partitionining of data samples into insample and OOB samples provided by boostrap aggregation in random forests to
-post-prune the individual decision trees.
-<br />
-<br />
-<center><b> <font color="orange"> Random forest pruning overview </font> </b> </center>
-<br />
-<center><img src="images/forest_pruning.png" alt="AUCVsErr" style="width:800px;height:500px;"></center>
-<br />
-Random Forest pruning can be defined in two ways using the cost-complexity parameters of the individual 
-decision trees. The goal is to obtain a optimal subforest by evaluating optimal values of $\alpha^{\ast}_j$
-for $M$ different trees. We can do this in two ways
-<ul>
-<li>  <b><font color="green">Independent tree pruning</font></b>   : calculate the optimal subtree by
-finding the optimal cost-complexity parameter independently for each tree in the forest :  
-	
-	\begin{equation}
-		\mathcal{T}^\ast_j = \arg\min_{\alpha \in \mathcal{A}_j} \mathbb{E} \bigg[\| Y_\text{OOB} - \mathcal{T}_j^{(\alpha)}(X^j_\text{OOB}) \|^2\bigg]
-	\end{equation}
-	where $X^j_\text{OOB} = X_\text{train} \setminus X_j$, and $X_j$ being the samples used in the creation 
-	of tree $j$.
-	</li>
-<li> <b><font color="green"> Global threshold pruning </font></b> : calculate the optimal subforest by 
-pruning subtrees across the $M$ trees by following the global ordering of cost-complexity parameters.
-That is we sort $\cup_i \mathcal{A}_i$ and evaluate the CV-error for each $\alpha \in \text{SORT}(\cup_i \mathcal{A}_i)$ :
-\(
+post-prune the individual decision trees.</p>
+<h2>Random forest pruning overview </h2>
+<p>Random Forest pruning can be defined in two ways using the cost-complexity parameters of the individual 
+decision trees. The goal is to obtain a optimal subforest by evaluating optimal values of \(\alpha^{\ast}_j\)
+for \(M\) different trees. We can do this in two ways</p>
+<h3>Independent tree pruning  </h3>
+<p>Calculate the optimal subtree by finding the optimal cost-complexity parameter independently for each tree in the forest :  </p>
+<div class="infoblock">
+<div class="blockcontent">
+<p style="text-align:center">
+\[
+    \mathcal{T}^\ast_j = \arg\min_{\alpha \in \mathcal{A}_j} \mathbb{E} \bigg[\| Y_\text{OOB} - \mathcal{T}_j^{(\alpha)}(X^j_\text{OOB}) \|^2\bigg]
+\]
+</p></div></div>
+<p>where \(X^j_\text{OOB} = X_\text{train} \setminus X_j\), and \(X_j\) being the samples used in the creation 
+of tree \(j\).</p>
+<h3>Global threshold pruning</h3>
+<p>Calculate the optimal subforest by 
+pruning subtrees across the \(M\) trees by following the global ordering of cost-complexity parameters.
+That is we sort \(\cup_i \mathcal{A}_i\) and evaluate the CV-error for each \(\alpha \in \text{SORT}(\cup_i \mathcal{A}_i)\) :</p>
+<p style="text-align:center">
+\[
 \DeclareMathOperator*{\argmin}{arg\,min}
-\)
-	\begin{equation}
-		\{\mathcal{T}^\ast_j\}_{j=1}^M = \argmin_{\alpha \in \text{SORT}(\cup_j \mathcal{A}_j)} \mathbb{E} \bigg[\| Y_\text{train} - \frac{1}{M} \sum_{j=1}^M 
-		\mathcal{T}_j^{(\alpha)}(X^j_\text{OOB})\|^2 \bigg]
-	\end{equation}
-	where the cross-validation uses the out-of-bag prediction error as to evaluate the optimal $\{\alpha_j\}$
-	values. This basically considers a single threshold of cost-complexity parameters, which chooses
-	a forest of subtrees for each threshold. The optimal threshold is calculated by cross-validating 
-	over the training set.</li>
-</ul>
-<br />
-<font color="yellow"> <b> Non-monotonic training error </font> </b>: As we prune the forest globally,
+\]
+</p><p style="text-align:center">
+\[
+    \{\mathcal{T}^\ast_j\}_{j=1}^M = \argmin_{\alpha \in \text{SORT}(\cup_j \mathcal{A}_j)} \mathbb{E} \bigg[\| Y_\text{train} - \frac{1}{M} \sum_{j=1}^M 
+    \mathcal{T}_j^{(\alpha)}(X^j_\text{OOB})\|^2 \bigg]
+\]
+</p><p>where the cross-validation uses the out-of-bag prediction error as to evaluate the optimal \(\{\alpha_j\}\)
+values. This basically considers a single threshold of cost-complexity parameters, which chooses
+a forest of subtrees for each threshold. The optimal threshold is calculated by cross-validating 
+over the training set.</p>
+<p><b>Non-monotonic training error</b> : As we prune the forest globally,
 the forest's accuracy on training set does not monotonically descend (as in the case of a decision tree). 
 As we prune the forest, we could have a set of trees that improve their prediction while the others degrade.
-This might be one of the reasons one observes spikes in the training error.<br/><br/>
-
-<font color="yellow"> <b> Forests </font> </b> 
-<a href="http://scikit-learn.org/stable/modules/classes.html#module-sklearn.ensemble">[scikit-learn modules]</a> : 
+This might be one of the reasons one observes spikes in the training error.</p>
+<p><b>Forests</b> [http:<i></i>scikit-learn.org<i>stable</i>modules/classes.html</p>
 <ul>
-	<li>Bagged Trees (Bagging)</li>
-	<li>Random Forests (Bagging + Random Feature selection)</li>
-	<li>Extremely randomized trees(Bagging + Feature selection + random threshold selection).</li>
+<li><p>Bagged Trees (Bagging)</p>
+</li>
+<li><p>Random Forests (Bagging + Random Feature selection)</p>
+</li>
+<li><p>Extremely randomized trees(Bagging <tt> Feature selection </tt> random threshold selection).</p>
+</li>
 </ul>
-
-
-
-<center><b> <font color="orange"> Distribution of cost-complexity parameters in different ensembles </font> </b> </center>
-<br />
-<img src="images/alpha_plot_BT.png" alt="AUCVsErr" style="width:260px;height:180px;">
-<img src="images/alpha_plot_ET.png" alt="AUCVsErr" style="width:260px;height:180px;">
-<img src="images/alpha_plot_RF.png" alt="AUCVsErr" style="width:260px;height:180px;">
-<br />
-Plot of the cost-complexity parameters for 100-tree ensemble for RFs, ETs
-and BTs. The distribution of $\mathcal{A}_j$ across trees $j$ shows BTs constitute 
+<h3>Distribution of cost-complexity parameters in different ensembles </h3>
+<table class="imgtable"><tr><td>
+<img src="images/alpha_plot_BT.png" alt="alpha_plot_BT" width="260px" height="180px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/alpha_plot_ET.png" alt="alpha_plot_ET" width="260px" height="180px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/alpha_plot_RF.png" alt="alpha_plot_RF" width="260px" height="180px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p>Plot of the cost-complexity parameters for 100-tree ensemble for RFs, ETs
+and BTs. The distribution of \(\mathcal{A}_j\) across trees \(j\) shows BTs constitute 
 of similar trees and thus contain similar cost complexity parameter values, while RFs
 and futhermore ETs have a larger range of parameter values, reflecting the known fact that these
 ensembles are further randomized. The consequence for pruning is that RFs and more so ETs
 produce subtrees of different depths, and achieve better prediction accuracy and size ratios 
-as compared to BTs. This basically reflects the higher degree of randomization in RFs and ETs. 
-
-<h1> Reading List and resources</h1>	
-
-<ul> 
-	
-	<li> Codes, Theorhetical understanding, Applications, Bibliography [<a href="https://github.com/kjw0612/awesome-random-forest">git</a>] </li>
-	<li> Scikit-learn tree ensembles [<a href="http://scikit-learn.org/stable/modules/classes.html#module-sklearn.ensemble">link</a>] </li>
-	<li>Understanding Random Forests from Theory to Practice, Louppe G., 2014
-		<a href="http://www.montefiore.ulg.ac.be/~glouppe/pdf/phd-thesis.pdf">[Thesis]</a></li>
-	<li>Impact of subsampling and pruning on random forests, Duroux R., Scornet E. 2016 
-	    <a href="https://arxiv.org/abs/1603.04261">[pdf]</a></li>
+as compared to BTs. This basically reflects the higher degree of randomization in RFs and ETs. </p>
+<h2>Reading List and resources</h2>
+<ul>
+<li><p>Codes, Theorhetical understanding, Applications, Bibliography <a href="https://github.com/kjw0612/awesome-random-forest" target=&ldquo;blank&rdquo;>git</a> </p>
+</li>
+<li><p>Scikit-learn tree ensembles [http:<i></i>scikit-learn.org<i>stable</i>modules/classes.html</p>
+</li>
+<li><p>Understanding Random Forests from Theory to Practice, Louppe G., 2014
+<a href="http://www.montefiore.ulg.ac.be/~glouppe/pdf/phd-thesis.pdf" target=&ldquo;blank&rdquo;>Thesis</a></p>
+</li>
+<li><p>Impact of subsampling and pruning on random forests, Duroux R., Scornet E. 2016 
+https:<i></i>arxiv.org<i>abs</i>1603.04261 <a href="pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Classification and Regression Trees 1984 L. Breiman, J. Friedman, C. J. Stone, R.A. Olshen </p>
+</li>
+<li><p>Cost-Complexity Pruning : <a href="http://0agr.ru/wiki/index.php/Cost-Complexity_Pruning" target=&ldquo;blank&rdquo;>Tutorial 1</a> 
+<a href="https://onlinecourses.science.psu.edu/stat857/node/60" target=&ldquo;blank&rdquo;>Tutorial 2</a></p>
+</li>
 </ul>
-<h3>Cost-Complexity pruning</h3>
-
-		<ul>
-			<li>Classification and Regression Trees 1984 L. Breiman, J. Friedman, C. J. Stone, R.A. Olshen </li>
-			<li>Cost-Complexity Pruning : [<a href="http://0agr.ru/wiki/index.php/Cost-Complexity_Pruning">Tutorial 1</a>] 
-			[<a href="https://onlinecourses.science.psu.edu/stat857/node/60">Tutorial 2</a>]</li>
+<h2>References</h2>
+<ul>
+<li><p>Banzhaf Random Forests <a href="https://arxiv.org/pdf/1507.06105.pdf" target=&ldquo;blank&rdquo;>pdf</a> </p>
+</li>
+<li><p>GloBo : un algorithme stochastique pour l'apprentissage supervisé et non-supervisé  
+<a href="http://www.grappa.univ-lille3.fr/~torre/Recherche/Articles/1999/torre99a.pdf" target=&ldquo;blank&rdquo;>pdf</a> 
+<a href="http://www.grappa.univ-lille3.fr/~torre/Recherche/Softwares/volata/" target=&ldquo;blank&rdquo;>VOLATA</a>  </p>
+</li>
+<li><p>Cost-Sensitive Tree of Classifiers JMLR 2013 <a href="http://proceedings.mlr.press/v28/xu13.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
 </ul>
-
-<h3>References</h3> 
-<ul> 
-	<li>Banzhaf Random Forests [<a href="https://arxiv.org/pdf/1507.06105.pdf">pdf</a>] </li>
-  <li>GloBo : un algorithme stochastique pour l'apprentissage supervisé et non-supervisé  
-  [<a href="http://www.grappa.univ-lille3.fr/~torre/Recherche/Articles/1999/torre99a.pdf">pdf</a>] 
-  [<a href="http://www.grappa.univ-lille3.fr/~torre/Recherche/Softwares/volata/">VOLATA</a>] </li> 
-  <li>Cost-Sensitive Tree of Classifiers JMLR 2013 [<a href="http://proceedings.mlr.press/v28/xu13.pdf">pdf</a>]</li>
-</ul> 
-
-
-	</div>
+<div id="footer">
+<div id="footer-text">
+Page generated 2019-12-27 20:07:19 CET, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
-</body></html>
- 
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

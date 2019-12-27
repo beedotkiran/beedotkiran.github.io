@@ -1,211 +1,253 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-
-<script type="text/javascript" async src="MathJax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title></title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    processEscapes: true
-  }
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>VideoAnomaly</title>
-
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700%7COpen+Sans:400,600,700" rel="stylesheet" type="text/css" />
-<link href="default.css" rel="stylesheet" type="text/css" media="all" /><!--[if IE 6]>
-<link href="default_ie6.css" rel="stylesheet" type="text/css" />
-<![endif]--></head><body>
-<div id="wrapper">
-	<div id="header-wrapper">
-		<div id="header" class="container">
-
-<div id="menu">
-				
+<!-- End MathJax -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Home</div>
+<div class="menu-item"><a href="index.html">Index</a></div>
+<div class="menu-item"><a href="CV.html">CV</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="thesis.html">Thesis</a></div>
+<div class="menu-item"><a href="research.html">Older&nbsp;work</a></div>
+<div class="menu-item"><a href="current.html">Current&nbsp;work</a></div>
+<div class="menu-category">Publications</div>
+<div class="menu-item"><a href="conference.html">Conferences</a></div>
+<div class="menu-item"><a href="journals.html">Journals</a></div>
+<div class="menu-item"><a href="workshops.html">Workshops</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-category">References</div>
+<div class="menu-item"><a href="drlad.html">DRLAD</a></div>
+<div class="menu-item"><a href="https://github.com/beedotkiran/Lidar_For_AD_references/blob/master/README.md">LiDARAD</a></div>
+</td>
+<td id="layout-content">
+<h1>Review : Representation learning for VAD </h1>
+<p><a href="https://www.mdpi.com/2313-433X/4/2/36" target=&ldquo;blank&rdquo;>MDPI 2018 pdf</a> : An overview of representation learning methods for unsupervised and semi-supervised anomaly detection in videos, 
+B Ravi Kiran, Dilip Mathew Thomas, and Ranjith Parakkal, UncannyVision. </p>
+<h2>Representation learning for reconstruction</h2>
+<p><b>Family of methods</b> : Principal component analysis (PCA), Auto-Encoders (AEs, CAEs, Contractive AEs, Stacked AEs, Denoising AEs), Restricted Boltzman Machines (RBMs).</p>
 <ul>
-  <li><a href="index.html" title="">Homepage</a></li>
-  <li><a href="Research.html" title="">Research</a></li>
-  <li><a href="CV.html" title="">CV</a></li>
-  <li><a href="pub.html" title="">Publications</a></li>
+<li><p>Learning Temporal Regularity in Video CVPR 2016 <a href="https://arxiv.org/pdf/1604.04574.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Energy-based Models for Video Anomaly Detection PAKDD 2017 <a href="https://arxiv.org/pdf/1708.05211.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Abnormal Event Detection in Videos using Spatiotemporal Autoencoder <a href="https://arxiv.org/pdf/1701.01546.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Anomaly Detection with Robust Deep Auto-encoders KDD 2017 <a href="http://www.kdd.org/kdd2017/papers/view/anomaly-detection-with-robust-deep-auto-encoders" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Robust, Deep and Inductive Anomaly Detection, Robust Convolutional AE (RCVAE) 2017 <a href="https://arxiv.org/pdf/1704.06743.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Outlier Detection Using Replicator Neural Networks 2002 <a href="http://ai2-s2-pdfs.s3.amazonaws.com/87a0/9c777dcecab4883e328669ef2af1ba8dd7be.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
 </ul>
-
-			</div>
-		</div>
-	</div>
-	<div id="page" class="container">
-<div style="text-align: center;">
-		</div>
-<div id="content">
-<div style="text-align: center;">
-			</div>
-
-<center><h1 style="color: rgb(151, 24, 255);">Review : Representation learning for VAD </h1></center>
-<br />
-
-<b>[<a href="https://arxiv.org/abs/1801.03149">MDPI 2018 pdf</a>]</b> : 
-An overview of representation learning methods for unsupervised and semi-supervised anomaly detection in videos, 
-B Ravi Kiran, Dilip Mathew Thomas, and Ranjith Parakkal, UncannyVision. 
-<br>
-
-<b> Existing reviews </b> : VAD using DL: A Review [<a href="https://arxiv.org/pdf/1505.00523.pdf">pdf</a>],
-  Self-Supervised VAD [<a href="https://launchpad.ai/blog/video-anomaly-detection">blog</a>]
-
-<br><br>
-<h1 style="color: rgb(11, 220, 0);"> <center> Representation learning for reconstruction </center></h1> 
-
-Principal component analysis (PCA), Auto-Encoders (AEs, CAEs, Contractive AEs, Stacked AEs, Denoising AEs), 
-Restricted Boltzman Machines (RBMs).
+<table class="imgtable"><tr><td>
+<img src="images/Models_VAD.png" alt="Models" width="550px" height="250px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p><b>Related Work</b> : </p>
 <ul>
-  <li>Learning Temporal Regularity in Video CVPR 2016 
-  [<a href="https://arxiv.org/pdf/1604.04574.pdf">pdf</a>]</li>
-  <li>Energy-based Models for Video Anomaly Detection PAKDD 2017 
-  [<a href="https://arxiv.org/pdf/1708.05211.pdf">pdf</a>]</li>
-  <li>Abnormal Event Detection in Videos using Spatiotemporal Autoencoder 
-  [<a href="https://arxiv.org/pdf/1701.01546.pdf">pdf</a>] </li>
-  <li>Anomaly Detection with Robust Deep Auto-encoders KDD 2017 
-  [<a href="http://www.kdd.org/kdd2017/papers/view/anomaly-detection-with-robust-deep-auto-encoders">pdf</a>]</li>
-  <li>Robust, Deep and Inductive Anomaly Detection, Robust Convolutional AE (RCVAE) 2017 [<a href="https://arxiv.org/pdf/1704.06743.pdf">pdf</a>]</li>
-  <li>Outlier Detection Using Replicator Neural Networks 2002 
-    [<a href="http://ai2-s2-pdfs.s3.amazonaws.com/87a0/9c777dcecab4883e328669ef2af1ba8dd7be.pdf">pdf</a>] </li>
+<li><p>Contractive Auto-Encoders 
+<a href="http://www.iro.umontreal.ca/~lisa/pointeurs/ICML2011_explicit_invariance.pdf" target=&ldquo;blank&rdquo;>pdf</a>, 
+<a href="http://techtalks.tv/talks/a-generative-process-for-contractive-auto-encoders/57301/" target=&ldquo;blank&rdquo;>talk</a>, </p>
+</li>
+<li><p>C3D <a href="http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Tran_Learning_Spatiotemporal_Features_ICCV_2015_paper.pdf" target=&ldquo;blank&rdquo;>pdf</a>, &rsquo;</p>
+</li>
+<li><p>NADE <a href="http://proceedings.mlr.press/v15/larochelle11a/larochelle11a.pdf" target=&ldquo;blank&rdquo;>pdf</a>, </p>
+</li>
+<li><p>MADE <a href="https://arxiv.org/pdf/1502.03509v2.pdf" target=&ldquo;blank&rdquo;>pdf</a>, </p>
+</li>
+<li><p>Deep AutoRegressive Networks 2014 <a href="https://arxiv.org/pdf/1310.8499.pdf" target=&ldquo;blank&rdquo;>pdf</a> </p>
+</li>
 </ul>
-
-<center><img src="images/Models_VAD.png" alt="Time-Series" style="width:550px;height:250px;"></center>
-
-<b style="color: rgb(11, 220, 0);">Related Work </b>:
-
-  <b> Contractive Auto-Encoders </b> [<a href="http://www.iro.umontreal.ca/~lisa/pointeurs/ICML2011_explicit_invariance.pdf">pdf</a>][<a href="http://techtalks.tv/talks/a-generative-process-for-contractive-auto-encoders/57301/">talk</a>],
-  <b>C3D </b>  [<a href="http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Tran_Learning_Spatiotemporal_Features_ICCV_2015_paper.pdf">pdf</a>],
-  <b>NADE</b>  [<a href="http://proceedings.mlr.press/v15/larochelle11a/larochelle11a.pdf">pdf</a>], <b>MADE</b>  [<a href="https://arxiv.org/pdf/1502.03509v2.pdf">pdf</a>],  
-  Deep AutoRegressive Networks 2014 [<a href="https://arxiv.org/pdf/1310.8499.pdf">pdf</a>]
-  <br><br><br><br>
-
-<h1 style="color: rgb(21, 222, 250);"> <center> Predictive modeling : Video as temporal patterns </center></h1>
-Linear Models, Convolutional LSTMs, CNN-LSTMs
+<h2>Predictive modeling : Video as temporal patterns </h2>
+<p><b>Family of methods</b> : Linear Models, Convolutional LSTMs, CNN-LSTMs : </p>
 <ul>
-  <li>Anomaly Detection in Video Using Predictive Convolutional LSTM Networks Dec 2016 
-  [<a href="https://arxiv.org/pdf/1612.00390.pdf">pdf</a>] </li>
-  <li>DeepAnomaly: Combining BG Sub. & Deep Learning for Anomalies 2016 
-  [<a href="http://www.mdpi.com/1424-8220/16/11/1904">pdf</a>]</li>
-  <li>Video anomaly detection using deep incremental slow feature analysis network [<a href="http://ieeexplore.ieee.org/document/7503634/">link</a>] </li>
+<li><p>Anomaly Detection in Video Using Predictive Convolutional LSTM Networks Dec 2016 <a href="https://arxiv.org/pdf/1612.00390.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>DeepAnomaly: Combining BG Sub. &amp; Deep Learning for Anomalies 2016 <a href="http://www.mdpi.com/1424-8220/16/11/1904" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Video anomaly detection using deep incremental slow feature analysis network <a href="http://ieeexplore.ieee.org/document/7503634/" target=&ldquo;blank&rdquo;>link</a></p>
+</li>
 </ul>
-
-<center><img src="images/ConvLSTM.png" alt="Time-Series" style="width:550px;height:325px;"></center>
-
-<b style="color: rgb(21, 222, 250);"> Related Work </b> : <b>Adversarial LSTM Networks </b> [<a href="http://web.engr.oregonstate.edu/~sinisa/research/publications/cvpr17_summarization.pdf">CVPR 2017</a>],
-<b>Video Representations using LSTMs </b> :
-  [<a href="https://arxiv.org/pdf/1502.04681.pdf">pdf</a>]
-  [<a href="https://www.slideshare.net/JunhoCho1/161209-unsupervised-learning-of-video-representations-using-lstms">Slides</a>],   
-  <b>Deep multi-scale video prediction </b> [<a href="https://arxiv.org/pdf/1511.05440.pdf">pdf</a>],
-  <b>ST-video autoencoder with differentiable memory </b> 
-  [<a href="https://arxiv.org/pdf/1511.06309.pdf">pdf</a> ], 
-  [<a href="https://www.robots.ox.ac.uk/seminars/Extra/2016_07_25_VioricaPatraucean.pdf">Slides</a>], 
-  <b>CortexNet: Robust Visual Temporal Representations </b> [<a href="https://arxiv.org/pdf/1706.02735.pdf">pdf</a>]
-  <b>PredNet: Deep Predictive Coding Networks </b> [<a href="https://cbmm.mit.edu/sites/default/files/publications/CBMM-Memo-064.pdf">pdf</a>],
-    [<a href="https://coxlab.github.io/prednet/">project</a>],
-  <b> Video prediction papers </b> : [<a href="https://arxiv.org/abs/1504.08023">pdf</a>], [<a href="http://ai.stanford.edu/~dahuang/papers/iccv17-vfid.pdf">pdf</a>],
-    [<a href="http://carlvondrick.com/transformer.pdf">pdf</a>],
-  <b>IncSFA</b> [<a href="https://arxiv.org/pdf/1112.2113.pdf">pdf</a>].
-
-<br><br><br><br>
-<h1 style="color: rgb(251, 70, 20);"> <center> Generative Models </center></h1>
-Variational Autoencoders(VAEs), Generative Adversarial Networks(GANs), Adversarial Auto-Encoders(AAEs)
+<table class="imgtable"><tr><td>
+<img src="images/ConvLSTM.png" alt="ConvLSTM" width="550px" height="325px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p><b>Related Work</b> : </p>
 <ul>
-  <li>Variational Autoencoder based Anomaly Detection using Reconstruction Probability TR2015 
-    [<a href="http://dm.snu.ac.kr/static/docs/TR/SNUDM-TR-2015-03.pdf">pdf</a>] </li>
-  <li>Training Adversarial Discriminators for Cross-channel Abnormal Events Jun 2017
-  [<a href="https://arxiv.org/pdf/1706.07680.pdf">pdf</a>] </li>
-  <li>Adversarial Autoencoders for Anomalous Event Detection in Images [<a href="https://scholarworks.iupui.edu/handle/1805/12352">Thesis</a>]</li>
-  <li>Unsupervised Anomaly Detection with GANs to Guide Marker Discovery 
-  [<a href="https://arxiv.org/pdf/1703.05921.pdf">pdf</a>] </li>
+<li><p>Adversarial LSTM Networks <a href="http://web.engr.oregonstate.edu/~sinisa/research/publications/cvpr17_summarization.pdf" target=&ldquo;blank&rdquo;>CVPR 2017</a>, </p>
+</li>
+<li><p>Video Representations using LSTMs : <a href="https://arxiv.org/pdf/1502.04681.pdf" target=&ldquo;blank&rdquo;>pdf</a> 
+<a href="https://www.slideshare.net/JunhoCho1/161209-unsupervised-learning-of-video-representations-using-lstms" target=&ldquo;blank&rdquo;>Slides</a>, </p>
+</li>
+<li><p>Deep multi-scale video prediction <a href="https://arxiv.org/pdf/1511.05440.pdf" target=&ldquo;blank&rdquo;>pdf</a>, </p>
+</li>
+<li><p>ST-video autoencoder with differentiable memory <a href="https://arxiv.org/pdf/1511.06309.pdf" target=&ldquo;blank&rdquo;>pdf</a>, 
+<a href="https://www.robots.ox.ac.uk/seminars/Extra/2016_07_25_VioricaPatraucean.pdf" target=&ldquo;blank&rdquo;>Slides</a>, </p>
+</li>
+<li><p>CortexNet: Robust Visual Temporal Representations <a href="https://arxiv.org/pdf/1706.02735.pdf" target=&ldquo;blank&rdquo;>pdf</a> </p>
+</li>
+<li><p>PredNet: Deep Predictive Coding Networks <a href="https://cbmm.mit.edu/sites/default/files/publications/CBMM-Memo-064.pdf" target=&ldquo;blank&rdquo;>pdf</a>, 
+<a href="https://coxlab.github.io/prednet/" target=&ldquo;blank&rdquo;>project</a>, </p>
+</li>
+<li><p>Video prediction papers : 
+<a href="https://arxiv.org/abs/1504.08023" target=&ldquo;blank&rdquo;>pdf</a>, <a href="http://ai.stanford.edu/~dahuang/papers/iccv17-vfid.pdf" target=&ldquo;blank&rdquo;>pdf</a>, 
+<a href="http://carlvondrick.com/transformer.pdf" target=&ldquo;blank&rdquo;>pdf</a>, IncSFA <a href="https://arxiv.org/pdf/1112.2113.pdf" target=&ldquo;blank&rdquo;>pdf</a>.</p>
+</li>
 </ul>
-
-<center><img src="images/CrossChan_GAN.png" alt="Time-Series" style="width:550px;height:325px;"></center>
-
-<b style="color: rgb(251, 70, 20);"> Related Work</b>: <b>(VAE) </b> Auto-Encoding Variational Bayes  [<a href="https://arxiv.org/pdf/1312.6114.pdf">pdf</a>],[<a href="https://arxiv.org/pdf/1606.05908.pdf">Tut</a>], <b>Split-Brain Autoencoders </b> [<a href="https://arxiv.org/pdf/1611.09842.pdf">CVPR2017</a>], 
-<b>GANs</b> [<a href="https://arxiv.org/abs/1406.2661">pdf</a>][<a href="https://www.youtube.com/watch?v=RvgYvHyT15E">NIPS Workshop</a>], 
-<b> BiGAN </b> [<a href="https://arxiv.org/pdf/1605.09782.pdf">pdf</a>], Adversarial Autoencoders (AAEs) [<a href="https://arxiv.org/pdf/1511.05644.pdf">pdf</a>], 
-<b>InfoGAN </b> [<a href="https://arxiv.org/pdf/1606.03657v1.pdf">pdf</a>], <b>McGan </b> [<a href="https://arxiv.org/pdf/1702.08398.pdf">pdf</a>]
-Recursive estimation of generative video models[<a href="https://pdfs.semanticscholar.org/d156/e74448a71e70ac73222167117a90e2ab93ef.pdf">pdf</a>]
-<br><br><br><br>
-
-<b style="color: rgb(151, 220, 0);"> Other models</b>:
-Spatio-Temporal Multiresolution Model for VAD [<a href="https://arxiv.org/pdf/1401.3291.pdf">pdf</a>][<a href="https://pdfs.semanticscholar.org/c6b3/edc63af38d7fe489474752d28ccee29ff8b1.pdf">Thesis</a>], Temporal Multi-Scale Models for Flow and Acceleration 
-[<a href="http://www.umiacs.umd.edu/~yaser/cvpr97_OF.pdf">pdf</a>]
-<br>
-<b style="color: rgb(151, 220, 0);"> Established Arch. for unsupervised video tasks</b>:
-Early, Late, Slow Fusion [<a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42455.pdf">pdf</a>],  
-  <b>Two-Stream CNNs </b> [<a href="https://arxiv.org/pdf/1406.2199.pdf">pdf</a>],
-  Disentangled Representations from Video [<a href="https://sites.google.com/view/drnet-paper">DRnet</a>],
-  Video and unsupervised Learning [<a href="https://www.youtube.com/watch?v=ekyBklxwQMU">CS231</a>],
-  [<a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture14.pdf">Slides</a>],
-  Activity Recognition and Unsupervised Learning [<a href="https://comp150dl.github.io/lectures/lecture12.pdf">slides</a>],
-  <br>
-<!-- 
-<h1 style="color: rgb(151, 151, 255);">VAD with Hand engineered features</h1>
+<h2>Generative Models </h2>
+<p><b>Family of methods</b> : Variational Autoencoders(VAEs), Generative Adversarial Networks(GANs), Adversarial Auto-Encoders(AAEs)</p>
 <ul>
-  <li>Anomaly Detection in Crowded Scenes (mixture of dynamic textures) 
-  [<a href="http://www.svcl.ucsd.edu/publications/conference/2010/cvpr2010/cvpr_anomaly_2010.pdf">pdf</a>], 
-  [<a href="https://www.researchgate.net/profile/Nuno_Vasconcelos2/publication/239943156_Anomaly_Detection_and_Localization_in_Crowded_Scenes/links/552e9d9b0cf2d495071a6a0f.pdf">PAMI 2014</a>] [<a href="http://videolectures.net/cvpr2010_mahadevan_adcs">video</a>] </li> 
-  <li>Optical Acceleration for Motion Description in Videos 
-  [<a href="http://openaccess.thecvf.com/content_cvpr_2017_workshops/w20/papers/Edison_Optical_Acceleration_for_CVPR_2017_paper.pdf">pdf</a>]  </li>
-<li>On the Essence of Unsupervised Detection of Anomalous Motion 2017 [<a href="https://www.comp.nus.edu.sg/~leowwk/papers/caip2017-anomaly.pdf">pdf</a>]</li>
-  <li>Discriminative FWK for AD in Videos [<a href="https://arxiv.org/pdf/1609.08938.pdf">pdf</a>], Abnormal Event Detection at 150 FPS 2013 [<a href="http://shijianping.me/abnormal_iccv13.pdf">pdf</a>] </li>
-  <li>Real-Time Anomaly Detection and Localization in Crowded Scenes 2015 
-  [<a href="https://arxiv.org/pdf/1511.06936.pdf">pdf</a>]</li>
-  
-  <li>Video Anomaly Detection Hierarchical Feature Representation 2015 [<a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Cheng_Video_Anomaly_Detection_2015_CVPR_paper.pdf">pdf</a>]</li>
-<li>Localized Anomaly Detection via Hierarchical Integrated Activity Discovery 2013
-[<a href="http://www.vanaheim-project.eu/assets/ChockalingamEmonetOdobez-AVSS-2013.pdf">pdf</a>] </li>
-  <li>Histograms of OF Orientation and Magnitude to Detect Anomalous Events in Videos
-  [<a href="http://www.ssig.dcc.ufmg.br/wp-content/uploads/2015/06/paper_camera_ready.pdf">pdf</a>]</li>
-  <li>VAD Based on Local Statistical Aggregates [<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.703.7756&rep=rep1&type=pdf">pdf</a>], 
-  AD Using Dense Trajectories [<a href="http://pages.cs.wisc.edu/~kma/downloads/anomaly-detection.pdf">pdf</a>]</li>
-  <li>Online Detection of Unusual Events in Videos via Dynamic Sparse Coding CVPR 2011 
-  [<a href="http://vision.stanford.edu/pdf/ZhaoFeiFeiXing_CVPR2011.pdf">pdf</a>]</li>
-  <li> Textures of Optical Flow for Real-Time AD [<a href="https://eprints.qut.edu.au/41572/1/PID1829439.pdf">pdf</a>], AD with Bayesian Nonparametrics 2016 
-  [<a href="https://arxiv.org/pdf/1606.08455.pdf">pdf</a>]</li>
-  <li>Topic Models for Scene Analysis and Abnormality Detection 2009 ICCV-VS WKSHpP[<a href="http://www.idiap.ch/~odobez/publications/VaradarajanOdobez-ICCV-VS_2009.pdf">pdf</a>], [<a href="https://www.youtube.com/watch?v=AZTNPlFLojY">Talk 2015</a>]</li>
-  <li>Learning Object Motion Patterns for Anomaly & Improved Object Detection 2008 CVPR 
-  [<a href="http://vision.eecs.ucf.edu/papers/cvpr2008/3.pdf">pdf</a>]</li>
-  <li>Analysis of Persistent Motion Patterns Using the 3D Structure Tensor 2005</li>
-</ul> -->
-
-<b style="color: rgb(151, 220, 0);">Video anomaly detection evaluation </b> : ROC Curves and EER [<a href="https://www.cs.ubc.ca/~murphyk/Teaching/CS340-Fall07/ROC.pdf">pdf</a>], [<a href="https://link.springer.com/chapter/10.1007/978-1-84996-202-5_5">link</a>]
-<br>
-<b style="color: rgb(151, 220, 0);"> Other Applications</b>: Detecting Events by Density Ratio Estimation 
-[<a href="http://www.ri.cmu.edu/pub_files/2012/10/paper_id_337.pdf">pdf</a>], Video Behavior Profiling for AD 
-[<a href="http://www.eecs.qmul.ac.uk/~sgg/papers/XiangGong_PAMI08.pdf">pdf</a>] 
-
-<br>
-<b style="color: rgb(151, 220, 0);">Video Anomlay Detection Datasets</b>:
-UCSD Ped : [<a href="http://www.svcl.ucsd.edu/projects/anomaly/dataset.htm">link</a>], 
-CUHK-Avenue Dataset [<a href="http://www.cse.cuhk.edu.hk/leojia/projects/detectabnormal/dataset.html">link</a>]
-Subway Entry & exit [<a href="http://www.cim.mcgill.ca/~javan/index_files/Dominant_behavior.html">link</a>]
-Idiap Traffic Junction dataset [<a href="http://www.idiap.ch/~odobez/RESSOURCES/DataRelease-TrafficJunction.php">link</a>]
-UMN Dataset [<a href="http://mha.cs.umn.edu/">link</a>]
-
-<br>
-<b style="color: rgb(151, 220, 0);">Other datasets (action recognition, surveillance)</b>:
-
-PETS 2016 [<a href="http://www.cvg.reading.ac.uk/PETS2016/">link</a>],
-MIT Traffic dataset [<a href="http://www.ee.cuhk.edu.hk/~xgwang/MITtraffic.html">link</a>] (for ped detection),
-Human activity recongnition [<a href="http://romisatriawahono.net/lecture/rm/survey/computer%20vision/Chaquet%20-%20Human%20Activity%20Recognition%20-%202013.pdf">link</a>] ,
-Extracting Temporal Motifs [<a href="http://www.idiap.ch/paper/2053/realdata.html">link</a>] ,
-HMDB:[<a href="http://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/">link</a>],
-UCF101 [<a href="http://crcv.ucf.edu/data/UCF101.php">link</a>],
-VIRAT  [<a href="http://www.viratdata.org/">link</a>], [<a href="http://ieeexplore.ieee.org/document/5995586/">paper</a>],
-A collection of datasets available at V.Nagarajans site [<a href="https://sites.google.com/site/vjagan/home/action_datasets">link</a>],<br />
-
-
-<br />
-	</div>
+<li><p>Variational Autoencoder based Anomaly Detection using Reconstruction Probability TR2015 
+<a href="http://dm.snu.ac.kr/static/docs/TR/SNUDM-TR-2015-03.pdf" target=&ldquo;blank&rdquo;>pdf</a> </p>
+</li>
+<li><p>Training Adversarial Discriminators for Cross-channel Abnormal Events Jun 2017
+<a href="https://arxiv.org/pdf/1706.07680.pdf" target=&ldquo;blank&rdquo;>pdf</a> </p>
+</li>
+<li><p>Adversarial Autoencoders for Anomalous Event Detection in Images <a href="https://scholarworks.iupui.edu/handle/1805/12352" target=&ldquo;blank&rdquo;>Thesis</a></p>
+</li>
+<li><p>Unsupervised Anomaly Detection with GANs to Guide Marker Discovery 
+<a href="https://arxiv.org/pdf/1703.05921.pdf" target=&ldquo;blank&rdquo;>pdf</a> </p>
+</li>
+</ul>
+<table class="imgtable"><tr><td>
+<img src="images/CrossChan_GAN.png" alt="CrossChan_GAN" width="550px" height="325px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p><b>Related Work</b></p>
+<ul>
+<li><p>VAE: Auto-Encoding Variational Bayes  <a href="https://arxiv.org/pdf/1312.6114.pdf" target=&ldquo;blank&rdquo;>pdf</a>,<a href="https://arxiv.org/pdf/1606.05908.pdf" target=&ldquo;blank&rdquo;>Tut</a>, </p>
+</li>
+<li><p>Split-Brain Autoencoders <a href="https://arxiv.org/pdf/1611.09842.pdf" target=&ldquo;blank&rdquo;>CVPR2017</a>, </p>
+</li>
+<li><p>GANs <a href="https://arxiv.org/abs/1406.2661" target=&ldquo;blank&rdquo;>pdf</a><a href="https://www.youtube.com/watch?v=RvgYvHyT15E" target=&ldquo;blank&rdquo;>NIPS Workshop</a>, </p>
+</li>
+<li><p>BiGAN <a href="https://arxiv.org/pdf/1605.09782.pdf" target=&ldquo;blank&rdquo;>pdf</a>, Adversarial Autoencoders (AAEs) <a href="https://arxiv.org/pdf/1511.05644.pdf" target=&ldquo;blank&rdquo;>pdf</a>, </p>
+</li>
+<li><p>InfoGAN <a href="https://arxiv.org/pdf/1606.03657v1.pdf" target=&ldquo;blank&rdquo;>pdf</a>, McGan <a href="https://arxiv.org/pdf/1702.08398.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Recursive estimation of generative video models <a href="https://pdfs.semanticscholar.org/d156/e74448a71e70ac73222167117a90e2ab93ef.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+</ul>
+<p><b>Other models</b></p>
+<ul>
+<li><p>Spatio-Temporal Multiresolution Model for VAD <a href="https://arxiv.org/pdf/1401.3291.pdf" target=&ldquo;blank&rdquo;>pdf</a>, <a href="https://pdfs.semanticscholar.org/c6b3/edc63af38d7fe489474752d28ccee29ff8b1.pdf" target=&ldquo;blank&rdquo;>Thesis</a>, </p>
+</li>
+<li><p>Temporal Multi-Scale Models for Flow and Acceleration <a href="http://www.umiacs.umd.edu/~yaser/cvpr97_OF.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+</ul>
+<p><b>Established Arch. for unsupervised video tasks</b></p>
+<ul>
+<li><p>Early, Late, Slow Fusion <a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42455.pdf" target=&ldquo;blank&rdquo;>pdf</a>,  </p>
+</li>
+<li><p>Two-Stream CNNs   <a href="https://arxiv.org/pdf/1406.2199.pdf" target=&ldquo;blank&rdquo;>pdf</a>,</p>
+</li>
+<li><p>Disentangled Representations from Video <a href="https://sites.google.com/view/drnet-paper" target=&ldquo;blank&rdquo;>DRnet</a>,</p>
+</li>
+<li><p>Video and unsupervised Learning <a href="https://www.youtube.com/watch?v=ekyBklxwQMU" target=&ldquo;blank&rdquo;>CS231</a>,
+<a href="http://cs231n.stanford.edu/slides/2016/winter1516_lecture14.pdf" target=&ldquo;blank&rdquo;>Slides</a>,</p>
+</li>
+<li><p>Activity Recognition and Unsupervised Learning <a href="https://comp150dl.github.io/lectures/lecture12.pdf" target=&ldquo;blank&rdquo;>slides</a></p>
+</li>
+</ul>
+<p><b>Video anomaly detection evaluation</b> : ROC Curves and EER <a href="https://www.cs.ubc.ca/~murphyk/Teaching/CS340-Fall07/ROC.pdf" target=&ldquo;blank&rdquo;>pdf</a>, 
+<a href="https://link.springer.com/chapter/10.1007/978-1-84996-202-5_5" target=&ldquo;blank&rdquo;>link</a></p>
+<p><b>Other Applications</b>: Detecting Events by Density Ratio Estimation 
+<a href="http://www.ri.cmu.edu/pub_files/2012/10/paper_id_337.pdf" target=&ldquo;blank&rdquo;>pdf</a>, Video Behavior Profiling for AD 
+<a href="http://www.eecs.qmul.ac.uk/~sgg/papers/XiangGong_PAMI08.pdf" target=&ldquo;blank&rdquo;>pdf</a> </p>
+<p><b>Video Anomlay Detection Datasets</b>:</p>
+<ul>
+<li><p>UCSD Ped : <a href="http://www.svcl.ucsd.edu/projects/anomaly/dataset.htm" target=&ldquo;blank&rdquo;>link</a>, </p>
+</li>
+<li><p>CUHK-Avenue Dataset <a href="http://www.cse.cuhk.edu.hk/leojia/projects/detectabnormal/dataset.html" target=&ldquo;blank&rdquo;>link</a></p>
+</li>
+<li><p>Subway Entry &amp; exit <a href="http://www.cim.mcgill.ca/~javan/index_files/Dominant_behavior.html" target=&ldquo;blank&rdquo;>link</a></p>
+</li>
+<li><p>Idiap Traffic Junction dataset <a href="http://www.idiap.ch/~odobez/RESSOURCES/DataRelease-TrafficJunction.php" target=&ldquo;blank&rdquo;>link</a></p>
+</li>
+<li><p>UMN Dataset <a href="http://mha.cs.umn.edu/" target=&ldquo;blank&rdquo;>link</a></p>
+</li>
+</ul>
+<p><b>Other datasets (action recognition, surveillance)</b>:</p>
+<ul>
+<li><p>PETS 2016 <a href="http://www.cvg.reading.ac.uk/PETS2016/" target=&ldquo;blank&rdquo;>link</a>,</p>
+</li>
+<li><p>MIT Traffic dataset <a href="http://www.ee.cuhk.edu.hk/~xgwang/MITtraffic.html" target=&ldquo;blank&rdquo;>link</a> (for ped detection),</p>
+</li>
+<li><p>Human activity recongnition <a href="http://romisatriawahono.net/lecture/rm/survey/computer%20vision/Chaquet%20-%20Human%20Activity%20Recognition%20-%202013.pdf" target=&ldquo;blank&rdquo;>link</a> ,</p>
+</li>
+<li><p>Extracting Temporal Motifs <a href="http://www.idiap.ch/paper/2053/realdata.html" target=&ldquo;blank&rdquo;>link</a> ,</p>
+</li>
+<li><p>HMDB:<a href="http://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/" target=&ldquo;blank&rdquo;>link</a>,</p>
+</li>
+<li><p>UCF101 <a href="http://crcv.ucf.edu/data/UCF101.php" target=&ldquo;blank&rdquo;>link</a>,</p>
+</li>
+<li><p>VIRAT  <a href="http://www.viratdata.org/" target=&ldquo;blank&rdquo;>link</a>, <a href="http://ieeexplore.ieee.org/document/5995586/" target=&ldquo;blank&rdquo;>paper</a>,</p>
+</li>
+<li><p>A collection of datasets available at V.Nagarajans site <a href="https://sites.google.com/site/vjagan/home/action_datasets" target=&ldquo;blank&rdquo;>link</a>,&lt;br /&gt;</p>
+</li>
+</ul>
+<h2>VAD with Hand engineered features</h2>
+<ul>
+<li><p>Anomaly Detection in Crowded Scenes (mixture of dynamic textures) 
+<a href="http://www.svcl.ucsd.edu/publications/conference/2010/cvpr2010/cvpr_anomaly_2010.pdf" target=&ldquo;blank&rdquo;>pdf</a>, 
+<a href="https://www.researchgate.net/profile/Nuno_Vasconcelos2/publication/239943156_Anomaly_Detection_and_Localization_in_Crowded_Scenes/links/552e9d9b0cf2d495071a6a0f.pdf" target=&ldquo;blank&rdquo;>PAMI 2014</a> <a href="http://videolectures.net/cvpr2010_mahadevan_adcs" target=&ldquo;blank&rdquo;>video</a>  </p>
+</li>
+<li><p>Optical Acceleration for Motion Description in Videos 
+<a href="http://openaccess.thecvf.com/content_cvpr_2017_workshops/w20/papers/Edison_Optical_Acceleration_for_CVPR_2017_paper.pdf" target=&ldquo;blank&rdquo;>pdf</a>  </p>
+</li>
+<li><p>On the Essence of Unsupervised Detection of Anomalous Motion 2017 <a href="https://www.comp.nus.edu.sg/~leowwk/papers/caip2017-anomaly.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Discriminative FWK for AD in Videos <a href="https://arxiv.org/pdf/1609.08938.pdf" target=&ldquo;blank&rdquo;>pdf</a>, Abnormal Event Detection at 150 FPS 2013 <a href="http://shijianping.me/abnormal_iccv13.pdf" target=&ldquo;blank&rdquo;>pdf</a> </p>
+</li>
+<li><p>Real-Time Anomaly Detection and Localization in Crowded Scenes 2015 
+<a href="https://arxiv.org/pdf/1511.06936.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Video Anomaly Detection Hierarchical Feature Representation 2015 <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Cheng_Video_Anomaly_Detection_2015_CVPR_paper.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Localized Anomaly Detection via Hierarchical Integrated Activity Discovery 2013
+<a href="http://www.vanaheim-project.eu/assets/ChockalingamEmonetOdobez-AVSS-2013.pdf" target=&ldquo;blank&rdquo;>pdf</a> </p>
+</li>
+<li><p>Histograms of OF Orientation and Magnitude to Detect Anomalous Events in Videos
+<a href="http://www.ssig.dcc.ufmg.br/wp-content/uploads/2015/06/paper_camera_ready.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>VAD Based on Local Statistical Aggregates <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.703.7756&amp;rep=rep1&amp;type=pdf" target=&ldquo;blank&rdquo;>pdf</a>, 
+AD Using Dense Trajectories <a href="http://pages.cs.wisc.edu/~kma/downloads/anomaly-detection.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Online Detection of Unusual Events in Videos via Dynamic Sparse Coding CVPR 2011 
+<a href="http://vision.stanford.edu/pdf/ZhaoFeiFeiXing_CVPR2011.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Textures of Optical Flow for Real-Time AD <a href="https://eprints.qut.edu.au/41572/1/PID1829439.pdf" target=&ldquo;blank&rdquo;>pdf</a>, AD with Bayesian Nonparametrics 2016 
+<a href="https://arxiv.org/pdf/1606.08455.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Topic Models for Scene Analysis and Abnormality Detection 2009 ICCV-VS WKSHpP<a href="http://www.idiap.ch/~odobez/publications/VaradarajanOdobez-ICCV-VS_2009.pdf" target=&ldquo;blank&rdquo;>pdf</a>, <a href="https://www.youtube.com/watch?v=AZTNPlFLojY" target=&ldquo;blank&rdquo;>Talk 2015</a></p>
+</li>
+<li><p>Learning Object Motion Patterns for Anomaly &amp; Improved Object Detection 2008 CVPR 
+<a href="http://vision.eecs.ucf.edu/papers/cvpr2008/3.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
+</li>
+<li><p>Analysis of Persistent Motion Patterns Using the 3D Structure Tensor 200</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2019-12-27 19:48:09 CET, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
-</body></html>
- 
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

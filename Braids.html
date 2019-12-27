@@ -1,335 +1,377 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-  
-
-<script type="text/javascript" async src="MathJax/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title></title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    processEscapes: true
-  }
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Braids</title>
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <link href="http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700%7COpen+Sans:400,600,700" rel="stylesheet" type="text/css" />
-  <link href="default.css" rel="stylesheet" type="text/css" media="all" /><!--[if IE 6]>
-
-
-<![endif]--></head><body>
-
-<div id="wrapper">
-<div id="header-wrapper">
-<div id="header" class="container">
-<div id="menu">
-<ul>
-  <li><a href="index.html" title="">Homepage</a></li>
-  <li><a href="Research.html" title="">Research</a></li>
-  <li><a href="CV.html" title="">Resume</a></li>
-  <li><a href="pub.html" title="">Publications</a></li>
-</ul>
-</div>
-</div>
-</div>
-
-<div id="page" class="container"><div id="content"><div id="box1">
-
-<div style="text-align: center;">
-<h1 style="color: rgb(151, 25, 125);text-align: center">Energetic Lattices and Braids Of Partitions</h1>
-</div>
-</br>
-
-Given a hierarchy of partitions $H = \{ \pi_i \}_{ 0 \leq i n}$ the
-optimal cut problem aims at calculating : 
-<center><span style="font-size:1.3em; font-weight: bold; ; color: yellow; line-height:0%"> 
-  $\begin{aligned}
-& \underset{\pi \in \Pi(E,H)}{\text{minimize}} & & \sum_{S \in \pi} \omega(S)\\
-\end{aligned}$</span></center>
-<br />
-The problem can be solved greedily using the dynamic program whose substructure is given by
-<br />
-<center><span style="font-size:1.3em; font-weight: bold; ; color: yellow; line-height:0%"> 
-$\pi^{\ast}(S) = \begin{cases}
-      \{S\}, & \text{if}\ \omega({S})\leq \sum(\omega(\pi^\ast(a))), a \in \pi(S)\\
-      \bigsqcup_{a \in \pi(S)} \pi^\ast(a), & \text{otherwise}
-\end{cases}$</span></center>
-<br />
-$h$-increasingness provides the condition on the energy defined on the partial 
-partitions $\omega(\pi(S))$ to so as to obtain a global optimum : <br />
-<center><span style="font-size:1.3em; font-weight: bold; ; color: yellow; line-height:0%"> 
-$\omega(\pi_1(S)) \leq \omega(\pi_2(S)) \implies
-      \omega(\pi_1(S) \sqcup \pi_0) \leq \omega(\pi_2(S) \sqcup \pi_0)
-$</span></center><br />
-There can be many solutions to the dynamic program. We impose uniqueness by
-imposing the following condition on $\omega$  :
-<br />
-<center><span style="font-size:1.3em; font-weight: bold; ; color: yellow; line-height:0%"> 
-$\forall \ \pi(S)\in\Pi(S), \ \ \omega(\{S\})\neq\omega(\pi(S))\}$</span></center>
-<br />
-Given the uniqueness condition the energetic-ordering between 
-two partitions $\pi_1, \pi_2$ is : <br />
-<center><span style="font-size:1.3em; font-weight: bold; ; color: yellow; line-height:0%"> 
-$\pi \preceq _{\omega }\pi^\prime  \ \Leftrightarrow \
+<!-- End MathJax -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Home</div>
+<div class="menu-item"><a href="index.html">Index</a></div>
+<div class="menu-item"><a href="CV.html">CV</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="thesis.html">Thesis</a></div>
+<div class="menu-item"><a href="research.html">Older&nbsp;work</a></div>
+<div class="menu-item"><a href="current.html">Current&nbsp;work</a></div>
+<div class="menu-category">Publications</div>
+<div class="menu-item"><a href="conference.html">Conferences</a></div>
+<div class="menu-item"><a href="journals.html">Journals</a></div>
+<div class="menu-item"><a href="workshops.html">Workshops</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-category">References</div>
+<div class="menu-item"><a href="drlad.html">DRLAD</a></div>
+<div class="menu-item"><a href="https://github.com/beedotkiran/Lidar_For_AD_references/blob/master/README.md">LiDARAD</a></div>
+</td>
+<td id="layout-content">
+<h1>Cost-complexity pruning of random forests <a href="http://cmm.ensmp.fr/ismm2017/" target=&ldquo;blank&rdquo;>ISMM 2017</a></h1>
+<p>Given a hierarchy of partitions \(H = \{ \pi_i \}_{ 0 \leq i n}\) the
+optimal cut problem aims at calculating : </p>
+<p>\(\begin{aligned}
+&amp; \underset{\pi \in \Pi(E,H)}{\text{minimize}} &amp; &amp; \sum_{S \in \pi} \omega(S)\\
+\end{aligned}\)</p>
+<p>The problem can be solved greedily using the dynamic program whose substructure is given by</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>\(\pi^{\ast}(S) = \begin{cases}
+\{S\}, &amp; \text{if}\ \omega({S})\leq \sum(\omega(\pi^\ast(a))), a \in \pi(S)\\
+\bigsqcup_{a \in \pi(S)} \pi^\ast(a), &amp; \text{otherwise}
+\end{cases}\)</p>
+</div></div>
+<p>\(h\)-increasingness provides the condition on the energy defined on the partial 
+partitions \(\omega(\pi(S))\) to so as to obtain a global optimum : </p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>\(\omega(\pi_1(S)) \leq \omega(\pi_2(S)) \implies
+\omega(\pi_1(S) \sqcup \pi_0) \leq \omega(\pi_2(S) \sqcup \pi_0)\)</p>
+</div></div>
+<p>There can be many solutions to the dynamic program. We impose uniqueness by
+imposing the following condition on \(\omega\)  :</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>\(\forall \ \pi(S)\in\Pi(S), \ \ \omega(\{S\})\neq\omega(\pi(S))\}\)</p>
+</div></div>
+<p>Given the uniqueness condition the energetic-ordering between 
+two partitions \(\pi_1, \pi_2\) is : </p>
+<div class="infoblock">
+<div class="blockcontent">
+<p>\(\pi \preceq _{\omega }\pi^\prime  \ \Leftrightarrow \
 \forall S\in \pi \vee \pi^\prime \ \text{we have} \ \omega (\pi \sqcap \{S\})\leq \ 
-\omega(\pi^\prime \sqcap \{S\})$ </span></center><br />
-Here $\pi \preceq _{\omega } \pi^{\prime}$
-<center><img style="width: 530px; height: 220px;" alt="" src="images/energetic_order.png"/><br /></center>
-
-In fact during the optimization procedure one never evaluates energy of a partition, but only
+\omega(\pi^\prime \sqcap \{S\})\) </p>
+</div></div>
+<p>Here \(\pi \preceq _{\omega } \pi^{\prime}\)</p>
+<table class="imgtable"><tr><td>
+<img src="images/energetic_order.png" alt="energetic_order" width="530px" height="220px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p>In fact during the optimization procedure one never evaluates energy of a partition, but only
 of the partial partitions. This is the cruicial part of the problem which renders
 the dynamic program to be forumlated as a lattice structure. 
-The energetic lattice ( $\preceq _{\omega }, \vee_{\omega}$ ) derives from 
-  the energetic order.
-
-
-<center><img style="width: 330px; height: 220px;" alt="" src="images/HierchieVSTresse.png" ALIGN="left"/><br /></center>
-The hierarchy of partitions can be created using two different types of operations.
+The energetic lattice ( \(\preceq _{\omega }, \vee_{\omega}\) ) derives from 
+the energetic order.</p>
+<table class="imgtable"><tr><td>
+<img src="images/HierchieVSTresse.png" alt="HierchieVSTresse" width="660px" height="440px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p>The hierarchy of partitions can be created using two different types of operations.
 Given a elementary leaves partition one can create the hierarchy bottom-up by
-fusing classes of the partitions together creating coarser parent partitions (child->parent /  fils -> pere).
+fusing classes of the partitions together creating coarser parent partitions (child-&gt;parent <i>  fils -&gt; pere).
 Or given a coarse elementary partition one can create the hierarchy top-down by
-dividing classes of the partitions into finer children classes (parent->child / pere -> fils).
-
-<br />
-<br />
-
-While the braid of partitions consists of a third type of refinement operation, including
+dividing classes of the partitions into finer children classes (parent-&gt;child </i> pere -&gt; fils).</p>
+<p>While the braid of partitions consists of a third type of refinement operation, including
 the fusion and division operations. This is termed as hierarchical reorganization, while
 mathematically it corresponds to local partitioning that keeps the pairwise supremum partitions
 a hierarchy of partitions. More particularly, this corresponds to a fusion-division (or division-fusion) operation
 on the same set of classes in a partition, that produces a new local partitioning of the space.
-Braids are the largest family over which the dynamic programming substructure is preserved to yield a global optimum. 
-<br />
-<br />
-
-<center><span style="font-size:1.3em; font-weight: bold; ; color: yellow; line-height:0%"> 
-  $B = \{\pi_i\}_{i=1}^n | \pi_i \vee \pi_j \in \Pi(E,H)$
-</span></center>
-<br />
-<p style="color: rgb(153, 103, 255)"> We can see from the braid structure that it is in accordance with the energetic ordering
-and also generalizes hierarchical partitioning of the space while preserving the dynamic program's substructure.</p>
-<p style="font-weight: bold; text-align: center"><big>  Examples of partition families that form braids:</big></p>
-
-
-
-The Ultrametric contour map(UCM) from the berkeley group is an example of a hierarchy.
+Braids are the largest family over which the dynamic programming substructure is preserved to yield a global optimum. </p>
+<div class="infoblock">
+<div class="blockcontent">
+<p style="text-align:center">
+\[
+  B = \{\pi_i\}_{i=1}^n | \pi_i \vee \pi_j \in \Pi(E,H)
+\]
+</p></div></div>
+<p>We can see from the braid structure that it is in accordance with the energetic ordering
+and also generalizes hierarchical partitioning of the space while preserving the dynamic program's substructure.&lt;/p&gt;</p>
+<h3>Examples of partition families that form braids</h3>
+<p>The Ultrametric contour map(UCM) from the berkeley group is an example of a hierarchy.
 While the Stochastic watershed by Angulo et al. is an example of a braid. There is a total 
 ordering between the partitions in a hierarchy, while there is a partial ordering for
 partitions belonging to a braid. The supremum partitions of a braid though turn out to be hierarchical.
 This provides a generalization of the hierarchical structure for the purpose of dynamic programming
-and search of better solution spaces.
-</br>
-</br>
-
-<p style="font-weight: bold; text-align: center"><big> Stochastic watershed Braids:</big></p>
-
-<center><img style="width: 600px; height: 400px;" alt="" src="images/braid_StochasticWatershed.png" /></center>
-<br />
-
-<p style="font-weight: bold; text-align: center"><big> Composition of Attribute watershed hierarchies:</big></p>
-<center><img style="width: 600px; height: 250px;" alt="" src="images/braid_AttributeWatershed.png" /><br /></center>
-
-</div>
-<br />
-
-<p style="font-weight: bold; text-align: center"><big>  Dynamic programming substructre on Braids:</big></p>
-
-<img style="width: 400px; height: 225px;" alt="" src="images/DPbraid.png" ALIGN="left"/>
-To ensure that one reaches the minimum using previously calculated results over finer partial partitions, 
+and search of better solution spaces.</p>
+<h4>Stochastic watershed Braids:</h4>
+<table class="imgtable"><tr><td>
+<img src="images/braid_StochasticWatershed.png" alt="braid_StochasticWatershed" width="600px" height="400px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<h4>Composition of Attribute watershed hierarchies:</h4>
+<table class="imgtable"><tr><td>
+<img src="images/braid_AttributeWatershed.png" alt="braid_AttributeWatershed" width="600px" height="320px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<h3>Dynamic programming substructre on Braids</h3>
+<table class="imgtable"><tr><td>
+<img src="images/DPbraid.png" alt="DPbraid" width="400px" height="225px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p>To ensure that one reaches the minimum using previously calculated results over finer partial partitions, 
 we use the hierarchical increasingness property. This ensures the monotonic property of the energy
-during the bottom-up/top-down scan by the dynamic program.
- 
-h-increasingness is over partial partitions from a hierarchy and a braid is demonstrated.
+during the bottom-up/top-down scan by the dynamic program.</p>
+<p>\(h\)-increasingness is over partial partitions from a hierarchy and a braid is demonstrated.
 We see that the braid provides a larger family of partitions over which the dynamic program works.
-This requires a partial ordering in case of braids. 
-<br>
-<BR CLEAR=”left” />
-<center><span style="font-size:1.3em; font-weight: bold; ; color: rgb(51, 55, 225); line-height:0%"> 
-division $S \supset \pi(S)$, fusion $\pi(R) \subset R$, partial partitioning $\pi(X) \vee \pi(X^\prime)$ </span>
-<br>
-Human annotated & algorithm segmentations match in three different ways (shown below)
-<img style="width: 600px; height: 200px;" alt="" src="images/RefinementsOverlaps.png" /><br />
-</center>
-<br />
-
-<!-- ############################################################################################ -->
-<h1 style="color: rgb(151, 25, 125);text-align: center">Optimal Cuts from hierarchies of partitions</h1>
-
-<br />
-<b> Preprint</b> : <a href="GlobalLocal_Hcuts_PR2013.pdf">PR journal 2013</a> 
-<br />
-<b> Slides </b> : <a href="Barca-2013-I.pdf">1. Optimal Cuts & Energetic Lattices </a>, 
-<a href="Barca-2013-II.pdf">2. Ground truth energies & evaluation </a> <br />
-<b> Keywords </b>: Hierarchical segmentation, MathematicalMorphology, Energy minimization, Dynamic programming
-<br />
-
-<b> Algorithms </b> : 
-<ol>  
-<li>Optimal Cut Algorithm : Breimans algorithm to calculate the optimally pruned rooted tree.</li>
-<li>Optimal hierarchy using scale-sets : Complete hierarchy of optimal cuts by ordered by scale function. </li>
-<li>Scale-function is calculated by equating lagrangians of parent and child energies</li>
-</ol> 
-
+This requires a partial ordering in case of braids. </p>
+<div class="infoblock">
+<div class="blockcontent">
+<ul>
+<li><p>\(S \supset \pi(S)\), fusion </p>
+</li>
+<li><p>\(\pi(R) \subset R\), division </p>
+</li>
+<li><p>\(\pi(X) \vee \pi(X^\prime)\), partial partitioning</p>
+</li>
+</ul>
+</div></div>
+<p>Human annotated &amp; algorithm segmentations match in three different ways (shown below)</p>
+<table class="imgtable"><tr><td>
+<img src="images/RefinementsOverlaps.png" alt="RefinementsOverlaps" width="600px" height="200px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<h2>Optimal Cuts from hierarchies of partitions</h2>
+<ul>
+<li><p>Preprint: <a href="GlobalLocal_Hcuts_PR2013.pdf" target=&ldquo;blank&rdquo;>PR journal 2013</a></p>
+</li>
+<li><p>Slides : <a href="Barca-2013-I.pdf" target=&ldquo;blank&rdquo;>1. Optimal Cuts &amp; Energetic Lattices</a> , <a href="Barca-2013-II.pdf" target=&ldquo;blank&rdquo;>2. Ground truth energies &amp; evaluation</a> </p>
+</li>
+<li><p>Keywords : Hierarchical segmentation, MathematicalMorphology, Energy minimization, Dynamic programming</p>
+</li>
+<li><p>Algorithms </p>
+<ul>
+<li><p>Optimal Cut Algorithm : Breimans algorithm to calculate the optimally pruned rooted tree.</p>
+</li>
+<li><p>Optimal hierarchy using scale-sets : Complete hierarchy of optimal cuts by ordered by scale function. </p>
+</li>
+<li><p>Scale-function is calculated by equating lagrangians of parent and child energies</p>
+</li>
 </ul>
 
-<br />
-<span style="font-weight: bold;">Intial Image: &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp;
-Optimal Cut (Luminance) &emsp; &emsp; &emsp;   Optimal Cut (Chrominance) </span><br />
-<br />
-<img style="width: 225px; height: 150px;" src="images/ducks_init.jpg" />  &emsp; &emsp;
-<img style="width: 225px; height: 150px;" alt="lum cut" src="images/ducks_lum_cut.jpg" /> &emsp; &emsp;
-<img style="width: 225px; height: 150px;" alt="chrom cut" src="images/ducks_chrom_cut.jpg" /><br />
-<br style="font-weight: bold;" />
-
-<br />
-
-$\omega_{\text{Lum}}(S) = \sum_{x \in S} \|l(x)-\mu(S)\|^2 + \lambda(24 + |\partial S|)$ Fidelity term (Luminance) 
-$\omega_{\text{Chrom}}(S) = \sum_{x \in S, i} \|c_i(x)-\bar{c}_i(S)\|^2 + \lambda(24 + |\partial S|)$ Fidelity term (Chrominance)
-<br /><span style="font-weight: bold;">
-Texture Enhancement by including class size unformity term in Mumford Shah Functional:</span><br /><br />
-Mean size of siblings : 
-$\mu_A = \frac{\sum_{S^\prime \in \text{siblings}(S)} |S|}{|\text{siblings}(S)|}$, 
-Texture energy :
-$\omega_{\text{texture}}(S) = \omega_{\text{Chrom}}(S) +  
-\frac{\nu}{\sum_{S^\prime \in \text{siblings(S)}} |\mu_A-|S^\prime||^2}$
-<br />
-<br />
-
-Intial Image: &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp; 
-For weak uniformity&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; &emsp;
-For strong uniformity:<br />
-<img style="width: 225px; height: 150px;" alt="texture image" src="images/texture_treeriver.jpg" /> &emsp; &emsp;
-<img style="width: 225px; height: 150px;" alt="texture weak" src="images/treeriver_lam100mu1e12.jpg" /> &emsp; &emsp;
-<img style="width: 225px; height: 150px;" alt="texture strong" src="images/treeriver_lam100mu1e14.jpg" /><br />
-<br />
-
-<h3 style="color: rgb(151, 100, 100);text-align: center">Related Publications and slides</h3>
-<br />
-<ul class="unilist">
-
-  <li>Energetic Lattices and braids : Talk at <a href="http://icube-miv.unistra.fr/en/index.php/Home" target="_blank">Icube-MIV</a> March 2017, 
-  [<a href="slides_braids.pdf">Slides</a> ]</li></li>
-
-  <li> Braids Of partitions, B Ravi Kiran, Jean Serra, ISMM 2015.[<a href="https://hal.archives-ouvertes.fr/hal-01134114/document" target="_blank">HAL</a>][<a href="ISMM2015_BraidsOfPartitions.pdf" target="_blank">Slides</a>]<span style="color: rgb(51, 204, 255); " />[<a href="KiranSerraBraidsISMM2015.bib" target="_blank">bibtex</a>]<span style="color: rgb(51, 204, 255);" /><span style="font-style: italic;"></li>
-
-  <li> Constrained Optimization on Hierarchies and Braids, Jean Serra, B Ravi Kiran, ISMM 2015[<a href="https://hal.archives-ouvertes.fr/hal-01134115/document" target="_blank">HAL</a>][<a href="PosterISMM2015.pdf" target="_blank">Poster</a>] <span style="color: rgb(51, 204, 255); font-weight: bold;" /><span style="font-style: italic;"><br /></span></li>
-
-  <li> Review on braids of partitions : Talk at [<a href="http://cmm.ensmp.fr/">CMM</a>] March 2015 [<a href="Braids-ReviewedJan2015CMM-PART-2.pdf" target="_blank">Slides</a>] 
-  <li> B. Ravi Kiran, Jean Serra, Global local optimizations by hierarchical cuts and climbing energies,
-  In press, Pattern Recognition, Volume 47, Issue 1, January 2014, Pages 12–24. ISSN 0031-3203.</li>
-  <li>Optima on Hierarchies of Partitions, 
-  J. Serra, B.R. Kiran, ISMM 2013, LNCS, Vol. 7883, pp 147-158 </li>
-</ul>  
-  <h3 style="color: rgb(151, 100, 100);text-align: center">Tutorial on optimization on hierarchies at <a id="TutorialICIP">ICIP 2014</a></h3>
-      <ul>    
-        <li>Jean Serra: Hierarchies and Energetic Lattice [<a href="ICIP2014TutPartI-Serra.pdf" target="_blank">Slides</a>]</li>
-        <li>Hugues Talbot: Optimisation in Imaging [<a href="ICIP2014TutPartII-Talbot.pdf" target="_blank">Slides</a>]</li>
-        <li>B Ravi Kiran: Constrained Optimization on Hierarchies [<a href="ICIP2014TutPartIII-Ravi.pdf" target="_blank">Slides</a>]</li>
-        <li>Jean Cousty: Handling and computing hierarchies with graphs [<a href="ICIP2014TutPartIV-Cousty.pdf" target="_blank">Slides</a>]</li>
-      </ul>
-
-
-<h3 style="color: rgb(151, 100, 100);text-align: center">Reading List</h3>
-<ol>
-  <li>Toward Objective Evaluation of Image Segmentation Algorithms, Unnikrishnan 2007 PAMI</li>
-  <li>Segmentation as Maximum-Weight Independent Set, Brendel, Todorovic NIPS 2010</li>
-  <li>Ordered Hypothesis Machines  Zimmer, Hush, Porter JMIV 2012</li>
-  <li>Grain Building Ordering, J. Serra ISMM 2011</li>
-  <li>Learning to Merge: A New Tool for Interactive Mapping, Porter SPIE 2013</li>
-  <li>Orders on Partial Partitions Based on Block Apportioning, Christian Ronse 2014</li>
-  <li> Classification and regression trees. CRC press, 1984, Breiman et al.</li>
-  <li> BPT, efficient representation for image segmentation, Image Proc., Transactions 2000, Salembier et al. </li>
-  <li> Guigues et al. "Scale-sets image analysis." IJCV 2006</li>
-  <li> GloBo : un algorithme stochastique pour l'apprentissage supervisé et non-supervisé 
-  [<a href="http://www.grappa.univ-lille3.fr/~torre/Recherche/Articles/1999/torre99a.pdf">pdf</a>]
-  [<a href="http://www.grappa.univ-lille3.fr/~torre/Recherche/Softwares/volata/">VOLATA</a>] </li>
-  <li> Convex optimization, Stephen Boyd and Lieven Vandenberghe (2004) </li>
-  
-  <li> Level lines selection with variational models for segmentation and encoding. Ballester, C., et al. 2007</li>
-  <li> Contour detection and hierarchical image segmentation, Arbelaez, P., et al. 2011 </li>
-  <li> Supervised assessment of segmentation hierarchies. Pont-Tuset, J. and Marques, F. (2012) </li>
-  <li> Fast approximate energy minimization via graph cuts, Boykov, Y., Veksler, O., and Zabih, R. (2001) </li>
-  <li> Some links between min-cuts, optimal spanning forests and watersheds, Allene, C., et al. 2007 </li>
-  <li> Watershed cuts: Thinnings, shortest path forests, and topological watersheds. Cousty. et al. 2010 </li>
-  <li> Power watersheds: A unifying graph-based optimization framework, Couprie, C., et al .2011 </li>
-</ol>
-
-<!-- ############################################################################################ -->
-<h1 style="color: rgb(151, 25, 125);text-align: center">Ground truth energies and Class opening</h1>
-
-During the evaluation of ground truth segmentation one problem is the evauation of a numerical measure that
+</li>
+</ul>
+<h4>Optimal Cut (Luminance)  VS  Optimal Cut (Chrominance)</h4>
+<ul>
+<li><p>Original Image</p>
+</li>
+</ul>
+<table class="imgtable"><tr><td>
+<img src="images/ducks_init.jpg" alt="ducks_init" width="225px" height="150px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<ul>
+<li><p>Fidelity term (Luminance) </p>
+</li>
+</ul>
+<table class="imgtable"><tr><td>
+<img src="images/ducks_lum_cut.jpg" alt="lum cut" width="225px" height="150px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<div class="infoblock">
+<div class="blockcontent">
+<p>\(\omega_{\text{Lum}}(S) = \sum_{x \in S} \|l(x)-\mu(S)\|^2 + \lambda(24 + |\partial S|)\) </p>
+</div></div>
+<ul>
+<li><p>Fidelity term (Chrominance)</p>
+</li>
+</ul>
+<table class="imgtable"><tr><td>
+<img src="images/ducks_chrom_cut.jpg" alt="chrom cut" width="225px" height="150px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<div class="infoblock">
+<div class="blockcontent">
+<p>\(\omega_{\text{Chrom}}(S) = \sum_{x \in S, i} \|c_i(x)-\bar{c}_i(S)\|^2 + \lambda(24 + |\partial S|)\) </p>
+</div></div>
+<ul>
+<li><p>Texture Enhancement by including class size unformity term in Mumford Shah Functional</p>
+</li>
+</ul>
+<div class="infoblock">
+<div class="blockcontent">
+<p>Mean size of siblings
+\(\mu_A = \frac{\sum_{S^\prime \in \text{siblings}(S)} |S|}{|\text{siblings}(S)|}\)</p>
+</div></div>
+<div class="infoblock">
+<div class="blockcontent">
+<p>Texture energy 
+\(\omega_{\text{texture}}(S) = \omega_{\text{Chrom}}(S) +  
+\frac{\nu}{\sum_{S^\prime \in \text{siblings(S)}} |\mu_A-|S^\prime||^2}\)</p>
+</div></div>
+<h3>Intial Image - VS - For weak uniformity - VS - For strong uniformity:</h3>
+<table class="imgtable"><tr><td>
+<img src="images/texture_treeriver.jpg" alt="texture_treeriver" width="225px" height="150px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/treeriver_lam100mu1e12.jpg" alt="treeriver_lam100mu1e12" width="225px" height="150px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/treeriver_lam100mu1e14.jpg" alt="treeriver_lam100mu1e14" width="225px" height="150px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<h3>Related Publications and slides</h3>
+<ul>
+<li><p>Energetic Lattices and braids : Talk at <a href="http://icube-miv.unistra.fr/en/index.php/Home" target=&ldquo;blank&rdquo;>Icube-MIV</a> March 2017, <a href="slides_braids.pdf" target=&ldquo;blank&rdquo;>Slides</a></p>
+</li>
+<li><p>Braids Of partitions, B Ravi Kiran, Jean Serra, ISMM 2015.<a href="https://hal.archives-ouvertes.fr/hal-01134114/document"" target=&ldquo;blank&rdquo;>HAL</a><a href="ISMM2015_BraidsOfPartitions.pdf" target=&ldquo;blank&rdquo;>Slides</a>, <a href="KiranSerraBraidsISMM2015.bib" target=&ldquo;blank&rdquo;>bibtex</a> </p>
+</li>
+<li><p>Constrained Optimization on Hierarchies and Braids, Jean Serra, B Ravi Kiran, ISMM 2015<a href="https://hal.archives-ouvertes.fr/hal-01134115/document" target=&ldquo;blank&rdquo;>HAL</a><a href="PosterISMM2015.pdf" target=&ldquo;blank&rdquo;>Poster</a> </p>
+</li>
+<li><p>Review on braids of partitions : Talk at <a href="http://cmm.ensmp.fr/" target=&ldquo;blank&rdquo;>CMM</a> March 2015 <a href="Braids-ReviewedJan2015CMM-PART-2.pdf" target=&ldquo;blank&rdquo;>Slides</a> </p>
+</li>
+<li><p>B. Ravi Kiran, Jean Serra, Global local optimizations by hierarchical cuts and climbing energies,
+In press, Pattern Recognition, Volume 47, Issue 1, January 2014, Pages 12–24. ISSN 0031-3203.</p>
+</li>
+<li><p>Optima on Hierarchies of Partitions, J. Serra, B.R. Kiran, ISMM 2013, LNCS, Vol. 7883, pp 147-158 </p>
+</li>
+</ul>
+<h3>Tutorial on optimization on hierarchies at ICIP 2014</h3>
+<ul>
+<li><p>Jean Serra: Hierarchies and Energetic Lattice <a href="ICIP2014TutPartI-Serra.pdf" target=&ldquo;blank&rdquo;>Slides</a></p>
+</li>
+<li><p>Hugues Talbot: Optimisation in Imaging <a href="ICIP2014TutPartII-Talbot.pdf" target=&ldquo;blank&rdquo;>Slides</a></p>
+</li>
+<li><p>B Ravi Kiran: Constrained Optimization on Hierarchies <a href="ICIP2014TutPartIII-Ravi.pdf" target=&ldquo;blank&rdquo;>Slides</a></p>
+</li>
+<li><p>Jean Cousty: Handling and computing hierarchies with graphs <a href="ICIP2014TutPartIV-Cousty.pdf" target=&ldquo;blank&rdquo;>Slides</a></p>
+</li>
+</ul>
+<h3>Reading List</h3>
+<ul>
+<li><p>Toward Objective Evaluation of Image Segmentation Algorithms, Unnikrishnan 2007 PAMI</p>
+</li>
+<li><p>Segmentation as Maximum-Weight Independent Set, Brendel, Todorovic NIPS 2010</p>
+</li>
+<li><p>Ordered Hypothesis Machines  Zimmer, Hush, Porter JMIV 2012</p>
+</li>
+<li><p>Grain Building Ordering, J. Serra ISMM 2011</p>
+</li>
+<li><p>Learning to Merge: A New Tool for Interactive Mapping, Porter SPIE 2013</p>
+</li>
+<li><p>Orders on Partial Partitions Based on Block Apportioning, Christian Ronse 2014</p>
+</li>
+<li><p>Classification and regression trees. CRC press, 1984, Breiman et al.</p>
+</li>
+<li><p>BPT, efficient representation for image segmentation, Image Proc., Transactions 2000, Salembier et al. </p>
+</li>
+<li><p>Guigues et al. &ldquo;Scale-sets image analysis.&rdquo; IJCV 2006</p>
+</li>
+<li><p>GloBo : un algorithme stochastique pour l'apprentissage supervisé et non-supervisé 
+<a href="http://www.grappa.univ-lille3.fr/~torre/Recherche/Articles/1999/torre99a.pdf" target=&ldquo;blank&rdquo;>pdf</a>
+<a href="http://www.grappa.univ-lille3.fr/~torre/Recherche/Softwares/volata/" target=&ldquo;blank&rdquo;>VOLATA</a> </p>
+</li>
+<li><p>Convex optimization, Stephen Boyd and Lieven Vandenberghe (2004) </p>
+</li>
+<li><p>Level lines selection with variational models for segmentation and encoding. Ballester, C., et al. 2007</p>
+</li>
+<li><p>Contour detection and hierarchical image segmentation, Arbelaez, P., et al. 2011 </p>
+</li>
+<li><p>Supervised assessment of segmentation hierarchies. Pont-Tuset, J. and Marques, F. (2012) </p>
+</li>
+<li><p>Fast approximate energy minimization via graph cuts, Boykov, Y., Veksler, O., and Zabih, R. (2001) </p>
+</li>
+<li><p>Some links between min-cuts, optimal spanning forests and watersheds, Allene, C., et al. 2007 </p>
+</li>
+<li><p>Watershed cuts: Thinnings, shortest path forests, and topological watersheds. Cousty. et al. 2010 </p>
+</li>
+<li><p>Power watersheds: A unifying graph-based optimization framework, Couprie, C., et al .2011 </p>
+</li>
+</ul>
+<h2>Ground truth energies and Class opening</h2>
+<p>During the evaluation of ground truth segmentation one problem is the evauation of a numerical measure that
 determines if the given image segmentation is close to the expert/human drawn ground truth. Given a hierarchy
 of segmentations one faces the problem of chosing which partition amongst all cuts is closest to a given ground truth.
 We evaluate a localized haussdorf distance locally for every super-pixel segment belonging to the input hierarchy of segmentations corresponding
-to the input image, using the ground truth partition contours and their distance functions. 
-
-<br />
-<center><img style="width: 700px; height: 420px;" alt="input saliency" src="images/GTenergies.png" /></center>
-<br />
-
-<b>First energy</b> : Maximum distance function value of the contours of the segment over the contour of the ground truth passing within the segment, 
-<b>Second energy</b> : Maximum distance function value of the ground truth contour over the segment contours. 
-<br>
-These local energies termed as ground truth energies. 
+to the input image, using the ground truth partition contours and their distance functions. </p>
+<table class="imgtable"><tr><td>
+<img src="images/GTenergies.png" alt="GTenergies" width="700px" height="420px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<p><b>First energy</b> : Maximum distance function value of the contours of the segment over the contour of the ground truth passing within the segment, 
+<b>Second energy</b> : Maximum distance function value of the ground truth contour over the segment contours. </p>
+<p>These local energies termed as ground truth energies. 
 These functions are h-increasing. Once, these energies calculated for every segment in the hierarchy, we can extract the partition
 whose with least value of composition of ground truth energies. The optimal cut extracted here thus corresponds to the partition from 
-the hierarchy of partitions closest locally w.r.t each class, to the input ground truth partition.
-
-<li>Net opening and applications to GIS
+the hierarchy of partitions closest locally w.r.t each class, to the input ground truth partition.</p>
+<ul>
+<li><p>Net opening and applications to GIS
 Function is defined on the contours while segment/regions are zero valued. 
-Thus a numerical function on the finest partition in fact defines a hierarchy of partitions.
-<br />
-<center>
-<img style="width: 270px; height: 180px; " alt="input saliency" src="images/arbsal.png" />
-<img style="width: 270px; height: 180px;" alt="1-distance funtion(Ground Truth Contours) " src="images/dist.png" />
-<img style="width: 270px; height: 180px;" alt="Net opening of Input saliency weighted by inverted distance function of ground truth" src="images/arbGTsal.png" />
-</center>
+Thus a numerical function on the finest partition in fact defines a hierarchy of partitions.</p>
 </li>
-
-<li> (left)L-opening: corner based opening that removes L configurations from k-d-trees to transform then into valid quad-tree partitions
-(right) Contour curvature weighted net openings
-</li>  
-<center><img style="width: 360px; height: 225px;" alt="L-angled" src="images/Lopen.png" /> &nbsp &nbsp &nbsp
-<img style="width: 360px; height: 225px;" alt="Curvature based" src="images/CurvatureOpen.png" />7
-</center>
-<li>Commune accessibility using distance maps of primary autoroutes in PACA -TBD<br />
-<center>
-<img style="width: 375px; height: 235px;" alt="PACA Autoroutes" src="images/PACA1.png" />
-<img style="width: 375px; height: 235px;" alt="Distance Function" src="images/PACA2.png" /><br>
-PACA Autoroutes and commune Contours &nbsp &nbsp &nbsp &nbsp &nbsp PACA Autoroutes Distance function
-
-<img style="width: 480px; height: 280px;" alt="Saliency Function" src="images/PACA3.png" /><br>
-Hierarchy of PACA Communes represented by saliency function on commune Contours
-</center> 
- <br/>
+</ul>
+<table class="imgtable"><tr><td>
+<img src="images/arbsal.png" alt="arbsal" width="270px" height="180px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/dist.png" alt="dist" width="270px" height="180px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/arbGTsal.png" alt="arbGTsal" width="270px" height="180px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<ul>
+<li><p>(left) L-opening: corner based opening that removes L configurations from k-d-trees to transform then into valid quad-tree partitions
+(right) Contour curvature weighted net openings</p>
 </li>
-
-<h3 style="color: rgb(151, 100, 100);text-align: center">Related Publications</h3>
-<ul>
-<li> Scale Space Operators on Hierarchies of Segmentations 
-B Ravi Kiran, Jean Serra &nbsp; SSVM 2013,[<a href="http://hal.archives-ouvertes.fr/hal-00802447/" target="_blank">PDF</a>]</li>
-<li> Ground truth energies for hierarchies of segmentations B. Ravi Kiran, Jean Serra, ISMM 2013 
-[<a href="http://hal.archives-ouvertes.fr/hal-00802453/" target="_blank">PDF</a>]</li>
-
-<li>Fusions of Ground Truths and of Hierarchies of Segmentations, B Ravi
-Kiran, Jean Serra, Pattern Recognition Letters 2014.[<a href = "www.sciencedirect.com/science/article/pii/S0167865514001457" target="blank">Link</a>]
-[<a href = "FusionGTPRLSlides-KIDICO-Feb2014.pdf" target="blank"> Slides</a>]</li>
 </ul>
-
-
-<h3 style="color: rgb(151, 100, 100);text-align: center">References</h3>
+<table class="imgtable"><tr><td>
+<img src="images/Lopen.png" alt="Lopen" width="360px" height="225px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/CurvatureOpen.png" alt="CurvatureOpen" width="360px" height="225px" />&nbsp;</td>
+<td align="left"></td></tr></table>
 <ul>
-  <li>Bottom-up Segmentation for Top-down Detection</li>
-  <li> Hierarchical Multi-Scale Supervoxel Matching using
-  Random Forests for Automatic Semi-Dense Abdominal
-  Image Registration </li>
+<li><p>Commune accessibility using distance maps of primary autoroutes in PACA -TBD</p>
+</li>
 </ul>
-
-
+<table class="imgtable"><tr><td>
+<img src="images/PACA1.png" alt="PACA Autoroutes" width="375px" height="235px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/PACA2.png" alt="PACA2 Distance Function" width="375px" height="235px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<table class="imgtable"><tr><td>
+<img src="images/PACA3.png" alt="PACA3 Saliency Function" width="480px" height="280px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<h2>Related Publications</h2>
+<ul>
+<li><p>Scale Space Operators on Hierarchies of Segmentations 
+B Ravi Kiran, Jean Serra &amp;nbsp; SSVM 2013,<a href="http://hal.archives-ouvertes.fr/hal-00802447/"" target=&ldquo;blank&rdquo;>PDF</a></p>
+</li>
+<li><p>Ground truth energies for hierarchies of segmentations B. Ravi Kiran, Jean Serra, ISMM 2013 
+<a href="http://hal.archives-ouvertes.fr/hal-00802453/"" target=&ldquo;blank&rdquo;>PDF</a></p>
+</li>
+</ul>
+<ul>
+<li><p>Fusions of Ground Truths and of Hierarchies of Segmentations, B Ravi
+Kiran, Jean Serra, Pattern Recognition Letters 2014.<a href="www.sciencedirect.com/science/article/pii/S0167865514001457" target=&ldquo;blank&rdquo;>Link</a>
+<a href="FusionGTPRLSlides-KIDICO-Feb2014.pdf" target=&ldquo;blank&rdquo;>Slides</a></p>
+</li>
+</ul>
+<h2>References</h2>
+<ul>
+<li><p>Bottom-up Segmentation for Top-down Detection</p>
+</li>
+<li><p>Hierarchical Multi-Scale Supervoxel Matching using
+Random Forests for Automatic Semi-Dense Abdominal
+Image Registration </p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2019-12-27 20:49:53 CET, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
-</body></html>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

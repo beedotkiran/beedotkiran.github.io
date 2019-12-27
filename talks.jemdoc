@@ -1,0 +1,29 @@
+# jemdoc: menu{MENU}{example.html}
+
+= B Ravi Kiran -- Technical Lead, ML, Navya
+
+== Talks/Seminars
+
+- Exploring applications of deep reinforcement learning for real-world autonomous driving systems : 
+[https://www.cognitive-vehicles.com/our-program Cognitive Vehicles 2019] at Berlin, 
+[https://drive.google.com/open?id=1wNrv3ONYjA259gqBdeIKzIvVhzrEjuug Slides]
+
+- Streaming multi-scale anomaly detection : INRIA Magnet May 2017 [slides_anomaly.pdf slides]
+
+- Energetic Lattices and braids : Icube Strasbourg Mar 2017, [slides_braids.pdf Slides]
+
+- Hierarchical clustering of HSI for tumor detection : Icube Strasbourg Mar 2017 [slides_hyperspectral.pdf slides]
+
+- Braids of Partitions at Indian Institute of Science (IISc) Aug 2016, [BraidsOfPartitions_IISc.pdf	 Slides] 
+
+- Constrained Optimization on Hierarchies of partitions, [http://cmm.ensmp.fr/ CMM] Jan 2015  [Braids-ReviewedJan2015CMM-PART-2.pdf Slides] 
+
+- Fusions of Ground Truths & Hierarchies, Journee ISS, Mines, Feb 2014 [FusionGTPRLSlides-KIDICO-Feb2014.pdf slides] 
+
+- Climbing energies & optimal cuts, UPC-GPI, Barcelona, [Barca-2013.pdf Slides] June 2013. 
+
+- Ground truth energies for hierarchies of partitions,  Journee ISS, Mines, Feb 2013 [Ground_truth_energies_ISS_Feb2013.pdf ISS PPT]
+
+- Saliency Transformation,  Atelier Doctorants, LIGM-A3SI-ESIEE Paris, Feb 2013 [Saliency Transformation_Atelier_Doctorants_Feb2013.pdf slides]
+
+- Optimization on hierarchies and GIS problems, Aug 2012 [OptHierarchies-IISc-2012-August.pdf slides]
