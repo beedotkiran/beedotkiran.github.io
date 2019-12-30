@@ -6,6 +6,15 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <title></title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -25,7 +34,7 @@
 <div class="menu-item"><a href="talks.html">Talks</a></div>
 <div class="menu-category">References</div>
 <div class="menu-item"><a href="drlad.html">DRLAD</a></div>
-<div class="menu-item"><a href="lidarad.html">LiDARAD</a></div>
+<div class="menu-item"><a href="https://github.com/beedotkiran/Lidar_For_AD_references/blob/master/README.md">LiDARAD</a></div>
 </td>
 <td id="layout-content">
 <h1>B Ravi Kiran &ndash; Technical Lead, ML, Navya</h1>
@@ -37,7 +46,7 @@ large amounts but in most cases contain little or no annotation for supervised l
 the state-of-the-art deep learning based methods for video anomaly detection and categorizes them based on the 
 type of model and criteria of detection. We also perform simple studies to understand the different approaches 
 and provide the criteria of evaluation for spatio-temporal anomaly detection. 
-<a href="https://beedotkiran.github.io/VideoAnomaly.html">Read More</a></p>
+<a href="https://beedotkiran.github.io/VideoAnomaly.html" target=&ldquo;blank&rdquo;>Read More</a></p>
 </td></tr></table>
 <h2>Random Forests Pruning - A Study </h2>
 <table class="imgtable"><tr><td>
@@ -47,7 +56,8 @@ This enables the evaluation of out-of-bag error which serves as a internal cross
 Our motivation lies in using the unsampled training samples to improve each decision tree in the ensemble. 
 We study the effect of using the out-of-bag samples to improve the generalization error first of the decision 
 trees and second the random forest by post-pruning. A preliminary empirical study on four UCI repository 
-datasets show consistent decrease in the size of the forests without considerable loss in accuracy. </p>
+datasets show consistent decrease in the size of the forests without considerable loss in accuracy. 
+<a href="https://beedotkiran.github.io/forest.html" target=&ldquo;blank&rdquo;>Read More</a></p>
 </td></tr></table>
 <h2>Time series anomalies detection</h2>
 <table class="imgtable"><tr><td>
@@ -57,7 +67,7 @@ making the algorithm scale invariant across a different types of time series wit
 structure. We explore different aggregation methods of the multi-scale anomaly score to obtain a final 
 anomaly score. We evaluate the performance on the Yahoo! and Numenta Anomaly Benchmark(NAB) datasets. </p>
 <ul>
-<li><p>Scattering 1-D</p>
+<li><p><a href="https://beedotkiran.github.io/forest.html" target=&ldquo;blank&rdquo;>Scattering 1-D</a>, <a href="https://beedotkiran.github.io/Anomaly.html" target=&ldquo;blank&rdquo;>Read More</a></p>
 </li>
 </ul>
 </td></tr></table>
@@ -67,7 +77,8 @@ anomaly score. We evaluate the performance on the Yahoo! and Numenta Anomaly Ben
 <td align="left"><p>Hyperspectral images of high spatial and spectral resolutions are employed to perform of brain tissue 
 segmentation for visualization of in-vivo images. We use hierarchical non-negative matrix factorization 
 H2NMF to identify the pure- pixel spectral signatures of blood, brain tissues, tumor and other 
-in-scene materials. A review of medical Hyperspectral Imaging is provided. </p>
+in-scene materials. A review of medical Hyperspectral Imaging is provided. 
+<a href="https://beedotkiran.github.io/HierarchRank2NMF_InvivoBrain.html" target=&ldquo;blank&rdquo;>Read more</a></p>
 </td></tr></table>
 <h2>Braids and energetic lattices</h2>
 <table class="imgtable"><tr><td>
@@ -77,28 +88,25 @@ Dynamic programming was used to calculate a greedy solution. The provisional opt
 uniqueness is formulated as a lattice. We expand the solution space from hierarchy to braids. 
 The largest partition family that preserves the energetic ordering and thus the DP substructure is defined. 
 Practically provide an intuitive way to combine multiple information sources in multivariate problems, 
-and accomodating for ground truth and machine segmentation variation. </p>
-<ul>
-<li><p>Read More</p>
-</li>
-</ul>
+and accomodating for ground truth and machine segmentation variation. 
+<a href="https://beedotkiran.github.io/Braids.html" target=&ldquo;blank&rdquo;>Read More</a></p>
 </td></tr></table>
 <h2>Multilabel optmization on hierarchies of segmentations </h2>
 <table class="imgtable"><tr><td>
 <img src="images/Hierarchy_multilabel_ex.png" alt="braids" width="600px" height="450px" />&nbsp;</td>
 <td align="left"><ul>
-<li><p>Study on energy minimization on hierarchies advised by <a href="https://www.frank-r-schmidt.de/">Frank R. Schmidt</a></p>
+<li><p>Study on energy minimization on hierarchies advised by <a href="https://www.frank-r-schmidt.de/" target=&ldquo;blank&rdquo;>Frank R. Schmidt</a></p>
 <ul>
 <li><p>Optimize over hierarchies of segmentations using Multi-label optimization using parent-child hierarchical costs </p>
 </li></ul>
 </li>
-<li><p>Preliminary Results and problem formulation : <a href="https://beedotkiran.github.io/Multi-labelingOptimizationOnHierarchiesResults43.pdf">slides</a></p>
+<li><p>Preliminary Results and problem formulation : <a href="https://beedotkiran.github.io/Multi-labelingOptimizationOnHierarchiesResults43.pdf" target=&ldquo;blank&rdquo;>slides</a></p>
 </li>
 <li><p>References: </p>
 <ul>
-<li><p>Minimizing Energies with Hierarchical Costs <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.447.1419&amp;rep=rep1&amp;type=pdf">pdf</a> </p>
+<li><p>Minimizing Energies with Hierarchical Costs <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.447.1419&amp;rep=rep1&amp;type=pdf" target=&ldquo;blank&rdquo;>pdf</a> </p>
 </li>
-<li><p>Interactive Segmentation with Super-Labels <a href="https://www.frank-r-schmidt.de/Publications/2011/DGSVB11/DGSVB11.pdf">pdf</a></p>
+<li><p>Interactive Segmentation with Super-Labels <a href="https://www.frank-r-schmidt.de/Publications/2011/DGSVB11/DGSVB11.pdf" target=&ldquo;blank&rdquo;>pdf</a></p>
 </li>
 </ul>
 
@@ -108,11 +116,11 @@ and accomodating for ground truth and machine segmentation variation. </p>
 <h2>Bibliography &amp; References </h2>
 <table class="imgtable"><tr><td>
 <img src="images/pyramids_mf_serra.png" alt="braids" width="600px" height="450px" />&nbsp;</td>
-<td align="left"><p><a href="https://sites.google.com/view/hierarchies-opt-bibliography/home">List of references during my PhD</a></p>
+<td align="left"><p><a href="https://sites.google.com/view/hierarchies-opt-bibliography/home" target=&ldquo;blank&rdquo;>List of references during my PhD</a></p>
 </td></tr></table>
 <div id="footer">
 <div id="footer-text">
-Page generated 2019-12-26 18:02:33 CET, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2019-12-30 19:39:55 CET, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </td>

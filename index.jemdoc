@@ -13,14 +13,13 @@
 
 == Workshops
 ~~~
-- Workshop Co-Organizer [https://sites.google.com/view/3d-dlad-v2-iv2020/home II 3D-DLAD workshop] at IV 2020 Las Vegas, US.
+- Workshop Co-Organizer [https://sites.google.com/view/3d-dlad-v2-iv2020/home 2nd 3D-DLAD workshop] at IV 2020 Las Vegas, US.
 - Workshop Co-Organizer [https://sites.google.com/view/dlad-bp-itsc2019/home DLAD-BP Workshop] at ITSC 2019, Auckland, NewZealand.
 - Speaker : [https://www.cognitive-vehicles.com/our-program Cognitive Vehicles 2019] at Berlin, [https://drive.google.com/open?id=1wNrv3ONYjA259gqBdeIKzIvVhzrEjuug Slides]
 - Workshop Co-Organizer : [https://sites.google.com/view/dlad-bp-itsc2019/home 3D-DLAD workshop] at IV 2019 Paris, France
 ~~~
-
-== Domains
-=== Current : 
+ 
+== Current Domains
 ~~~
 - Real-time Adaptive background subtraction with Rejection Cascades [https://arxiv.org/abs/1705.09339 paper], 
 - Reinforcement Learning for autonomous driving [https://drive.google.com/open?id=1wNrv3ONYjA259gqBdeIKzIvVhzrEjuug Slides] 
@@ -29,7 +28,7 @@
 - Deep learning for Video anomaly detection [https://beedotkiran.github.io/VideoAnomaly.html Project], 
 ~~~
 
-=== Older Domains : 
+=== Older Domains 
 ~~~
 - CC Pruning of Random forests [https://beedotkiran.github.io/forest.html Project], 
 - Multiscale online TS anomaly detection [https://beedotkiran.github.io/Anomaly.html Project], 
@@ -45,9 +44,9 @@
 == Service 
 Journal/Conference Reviewer
 ~~~
-CIARP 2012, ISMM 2013/15, PR Letters 2013/15/16, ICIP 2014, 
-ITSC 2016, MSSP 2017, ICVES 2017,IROS 2017, TIP 2017, 
-NIPS2017 LLD,ITSC 2018, PR 2018/19, ALA 2018, ITSC 2019
+CIARP 2012, ICIP 2014, ICVES 2017, ISMM 2013-15-17-19, IROS 2017, TIP 2017, NeurIPS2017W-LLD, ITSC 2018,  
+[http://ala2018.it.nuigalway.ie/ ALA 2018], ITSC 2016-18-19, PR Letters 2013-15-16-19, PR 2018-19,
+[https://lld-workshop.github.io/ NeurIPS2019W-LLD], [http://ecai2020.eu/ ECAI 2020]
 ~~~
 
 === Experience

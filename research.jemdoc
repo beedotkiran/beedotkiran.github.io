@@ -24,6 +24,7 @@ Our motivation lies in using the unsampled training samples to improve each deci
 We study the effect of using the out-of-bag samples to improve the generalization error first of the decision 
 trees and second the random forest by post-pruning. A preliminary empirical study on four UCI repository 
 datasets show consistent decrease in the size of the forests without considerable loss in accuracy. 
+[https://beedotkiran.github.io/forest.html Read More]
 ~~~
 
 == Time series anomalies detection
@@ -33,7 +34,7 @@ We develop a multi-scale streaming anomaly score that takes into account a famil
 making the algorithm scale invariant across a different types of time series with varying pseudo-periodic 
 structure. We explore different aggregation methods of the multi-scale anomaly score to obtain a final 
 anomaly score. We evaluate the performance on the Yahoo! and Numenta Anomaly Benchmark(NAB) datasets. 
-- Scattering 1-D
+- [https://beedotkiran.github.io/forest.html Scattering 1-D], [https://beedotkiran.github.io/Anomaly.html Read More]
 ~~~
 
 == Tumor detection in Hyperspectral images 
@@ -45,6 +46,7 @@ Hyperspectral images of high spatial and spectral resolutions are employed to pe
 segmentation for visualization of in-vivo images. We use hierarchical non-negative matrix factorization 
 H2NMF to identify the pure- pixel spectral signatures of blood, brain tissues, tumor and other 
 in-scene materials. A review of medical Hyperspectral Imaging is provided. 
+[https://beedotkiran.github.io/HierarchRank2NMF_InvivoBrain.html Read more]
 ~~~
 
 == Braids and energetic lattices
@@ -57,7 +59,7 @@ uniqueness is formulated as a lattice. We expand the solution space from hierarc
 The largest partition family that preserves the energetic ordering and thus the DP substructure is defined. 
 Practically provide an intuitive way to combine multiple information sources in multivariate problems, 
 and accomodating for ground truth and machine segmentation variation. 
-- Read More
+[https://beedotkiran.github.io/Braids.html Read More]
 ~~~
 
 == Multilabel optmization on hierarchies of segmentations 
