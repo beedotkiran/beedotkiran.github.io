@@ -21,10 +21,12 @@
  
 == Current Domains
 ~~~
+- Deep Reinforcement Learning for Autonomous Driving: A Survey *Expected 2020* 
+[https://arxiv.org/abs/2002.00444 Preprint], [https://drive.google.com/open?id=1wNrv3ONYjA259gqBdeIKzIvVhzrEjuug Slides]
+- 3D-Deep learning for pointclouds 
 - Real-time Adaptive background subtraction with Rejection Cascades [https://arxiv.org/abs/1705.09339 paper], 
-- Reinforcement Learning for autonomous driving [https://drive.google.com/open?id=1wNrv3ONYjA259gqBdeIKzIvVhzrEjuug Slides] 
+- Reinforcement Learning for autonomous driving  
 - Multi-task learning architectures for Autonomous driving
-- Deep learning for Autonomous Driving : Computer vision and Lidar pointcloud processing tasks
 - Deep learning for Video anomaly detection [https://beedotkiran.github.io/VideoAnomaly.html Project], 
 ~~~
 
