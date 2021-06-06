@@ -11,20 +11,25 @@
 - CVs [https://beedotkiran.github.io/cvRaviKiran_1page.pdf 1page], [https://beedotkiran.github.io/cvRaviKiran.pdf EN], [https://beedotkiran.github.io/cvRaviKiran_fr.pdf FR]
 ~~~
 
-== Workshops
+== Workshops Organisation & Speaker
 ~~~
-- Workshop Co-Organizer [https://sites.google.com/view/cofed-dlad-2020/home CoFED-DLAD 2020 workshop] at ITSC 2020 Rhodes, Greece.
-- Workshop Co-Organizer [https://sites.google.com/view/3d-dlad-v2-iv2020/home 2nd 3D-DLAD workshop] at IV 2020 Las Vegas, US.
-- Workshop Co-Organizer [https://sites.google.com/view/dlad-bp-itsc2019/home DLAD-BP Workshop] at ITSC 2019, Auckland, NewZealand.
-- Speaker : [https://www.cognitive-vehicles.com/our-program Cognitive Vehicles 2019] at Berlin, [https://drive.google.com/open?id=1wNrv3ONYjA259gqBdeIKzIvVhzrEjuug Slides]
-- Workshop Co-Organizer : [https://sites.google.com/view/dlad-bp-itsc2019/home 3D-DLAD workshop] at IV 2019 Paris, France
+- Speaker : Real world data augmentations for perception tasks in autonomous driving [https://www.auto-ai.eu/speaker Auto.AI 2021] Berlin
+- Workshop Co-Organizer [https://sites.google.com/view/3d-dlad-v3-iv2021/home 3D-DLAD 2021 workshop] IV 2021 Nagoya, Japan.
+- Workshop Co-Organizer [https://sites.google.com/view/cofed-dlad-2020/home CoFED-DLAD 2020 workshop] ITSC 2020 Rhodes, Greece.
+- Workshop Co-Organizer [https://sites.google.com/view/3d-dlad-v2-iv2020/home 2nd 3D-DLAD workshop] IV 2020 Las Vegas, US.
+- Workshop Co-Organizer [https://sites.google.com/view/dlad-bp-itsc2019/home DLAD-BP Workshop] ITSC 2019, Auckland, NewZealand.
+- Speaker : Exploring applications of deep reinforcement learning for real-world autonomous driving systems
+ [https://www.cognitive-vehicles.com/our-program Cognitive Vehicles 2019] Berlin, 
+ [https://beedotkiran.github.io/DRLAD_ExploringApplicationsTalk2019_CognitiveVehicles.pdf Slides]
+- Workshop Co-Organizer : [https://sites.google.com/view/dlad-bp-itsc2019/home 3D-DLAD workshop] IV 2019 Paris, France
 ~~~
  
 == Current Domains
 ~~~
-- Deep Reinforcement Learning for Autonomous Driving: A Survey *Expected 2020* 
-[https://arxiv.org/abs/2002.00444 Preprint], [https://drive.google.com/open?id=1wNrv3ONYjA259gqBdeIKzIvVhzrEjuug Slides]
-- 3D-Deep learning for pointclouds 
+- Exploring 2D Data Augmentation for 3D Monocular Object Detection 2021 [https://arxiv.org/abs/2104.10786 pdf]
+- Deep Reinforcement Learning for Autonomous Driving: A Survey ([https://ieeexplore.ieee.org/document/9351818 Transactions ITS 2021],
+[https://arxiv.org/abs/2002.00444 Preprint], [https://beedotkiran.github.io/DRLAD_ExploringApplicationsTalk2019_CognitiveVehicles.pdf Slides])
+- 3D-Deep learning for pointclouds, domain adaptation, simulation-to-real, data augmentatations on pointclouds
 - Real-time Adaptive background subtraction with Rejection Cascades [https://arxiv.org/abs/1705.09339 paper], 
 - Reinforcement Learning for autonomous driving  
 - Multi-task learning architectures for Autonomous driving
