@@ -16,14 +16,11 @@ Technical Lead, Machine learning, Navya
 - Oct'11-Oct'14 : PhD A3SI-LIGM, Univ. Paris-Est
 
 ## Workshops Organisation 
-- Workshop Co-Organizer [3D-DLAD-v4 2021 workshop](https://sites.google.com/view/3d-dlad-v4-iv2022/schedule) at the [IV 2022](https://iv2022.com/) conference held at Aachen, Germany.
+- Workshop Co-Organizer [3D-DLAD-v4 2021 workshop](https://sites.google.com/view/3d-dlad-v4-iv2022/schedule) at [IV 2022](https://iv2022.com/) Aachen, Germany.
 - Workshop Co-Organizer [3D-DLAD 2021 workshop](https://sites.google.com/view/3d-dlad-v3-iv2021/home) IV 2021 Nagoya, Japan.
 - Workshop Co-Organizer [CoFED-DLAD 2020 workshop](https://sites.google.com/view/cofed-dlad-2020/home) ITSC 2020 Rhodes, Greece.
 - Workshop Co-Organizer [2nd 3D-DLAD workshop](https://sites.google.com/view/3d-dlad-v2-iv2020/home) IV 2020 Las Vegas, US.
 - Workshop Co-Organizer [DLAD-BP Workshop](https://sites.google.com/view/dlad-bp-itsc2019/home) at ITSC 2019, Auckland, NewZealand.
-- Exploring applications of deep RL for real-world autonomous driving systems
- [Speaker Cognitive Vehicles 2019](https://www.cognitive-vehicles.com/our-program) Berlin, 
- [Slides](https://beedotkiran.github.io/files/DRLAD_ExploringApplicationsTalk2019_CognitiveVehicles.pdf)
 - Workshop Co-Organizer : [3D-DLAD workshop](https://sites.google.com/view/dlad-bp-itsc2019/home) at IV 2019 Paris, France
 
 ## Current Domains
@@ -33,8 +30,11 @@ Technical Lead, Machine learning, Navya
 - Exploring 2D Data Augmentation for 3D Monocular Object Detection 2021 [pdf](https://arxiv.org/abs/2104.10786)
 - Deep Reinforcement Learning for Autonomous Driving: A Survey ([Transactions-ITS 2021](https://ieeexplore.ieee.org/document/9351818),
 [Preprint](https://arxiv.org/abs/2002.00444), [Slides](https://beedotkiran.github.io/files/DRLAD_ExploringApplicationsTalk2019_CognitiveVehicles.pdf))
+- Exploring applications of deep RL for real-world autonomous driving systems
+ [Speaker Cognitive Vehicles 2019](https://www.cognitive-vehicles.com/our-program) Berlin, 
+ [Slides](https://beedotkiran.github.io/files/DRLAD_ExploringApplicationsTalk2019_CognitiveVehicles.pdf)
 - LiDAR for Autonomous Driving literature survey [Updated Survey](https://github.com/beedotkiran/Lidar_For_AD_references/blob/master/README.md)
-- Multi-task learning architectures for Autonomous driving
+- Multi-task learning architectures for Autonomous driving, Joint work with Hao Liu & Thomas Gauthier
 
 ### Older Domains 
 - CC Pruning of Random forests [Project](https://beedotkiran.github.io/forest.html), 
