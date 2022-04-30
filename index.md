@@ -174,7 +174,3 @@ workshop IEEE Intelligent Vehicles Symposium (IV’19) - Paris, France, June 9-1
 - Jean-Emmanuel Deschaud, MINES ParisTech, France
 - Kuo-Chin Lien, Appen USA
 - Naveen Shankar Nagaraja, BMW Group, Munich
-
-- Thesis Resume : [ResumeThesis.pdf EN], [ResumeTheseFr.pdf FR]
-- Thesis manuscript : [https://hal.archives-ouvertes.fr/LIGM_A3SI/tel-01126842v1 thesis.fr] 
-- Defense presentation : [https://beedotkiran.github.io/DefenseSlidesOct2014-EnergeticLattices.pdf slides]
