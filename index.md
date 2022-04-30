@@ -28,15 +28,13 @@ Technical Lead, Machine learning, Navya
 
 ## Current Domains
 - LiDAR dataset distillation within bayesian active learning framework: Understanding the effect of data augmentation [pdf](https://arxiv.org/abs/2202.02661)
+- 3D-Deep learning for pointclouds, domain adaptation, simulation-to-real, data augmentatations on pointclouds
 - Real world data augmentations for perception tasks in autonomous driving [Speaker Auto.AI 2021](https://www.auto-ai.eu/speaker) Berlin, [Slides](https://beedotkiran.github.io/files/Navya_Auto_AI_Sept_2021.pdf)
 - Exploring 2D Data Augmentation for 3D Monocular Object Detection 2021 [pdf](https://arxiv.org/abs/2104.10786)
 - Deep Reinforcement Learning for Autonomous Driving: A Survey ([Transactions-ITS 2021](https://ieeexplore.ieee.org/document/9351818),
 [Preprint](https://arxiv.org/abs/2002.00444), [Slides](https://beedotkiran.github.io/files/DRLAD_ExploringApplicationsTalk2019_CognitiveVehicles.pdf))
-- 3D-Deep learning for pointclouds, domain adaptation, simulation-to-real, data augmentatations on pointclouds
 - LiDAR for Autonomous Driving literature survey [Updated Survey](https://github.com/beedotkiran/Lidar_For_AD_references/blob/master/README.md)
-- Real-time Adaptive background subtraction with Rejection Cascades [paper](https://arxiv.org/abs/1705.09339),   
 - Multi-task learning architectures for Autonomous driving
-- Deep learning for Video anomaly detection [Project](https://beedotkiran.github.io/VideoAnomaly.html) 
 
 ### Older Domains 
 - CC Pruning of Random forests [Project](https://beedotkiran.github.io/forest.html), 
@@ -70,8 +68,8 @@ A. Lepoutre, G. Trehard, *ECCVW 2018, AutoNUE* [pdf](https://arxiv.org/abs/1809.
 - Cost-complexity pruning of random forests, B Ravi Kiran, J. Serra, 
 [pdf](https://arxiv.org/abs/1703.05430), [poster](pruning_posterISMM2017.pdf), 
 [git](https://github.com/beedotkiran/randomforestpruning-ismm-2017) *ISMM 2017*
-- A Novel Framework for Brain Cancer Detection based on Spatial-Spectral Hyperspectral Image Classification, H. Fabelo, et al. (4th author) *DCIS 2016*
-- Spatio-Spectral Classification of Hyperspectral Images based on Supervised and Unsupervised Methods for Brain Cancer Detection, S. Ortega et al. (3rd author) *DCIS 2016*
+- Brain Cancer Detection based on Spatial-Spectral Hyperspectral Image Classification, H. Fabelo, et al. *DCIS 2016*
+- Spatio-Spectral Classification of Hyperspectral Images for Brain Cancer Detection, S. Ortega et al. *DCIS 2016*
 - Digitization of partitions and tessellations, J. Serra and B. Ravi Kiran, *DGCI 2016* 
 [HAL](https://hal.archives-ouvertes.fr/hal-01306414), [Slides](https://hal.archives-ouvertes.fr/hal-01306414/file/Serra_Kiran_DGCI2016.pdf)
 - Unsupervised clustering of hyperspectral images of brain tissues by hierarchical non-negative matrix factorization,
@@ -103,14 +101,13 @@ B Ravi Kiran, Y Senthil Kumar, Anoop K P, K R Ramakrishnan, *NCC 2011* [pdf](htt
 
 ## Journals
 [Google Scholar Page](scholar.google.co.in/citations?user=qvXusvwAAAAJ) for complete list.
-
-- Deep Reinforcement Learning for Autonomous Driving: A Survey [Transactions ITS 2021](https://ieeexplore.ieee.org/document/9351818), [https://arxiv.org/abs/2002.00444 Preprint], B Ravi Kiran et al.
+- Deep Reinforcement Learning for Autonomous Driving: A Survey [Transactions ITS 2021](https://arxiv.org/abs/2002.00444), B Ravi Kiran et al.
 - An overview of deep learning based methods for unsupervised and semi-supervised anomaly detection in videos. Journal of Imaging (2018) B Ravi Kiran, Dilip Thomas, and Ranjith Parakkal [pdf](https://www.mdpi.com/2313-433X/4/2/36/pdf). 
-- An Intraoperative Visualization System Using Hyperspectral Imaging to Aid in Brain Tumor Delineation, H. Fabelo et. al. [pdf](www.mdpi.com/1424-8220/18/2/430/pdf), Sensors, MDPI, Jan 2018.
-- Spatio-spectral classification of hyperspectral images for brain cancer detection during surgical operations, H. Fabelo et al. PLOS ONE 2018 [link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0193721)
+- Intraoperative Hyperspectral Imaging to Aid Brain Tumor Delineation, H. Fabelo et. al. [pdf](www.mdpi.com/1424-8220/18/2/430/pdf), Sensors, MDPI, Jan 2018.
+- Spatio-spectral classification of hyperspectral images for brain cancer detection H. Fabelo et al. PLOS ONE 2018 [link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0193721)
 - Intra-operative hyperspectral imaging for brain tumour detection and delineation: Current progress on the HELICoid project, S Kabwama, et. al., Journal of Surgery 2016
 - Fusions of ground truths & hierarchies, B Ravi Kiran, J. Serra, Pattern Recognition. Letters 2014. [link](www.sciencedirect.com/science/article/pii/S0167865514001457) 
-- Global-local optimizations by hierarchical cuts & climbing B Ravi Kiran, J. Serra, Pattern Recognition 2014. [https://www.sciencedirect.com/science/article/abs/pii/S0031320313002161?via%3Dihub link]
+- Global-local optimizations by hierarchical cuts & climbing B Ravi Kiran, J. Serra, Pattern Recognition 2014. [link](https://www.sciencedirect.com/science/article/abs/pii/S0031320313002161?via%3Dihub)
 
 ## Journal and Conference Reviewer, Associate Editor 
 CIARP 2012, ISMM 2013-15-17-19, ICIP 2014, ICVES 2017, TIP 2017, NeurIPS2017W-LLD, 
@@ -131,31 +128,25 @@ By Lentin Joseph, Amit Kumar Mondal
 
 ## Deep Learning for AD Workshops Series
 - YouTube [Channel](https://www.youtube.com/channel/UCRJxcVElG-p_VgoqOiGe-Rw/about)
-
 - [III 3D-DLAD workshop](https://sites.google.com/view/3d-dlad-v3-iv2021), 7th Edition of Deep Learning for Automated Driving (DLAD) 
 workshop IEEE Intelligent Vehicles Symposium (IV’2020) at Las Vegas, United States, 
     -- *Organizers* : B Ravi Kiran, [Y Senthil Kumar](https://www.linkedin.com/in/senthilyogamani/?originalSubdomain=ie), [Abhinav Valada](https://rl.uni-freiburg.de/people/valada) with DLAD team
-    
 - [II 3D-DLAD workshop](https://sites.google.com/view/3d-dlad-v2-iv2020/home), 6th Edition of Deep Learning for Automated Driving (DLAD) 
 workshop IEEE Intelligent Vehicles Symposium (IV’2020) at Las Vegas, United States, 
     -- *Organizers* : B Ravi Kiran, Y Senthil Kumar, with DLAD team
-
 - [CoFED-DLAD 2020 workshop](https://sites.google.com/view/cofed-dlad-2020/home), 5th Edition of Deep Learning for Automated Driving (DLAD), Collaborative Perception & Federated ML for Autonomous Driving
 workshop Intelligent Transportation Systems Conference [ITSC’2020](https://www.ieee-itsc2020.org/) at Rhodes, Greece. 
-    -- *Organizers* : B. Ravi Kiran, Naveen Shankar Nagaraja, Senthil Yogamani, Konstantinos Moustakasm Victor Vaquero,  
-    -- Patrick Perez, Bharanidhar Duraisamy, Dan Levi, Felix Friedmann, Lars Kunze, Markus Enzweiler, Ahmad El Sallab, Ravishankar Sivalingam, Stefan Milz, Sumanth Chennupati
-
+    - *Organizers* : B. Ravi Kiran, Naveen Shankar Nagaraja, Senthil Yogamani, Konstantinos Moustakasm Victor Vaquero,  
+    - Patrick Perez, Bharanidhar Duraisamy, Dan Levi, Felix Friedmann, Lars Kunze, Markus Enzweiler, Ahmad El Sallab, Ravishankar Sivalingam, Stefan Milz, Sumanth Chennupati
 - [II 3D-DLAD workshop](https://sites.google.com/view/3d-dlad-v2-iv2020/home), 4th Edition of Deep Learning for Automated Driving (DLAD) 
 workshop IEEE Intelligent Vehicles Symposium (IV’2020) at Las Vegas, United States, 
-    -- *Organizers* : Victor Vaquero, Sumanth Chennupati, B. Ravi Kiran, Senthil Yogamani, Patrick Perez, Bharanidhar Duraisamy, Dan Levi, Felix Friedmann, Lars Kunze, Markus Enzweiler, Ahmad El Sallab, Ravishankar Sivalingam, Stefan Milz, 
-
+    - *Organizers* : Victor Vaquero, Sumanth Chennupati, B. Ravi Kiran, Senthil Yogamani, Patrick Perez, Bharanidhar Duraisamy, Dan Levi, Felix Friedmann, Lars Kunze, Markus Enzweiler, Ahmad El Sallab, Ravishankar Sivalingam, Stefan Milz, 
 - [DLAD-BP 2019](https://sites.google.com/view/dlad-bp-itsc2019/), 3rd Edition of Deep Learning for Automated Driving (DLAD) workshop 
 at Intelligent Transportation Systems Conference [ITSC’19](https://www.itsc2019.org/) - NewZealand, Auckland, 27-30 Oct, 2019, 
-    -- *Organizers* :  Senthil Yogamani, B. Ravi Kiran, Victor Vaquero, Patrick Perez, Bharanidhar Duraisamy, Dan Levi, Felix Friedmann, Lars Kunze, Markus Enzweiler, Ahmad El Sallab, Ravishankar Sivalingam, Stefan Milz, Sumanth Chennupati
-
-- [https://sites.google.com/view/3d-dlad-iv2019/ 3D-DLAD 2019], 2nd Edition of Deep Learning for Automated Driving (DLAD) 
+    - *Organizers* :  Senthil Yogamani, B. Ravi Kiran, Victor Vaquero, Patrick Perez, Bharanidhar Duraisamy, Dan Levi, Felix Friedmann, Lars Kunze, Markus Enzweiler, Ahmad El Sallab, Ravishankar Sivalingam, Stefan Milz, Sumanth Chennupati
+- [3D-DLAD 2019](https://sites.google.com/view/3d-dlad-iv2019/), 2nd Edition of Deep Learning for Automated Driving (DLAD) 
 workshop IEEE Intelligent Vehicles Symposium (IV’19) - Paris, France, June 9-12, 2019, 
-    -- *Organizers* : Victor Vaquero, B. Ravi Kiran, Senthil Yogamani, Patrick Perez, Bharanidhar Duraisamy, Dan Levi, Felix Friedmann, Lars Kunze, Markus Enzweiler, Ahmad El Sallab, Ravishankar Sivalingam, Stefan Milz, Sumanth Chennupati
+    - *Organizers* : Victor Vaquero, B. Ravi Kiran, Senthil Yogamani, Patrick Perez, Bharanidhar Duraisamy, Dan Levi, Felix Friedmann, Lars Kunze, Markus Enzweiler, Ahmad El Sallab, Ravishankar Sivalingam, Stefan Milz, Sumanth Chennupati
  
 **DLAD Team**
 - B Ravi Kiran, Navya, France
