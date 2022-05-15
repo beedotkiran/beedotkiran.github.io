@@ -20,6 +20,7 @@ Technical Lead, Machine learning, Navya
 - Dec'15-Nov'16 : Post-doc DATA-ENS Paris & ThalesAlenia Space, 
 - Nov'14-Nov'15 : Post-Doc CAOR Mines ParisTech & Helicoid, 
 - Oct'11-Oct'14 : PhD A3SI-LIGM, Univ. Paris-Est
+
 ### Industry
 - Nov'18 - Now  : ML/DL Technical Lead, Navya
 - Jan'18-Oct'18 : R&D Engineer, Autonomous Systems, AKKA Technologies, 
