@@ -4,6 +4,7 @@ email: beedotkiran@gmail.com
 fixed_navbar: top
 permalink: pretty
 paginate: 5
+paginate_path: "/Workshops/page:num"
 
 plugins:
   - jekyll-sitemap
