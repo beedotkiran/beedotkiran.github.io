@@ -1,6 +1,4 @@
-- name: Home
-  link: index.md
 - name: Workshops
-  link: workshop.md
+  link: /Workshops/workshops.md
 - name : Publications
-  link : pub.md
+  link : /Publications/pub.md
