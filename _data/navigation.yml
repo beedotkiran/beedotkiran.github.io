@@ -1,4 +1,8 @@
 - name: Workshops
-  link: /Workshops/
+  layout: page
+  link: /Workshops/workshops.md
+  title: Workshops
 - name : Publications
-  link : /Publications/
+  layout: page
+  link : /Publications/pubs.md
+  title: Publications
