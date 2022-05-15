@@ -1,0 +1,6 @@
+- name: Home
+  link: index.md
+- name: Workshops
+  link: workshop.md
+- name : Publications
+  link : pub.md
