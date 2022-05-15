@@ -5,14 +5,6 @@ Technical Lead, Machine learning, Navya
 - [LinkedIn](https://www.linkedin.com/in/b-ravi-kiran-b246968/), [Twitter](https://twitter.com/beedotkiran), [Scholar](http://scholar.google.co.in/citations?user=qvXusvwAAAAJ)
 - CVs [1page](https://beedotkiran.github.io/files/cvRaviKiran_1page.pdf), [EN](https://beedotkiran.github.io/files/cvRaviKiran.pdf), [FR](https://beedotkiran.github.io/files/cvRaviKiran_fr.pdf)
 
-## Deep Learning for AD Workshops Series YouTube [Channel](https://www.youtube.com/channel/UCRJxcVElG-p_VgoqOiGe-Rw/videos)
-   - Workshop Co-Organizer [3D-DLAD-v4 2021 workshop](https://sites.google.com/view/3d-dlad-v4-iv2022/schedule) at [IV 2022](https://iv2022.com/) Aachen, Germany.
-   - Workshop Co-Organizer [3D-DLAD 2021 workshop](https://sites.google.com/view/3d-dlad-v3-iv2021/home) IV 2021 Nagoya, Japan.
-   - Workshop Co-Organizer [CoFED-DLAD 2020 workshop](https://sites.google.com/view/cofed-dlad-2020/home) ITSC 2020 Rhodes, Greece.
-   - Workshop Co-Organizer [2nd 3D-DLAD workshop](https://sites.google.com/view/3d-dlad-v2-iv2020/home) IV 2020 Las Vegas, US.
-   - Workshop Co-Organizer [DLAD-BP Workshop](https://sites.google.com/view/dlad-bp-itsc2019/home) at ITSC 2019, Auckland, NewZealand.
-   - Workshop Co-Organizer : [3D-DLAD workshop](https://sites.google.com/view/dlad-bp-itsc2019/home) at IV 2019 Paris, France
-
 ## Experience
 
 ### Academia
@@ -51,3 +43,10 @@ Technical Lead, Machine learning, Navya
 [Def. Slides](https://beedotkiran.github.io/files/DefenseSlidesOct2014-EnergeticLattices.pdf), 
 - Multilabel optimization and graphcuts for image segmentation
 
+## Deep Learning for AD Workshops Series YouTube [Channel](https://www.youtube.com/channel/UCRJxcVElG-p_VgoqOiGe-Rw/videos)
+- Workshop Co-Organizer [3D-DLAD-v4 2021 workshop](https://sites.google.com/view/3d-dlad-v4-iv2022/schedule) at [IV 2022](https://iv2022.com/) Aachen, Germany.
+- Workshop Co-Organizer [3D-DLAD 2021 workshop](https://sites.google.com/view/3d-dlad-v3-iv2021/home) IV 2021 Nagoya, Japan.
+- Workshop Co-Organizer [CoFED-DLAD 2020 workshop](https://sites.google.com/view/cofed-dlad-2020/home) ITSC 2020 Rhodes, Greece.
+- Workshop Co-Organizer [2nd 3D-DLAD workshop](https://sites.google.com/view/3d-dlad-v2-iv2020/home) IV 2020 Las Vegas, US.
+- Workshop Co-Organizer [DLAD-BP Workshop](https://sites.google.com/view/dlad-bp-itsc2019/home) at ITSC 2019, Auckland, NewZealand.
+- Workshop Co-Organizer : [3D-DLAD workshop](https://sites.google.com/view/dlad-bp-itsc2019/home) at IV 2019 Paris, France
