@@ -3,13 +3,12 @@ tagline: B Ravi Kiran
 email: beedotkiran@gmail.com
 fixed_navbar: top
 permalink: pretty
-
+markdown: GFM
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-feed
   - jekyll-seo-tag
-  - kramdown-parser-gfm
   - jekyll-redirect-from
 
 livereload: true
