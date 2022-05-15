@@ -4,7 +4,7 @@
 ## Conferences
 - Simulation-to-Reality domain adaptation for offline 3D object annotation on pointclouds with correlation alignment, IMPROVE 2022 [pdf](https://arxiv.org/abs/2202.02666)
 - Reducing redundancy in Semantic-KITTI: Study on data augmentations within Active Learning Anh et al. 
-[http://bayesiandeeplearning.org/ BDL Workshop NeurIPS 2021]
+[http://bayesiandeeplearning.org/](BDL Workshop NeurIPS 2021)
 - Self-Supervised 3D Monocular Object Detection by Recycling Bounding Boxes,  Sugirtha T et al. [pdf](https://sslad2021.github.io/files/17.pdf)
 ICCV Workshop on [SSLAD 2021](https://sslad2021.github.io/)
 - Rejection-Cascade of Gaussians: Real-time adaptive background subtraction framework *NCVPRIG 2019*, 
