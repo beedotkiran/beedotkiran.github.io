@@ -6,19 +6,13 @@ Technical Lead, Machine learning, Navya
 - CVs [1page](https://beedotkiran.github.io/files/cvRaviKiran_1page.pdf), [EN](https://beedotkiran.github.io/files/cvRaviKiran.pdf), [FR](https://beedotkiran.github.io/files/cvRaviKiran_fr.pdf)
 
 ## Experience
+| Academia                                                      	| Industry                                                                        	|
+|---------------------------------------------------------------	|---------------------------------------------------------------------------------	|
+| Oct’16-Aug’17 : ATER Université Lille 3 & CRISTAL,            	| Nov’18 - Now : ML/DL for perception Technical Lead, Navya                       	|
+| Dec’15-Nov’16 : Post-doc DATA-ENS Paris & ThalesAlenia Space, 	| Jan’18-Oct’18 : R&D Engineer, Autonomous Systems, AKKA Technologies             	|
+| Nov’14-Nov’15 : Post-Doc CAOR Mines ParisTech & Helicoid      	| May’17-Dec’17 : Vision & deep learning consultant Uncanny Vision                	|
+| Oct’11-Oct’14 : PhD A3SI-LIGM, Univ. Paris-Est                	| Aug’08-Feb’10 : Embedded Software Engineer, Texas Instruments, Bangalore, India 	|
 
-### Academia
-- Oct'16-Aug'17 : ATER Université Lille 3 & CRISTAL, 
-- Dec'15-Nov'16 : Post-doc DATA-ENS Paris & ThalesAlenia Space, 
-- Nov'14-Nov'15 : Post-Doc CAOR Mines ParisTech & Helicoid, 
-- Oct'11-Oct'14 : PhD A3SI-LIGM, Univ. Paris-Est
-
-### Industry
-- Nov'18 - Now  : ML/DL Technical Lead, Navya
-- Jan'18-Oct'18 : R&D Engineer, Autonomous Systems, AKKA Technologies, 
-- May'17-Dec'17 : Vision & deep learning consultant Uncanny Vision, 
-- Aug'08-Feb'10 : Embedded Software Engineer, Texas Instruments, Bangalore, India
- 
 ## Current Domains
 - LiDAR dataset distillation within bayesian active learning framework: Understanding the effect of data augmentation [pdf](https://arxiv.org/abs/2202.02661)
 - 3D-Deep learning for pointclouds, domain adaptation, simulation-to-real, data augmentatations on pointclouds
