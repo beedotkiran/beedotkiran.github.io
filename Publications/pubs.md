@@ -4,10 +4,10 @@
 ## Conferences
 - Simulation-to-Reality domain adaptation for offline 3D object annotation on pointclouds with correlation alignment, IMPROVE 2022 [pdf](https://arxiv.org/abs/2202.02666)
 - Reducing redundancy in Semantic-KITTI: Study on data augmentations within Active Learning Anh et al. 
-[http://bayesiandeeplearning.org/](BDL Workshop NeurIPS 2021)
+[BDL Workshop NeurIPS 2021](http://bayesiandeeplearning.org/2021/papers/75.pdf)
 - Self-Supervised 3D Monocular Object Detection by Recycling Bounding Boxes,  Sugirtha T et al. [pdf](https://sslad2021.github.io/files/17.pdf)
 ICCV Workshop on [SSLAD 2021](https://sslad2021.github.io/)
-- Rejection-Cascade of Gaussians: Real-time adaptive background subtraction framework *NCVPRIG 2019*, 
+- Rejection-Cascade of Gaussians: Real-time adaptive background subtraction *NCVPRIG 2019*, 
 B Ravi Kiran, Arindam Das, Senthil Yogamani [pdf](https://arxiv.org/abs/1705.09339), 
 [poster](DeepRejectionCascade_NCVPRIG2019_Poster.pdf)
 - Exploring applications of deep reinforcement learning for real-world autonomous driving systems, 
@@ -25,7 +25,7 @@ A. Lepoutre, G. Trehard, *ECCVW 2018, AutoNUE* [pdf](https://arxiv.org/abs/1809.
 - Spatio-Spectral Classification of Hyperspectral Images for Brain Cancer Detection, S. Ortega et al. *DCIS 2016*
 - Digitization of partitions and tessellations, J. Serra and B. Ravi Kiran, *DGCI 2016* 
 [HAL](https://hal.archives-ouvertes.fr/hal-01306414), [Slides](https://hal.archives-ouvertes.fr/hal-01306414/file/Serra_Kiran_DGCI2016.pdf)
-- Unsupervised clustering of hyperspectral images of brain tissues by hierarchical non-negative matrix factorization,
+- Unsupervised clustering of hyperspectral images of brain by hierarchical NMF,
 B Ravi Kiran, B. Stanciulescu, [J. Angulo](http://cmm.ensmp.fr/~angulo/), *BIOIMAGING 2016* ,
 [Poster](H2NMF_BrainPoster.pdf) [pdf](https://hal.archives-ouvertes.fr/hal-01280453/document) 
 - Tumor localization in HSI, *ROMOPTO 2015*, B Ravi Kiran, B. Stanciulescu, & J. Angulo
@@ -46,7 +46,7 @@ Jean Serra, B. Ravi Kiran, *ISMM 2013*
 - Climbing on Pyramids, J. Serra, B. Ravi Kiran, ESIEE 2012 March, [Tech. Report](https://arxiv.org/abs/1204.5383).
 - Automatic Summarization Of Broadcast Cricket s, Y Senthil Kumar, Sunil Kumar Gupta, 
 B Ravi Kiran, K R Ramakrishnan, C. Bhattacharyya *ISCE 2011* [link](http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=5973819)
-- Parallelizing Connectivity-Based Image Processing Operators in a Multi-Core Environment - 
+- Parallelizing Connectivity-Based Image Processing Operators,  
 Anoop K P, B Ravi Kiran and Y Senthil Kumar, *ICCSP 2011*. [link](https://ieeexplore.ieee.org/document/5739306)
 - An Improved Connected Component Labeling by Recursive Label Propagation - Using Divide & Conquer Approach, 
 B Ravi Kiran, Y Senthil Kumar, Anoop K P, K R Ramakrishnan, *NCC 2011* [pdf](https://sites.google.com/site/beedotkiran/RecursiveCCL.pdf?attredirects=0)
@@ -74,7 +74,7 @@ IV 2019-2020, ITSC 2016-18-19-20, [IJCAI-2020](https://ijcai20.org/)
 [part-1](https://hal.archives-ouvertes.fr/hal-01532880/), [part-2](https://hal.archives-ouvertes.fr/hal-01538632/) 
 
 ## Book Chapters
-Book: Autonomous Driving and Advanced Driver-Assistance Systems (ADAS), Applications, Development, Legal Issues, and Testing
+- Book: Autonomous Driving and Advanced Driver-Assistance Systems (ADAS), Applications, Development, Legal Issues, and Testing
 By Lentin Joseph, Amit Kumar Mondal
-- Object Detection, Tracking and Trajectory Prediction for Autonomous Driving, Sridevi et al.
-- Localization and Mapping for Autonomous Driving, Sridevi et al.
+  - **Chapter** : Object Detection, Tracking and Trajectory Prediction for Autonomous Driving, Sridevi et al.
+  - **Chapter** : Localization and Mapping for Autonomous Driving, Sridevi et al.
