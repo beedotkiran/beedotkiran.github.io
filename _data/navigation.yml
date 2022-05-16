@@ -6,3 +6,6 @@
   layout: page
   link : /Publications/pubs
   title: Publications
+- name : Previous work
+  layout: page
+  link: /VAD/VideoAnamaly
