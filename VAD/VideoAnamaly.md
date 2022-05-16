@@ -1,49 +1,41 @@
 # Video Anomalies 
 
 ## Review : Representation learning for VAD 
-[https://www.mdpi.com/2313-433X/4/2/36 MDPI 2018 pdf] : An overview of representation learning methods for unsupervised and semi-supervised anomaly detection in videos, 
-B Ravi Kiran, Dilip Mathew Thomas, and Ranjith Parakkal, UncannyVision. 
+An overview of representation learning methods for unsupervised and semi-supervised anomaly detection in videos, B Ravi Kiran, Dilip Mathew Thomas, and Ranjith Parakkal, [UncannyVision](https://www.uncannyvision.com/), Review : [MDPI 2018](https://www.mdpi.com/2313-433X/4/2/36)
 
+## Categories of AD methods
+- Signal reconstruction using PCA/AE methods and evaluating reconstruction error as anomaly measure
+- Predictive modeling of video as time series and evaluating prediction error as anomaly measure
+- GAN or VAE based likelihood models that measures negative loglikelihood as anomaly measure
 
 ## Representation learning for reconstruction
 **Family of methods** : Principal component analysis (PCA), Auto-Encoders (AEs, CAEs, Contractive AEs, Stacked AEs, Denoising AEs), Restricted Boltzman Machines (RBMs).
-- Learning Temporal Regularity in Video CVPR 2016 [https://arxiv.org/pdf/1604.04574.pdf pdf]
-- Energy-based Models for Video Anomaly Detection PAKDD 2017 [https://arxiv.org/pdf/1708.05211.pdf pdf]
-- Abnormal Event Detection in Videos using Spatiotemporal Autoencoder [https://arxiv.org/pdf/1701.01546.pdf pdf]
-- Anomaly Detection with Robust Deep Auto-encoders KDD 2017 [http://www.kdd.org/kdd2017/papers/view/anomaly-detection-with-robust-deep-auto-encoders pdf]
-- Robust, Deep and Inductive Anomaly Detection, Robust Convolutional AE (RCVAE) 2017 [https://arxiv.org/pdf/1704.06743.pdf pdf]
-- Outlier Detection Using Replicator Neural Networks 2002 [http://ai2-s2-pdfs.s3.amazonaws.com/87a0/9c777dcecab4883e328669ef2af1ba8dd7be.pdf pdf]
+- Learning Temporal Regularity in Video CVPR 2016 [pdf](https://arxiv.org/pdf/1604.04574.pdf)
+- Energy-based Models for Video Anomaly Detection PAKDD 2017 [pdf](https://arxiv.org/pdf/1708.05211.pdf)
+- Abnormal Event Detection in Videos using Spatiotemporal Autoencoder [pdf](https://arxiv.org/pdf/1701.01546.pdf)
+- Anomaly Detection with Robust Deep Auto-encoders KDD 2017 [pdf](http://www.kdd.org/kdd2017/papers/view/anomaly-detection-with-robust-deep-auto-encoders)
+- Robust, Deep and Inductive Anomaly Detection, Robust Convolutional AE (RCVAE) 2017 [pdf](https://arxiv.org/pdf/1704.06743.pdf)
+- Outlier Detection Using Replicator Neural Networks 2002 [pdf](http://ai2-s2-pdfs.s3.amazonaws.com/87a0/9c777dcecab4883e328669ef2af1ba8dd7be.pdf)
 
-~~~
-{}{img_left}{../images/Models_VAD.png}{Models}{550}{250}
-~~~
+![VAD Models](../images/Models_VAD.png)
 
 **Related Work** : 
-- Contractive Auto-Encoders 
-[http://www.iro.umontreal.ca/~lisa/pointeurs/ICML2011_explicit_invariance.pdf pdf], 
-[http://techtalks.tv/talks/a-generative-process-for-contractive-auto-encoders/57301/ talk], 
-- C3D [http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Tran_Learning_Spatiotemporal_Features_ICCV_2015_paper.pdf pdf], '
-- NADE [http://proceedings.mlr.press/v15/larochelle11a/larochelle11a.pdf pdf], 
-- MADE [https://arxiv.org/pdf/1502.03509v2.pdf pdf], 
-- Deep AutoRegressive Networks 2014 [https://arxiv.org/pdf/1310.8499.pdf pdf] 
+- Contractive Auto-Encoders [pdf](http://www.iro.umontreal.ca/~lisa/pointeurs/ICML2011_explicit_invariance.pdf), 
+[talk](http://techtalks.tv/talks/a-generative-process-for-contractive-auto-encoders/57301/), [C3D](http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Tran_Learning_Spatiotemporal_Features_ICCV_2015_paper.pdf), [NADE](http://proceedings.mlr.press/v15/larochelle11a/larochelle11a.pdf), MADE [MADE](https://arxiv.org/pdf/1502.03509v2.pdf), 2014 [Deep AutoRegressive Networks](https://arxiv.org/pdf/1310.8499.pdf) 
 
 ## Predictive modeling : Video as temporal patterns 
 **Family of methods** : Linear Models, Convolutional LSTMs, CNN-LSTMs : 
-- Anomaly Detection in Video Using Predictive Convolutional LSTM Networks Dec 2016 [https://arxiv.org/pdf/1612.00390.pdf pdf]
-- DeepAnomaly: Combining BG Sub. & Deep Learning for Anomalies 2016 [http://www.mdpi.com/1424-8220/16/11/1904 pdf]
-- Video anomaly detection using deep incremental slow feature analysis network [http://ieeexplore.ieee.org/document/7503634/ link]
+- Anomaly Detection in Video Using Predictive Convolutional LSTM Networks Dec 2016 [pdf](https://arxiv.org/pdf/1612.00390.pdf)
+- DeepAnomaly: Combining BG Sub. & Deep Learning for Anomalies 2016 [pdf](http://www.mdpi.com/1424-8220/16/11/1904)
+- Video anomaly detection using deep incremental slow feature analysis network [link](http://ieeexplore.ieee.org/document/7503634/)
 
-~~~
-{}{img_left}{images/ConvLSTM.png}{ConvLSTM}{550}{325}
-~~~
+![ConvLSTM](../images/ConvLSTM.png)
 
 **Related Work**
-- Adversarial LSTM Networks [http://web.engr.oregonstate.edu/~sinisa/research/publications/cvpr17_summarization.pdf CVPR 2017], 
-- Video Representations using LSTMs : [https://arxiv.org/pdf/1502.04681.pdf pdf] 
-[https://www.slideshare.net/JunhoCho1/161209-unsupervised-learning-of-video-representations-using-lstms Slides], 
-- Deep multi-scale video prediction [https://arxiv.org/pdf/1511.05440.pdf pdf], 
-- ST-video autoencoder with differentiable memory [https://arxiv.org/pdf/1511.06309.pdf pdf], 
-[https://www.robots.ox.ac.uk/seminars/Extra/2016_07_25_VioricaPatraucean.pdf Slides], 
+-  [Adversarial LSTM Networks](http://web.engr.oregonstate.edu/~sinisa/research/publications/cvpr17_summarization.pdf), 
+- [Video Representations using LSTMs](https://arxiv.org/pdf/1502.04681.pdf), [Slides](https://www.slideshare.net/JunhoCho1/161209-unsupervised-learning-of-video-representations-using-lstms), 
+- Deep multi-scale video prediction [pdf](https://arxiv.org/pdf/1511.05440.pdf), 
+- ST-video autoencoder with differentiable memory [pdf](https://arxiv.org/pdf/1511.06309.pdf), [Slides](https://www.robots.ox.ac.uk/seminars/Extra/2016_07_25_VioricaPatraucean.pdf), 
 - CortexNet: Robust Visual Temporal Representations [https://arxiv.org/pdf/1706.02735.pdf pdf] 
 - PredNet: Deep Predictive Coding Networks [https://cbmm.mit.edu/sites/default/files/publications/CBMM-Memo-064.pdf pdf], 
 [https://coxlab.github.io/prednet/ project], 
@@ -61,9 +53,8 @@ B Ravi Kiran, Dilip Mathew Thomas, and Ranjith Parakkal, UncannyVision.
 - Unsupervised Anomaly Detection with GANs to Guide Marker Discovery 
 [https://arxiv.org/pdf/1703.05921.pdf pdf] 
 
-~~~
-{}{img_left}{images/CrossChan_GAN.png}{CrossChan_GAN}{550}{325}
-~~~
+![CrossChan_GAN](../images/CrossChan_GAN.png)
+
 
 **Related Work**
 - VAE: Auto-Encoding Variational Bayes  [https://arxiv.org/pdf/1312.6114.pdf pdf],[https://arxiv.org/pdf/1606.05908.pdf Tut], 
@@ -120,21 +111,21 @@ Detecting Events by Density Ratio Estimation
 - Optical Acceleration for Motion Description in Videos 
 [http://openaccess.thecvf.com/content_cvpr_2017_workshops/w20/papers/Edison_Optical_Acceleration_for_CVPR_2017_paper.pdf pdf]  
 - On the Essence of Unsupervised Detection of Anomalous Motion 2017 [https://www.comp.nus.edu.sg/~leowwk/papers/caip2017-anomaly.pdf pdf]
-- Discriminative FWK for AD in Videos [https://arxiv.org/pdf/1609.08938.pdf pdf], Abnormal Event Detection at 150 FPS 2013 [http://shijianping.me/abnormal_iccv13.pdf pdf] 
+- Discriminative FWK for AD in Videos [pdf](https://arxiv.org/pdf/1609.08938.pdf), Abnormal Event Detection at 150 FPS 2013 [pdf](http://shijianping.me/abnormal_iccv13.pdf) 
 - Real-Time Anomaly Detection and Localization in Crowded Scenes 2015 
-[https://arxiv.org/pdf/1511.06936.pdf pdf]
-- Video Anomaly Detection Hierarchical Feature Representation 2015 [http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Cheng_Video_Anomaly_Detection_2015_CVPR_paper.pdf pdf]
+[pdf](https://arxiv.org/pdf/1511.06936.pdf)
+- Video Anomaly Detection Hierarchical Feature Representation 2015 [pdf](http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Cheng_Video_Anomaly_Detection_2015_CVPR_paper.pdf)
 - Localized Anomaly Detection via Hierarchical Integrated Activity Discovery 2013
-[http://www.vanaheim-project.eu/assets/ChockalingamEmonetOdobez-AVSS-2013.pdf pdf] 
+[pdf](http://www.vanaheim-project.eu/assets/ChockalingamEmonetOdobez-AVSS-2013.pdf) 
 - Histograms of OF Orientation and Magnitude to Detect Anomalous Events in Videos
-[http://www.ssig.dcc.ufmg.br/wp-content/uploads/2015/06/paper_camera_ready.pdf pdf]
-- VAD Based on Local Statistical Aggregates [http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.703.7756&rep=rep1&type=pdf pdf], 
-AD Using Dense Trajectories [http://pages.cs.wisc.edu/~kma/downloads/anomaly-detection.pdf pdf]
+[pdf(http://www.ssig.dcc.ufmg.br/wp-content/uploads/2015/06/paper_camera_ready.pdf)]
+- VAD Based on Local Statistical Aggregates [pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.703.7756&rep=rep1&type=pdf), 
+AD Using Dense Trajectories [pdf](http://pages.cs.wisc.edu/~kma/downloads/anomaly-detection.pdf)
 - Online Detection of Unusual Events in Videos via Dynamic Sparse Coding CVPR 2011 
-[http://vision.stanford.edu/pdf/ZhaoFeiFeiXing_CVPR2011.pdf pdf]
--  Textures of Optical Flow for Real-Time AD [https://eprints.qut.edu.au/41572/1/PID1829439.pdf pdf], AD with Bayesian Nonparametrics 2016 
-[https://arxiv.org/pdf/1606.08455.pdf pdf]
-- Topic Models for Scene Analysis and Abnormality Detection 2009 ICCV-VS WKSHpP[http://www.idiap.ch/~odobez/publications/VaradarajanOdobez-ICCV-VS_2009.pdf pdf], [https://www.youtube.com/watch?v=AZTNPlFLojY Talk 2015]
+[pdf](http://vision.stanford.edu/pdf/ZhaoFeiFeiXing_CVPR2011.pdf)
+-  Textures of Optical Flow for Real-Time AD [pdf](https://eprints.qut.edu.au/41572/1/PID1829439.pdf), AD with Bayesian Nonparametrics 2016 
+[pdf](https://arxiv.org/pdf/1606.08455.pdf)
+- Topic Models for Scene Analysis and Abnormality Detection 2009 ICCV-VS WKSHpP[http://www.idiap.ch/~odobez/publications/VaradarajanOdobez-ICCV-VS_2009.pdf pdf], [Talk 2015](https://www.youtube.com/watch?v=AZTNPlFLojY)
 - Learning Object Motion Patterns for Anomaly & Improved Object Detection 2008 CVPR 
-[http://vision.eecs.ucf.edu/papers/cvpr2008/3.pdf pdf]
+[pdf](http://vision.eecs.ucf.edu/papers/cvpr2008/3.pdf)
 - Analysis of Persistent Motion Patterns Using the 3D Structure Tensor 2005
