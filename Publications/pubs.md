@@ -64,8 +64,8 @@ Journal of Electronic Imaging, 2022
 - Fusions of ground truths & hierarchies, B Ravi Kiran, J. Serra, Pattern Recognition. Letters 2014. [link](www.sciencedirect.com/science/article/pii/S0167865514001457) 
 - Global-local optimizations by hierarchical cuts & climbing B Ravi Kiran, J. Serra, Pattern Recognition 2014. [link](https://www.sciencedirect.com/science/article/abs/pii/S0031320313002161?via%3Dihub)
 
-## In Preparartion
-- **Previous work** : The Theory of Braids and Energetic Lattices and Constrained Optimization by Disseminated Energy, Jean Serra, B Ravi Kiran.
+## Previous work
+- The Theory of Braids and Energetic Lattices and Constrained Optimization by Disseminated Energy, Jean Serra, B Ravi Kiran.
 [part-1](https://hal.archives-ouvertes.fr/hal-01532880/), [part-2](https://hal.archives-ouvertes.fr/hal-01538632/) 
 
 ## Book Chapters
