@@ -54,6 +54,8 @@ B Ravi Kiran, Y Senthil Kumar, Anoop K P, K R Ramakrishnan, *NCC 2011* [pdf](htt
 
 ## Journals
 [Google Scholar Page](scholar.google.co.in/citations?user=qvXusvwAAAAJ) for complete list.
+- Monocular 3D Object Detection using Data Augmentation and Self-Supervised Learning in Autonomous Driving. Sugirtha et al. Accepted,
+Journal of Electronic Imaging, 2022 
 - Deep Reinforcement Learning for Autonomous Driving: A Survey [Transactions ITS 2021](https://arxiv.org/abs/2002.00444), B Ravi Kiran et al.
 - An overview of deep learning based methods for unsupervised and semi-supervised anomaly detection in videos. Journal of Imaging (2018) B Ravi Kiran, Dilip Thomas, and Ranjith Parakkal [pdf](https://www.mdpi.com/2313-433X/4/2/36/pdf). 
 - Intraoperative Hyperspectral Imaging to Aid Brain Tumor Delineation, H. Fabelo et. al. [pdf](www.mdpi.com/1424-8220/18/2/430/pdf), Sensors, MDPI, Jan 2018.
@@ -62,14 +64,7 @@ B Ravi Kiran, Y Senthil Kumar, Anoop K P, K R Ramakrishnan, *NCC 2011* [pdf](htt
 - Fusions of ground truths & hierarchies, B Ravi Kiran, J. Serra, Pattern Recognition. Letters 2014. [link](www.sciencedirect.com/science/article/pii/S0167865514001457) 
 - Global-local optimizations by hierarchical cuts & climbing B Ravi Kiran, J. Serra, Pattern Recognition 2014. [link](https://www.sciencedirect.com/science/article/abs/pii/S0031320313002161?via%3Dihub)
 
-## Journal and Conference Reviewer, Associate Editor 
-CIARP 2012, ISMM 2013-15-17-19, ICIP 2014, ICVES 2017, TIP 2017, NeurIPS2017W-LLD, 
-[ALA 2018](http://ala2018.it.nuigalway.ie/), PR Letters 2013-15-16-19, PR 2018-19,
-[NeurIPS2019W-LLD](https://lld-workshop.github.io/), [ECAI 2020](http://ecai2020.eu/), IROS 2017,
-IV 2019-2020, ITSC 2016-18-19-20, [IJCAI-2020](https://ijcai20.org/)
-
 ## In Preparartion
-- Data augmentation strategies for 3D-monocular object detection forautonomous driving, Sugirtha et al. 2021
 - **Previous work** : The Theory of Braids and Energetic Lattices and Constrained Optimization by Disseminated Energy, Jean Serra, B Ravi Kiran.
 [part-1](https://hal.archives-ouvertes.fr/hal-01532880/), [part-2](https://hal.archives-ouvertes.fr/hal-01538632/) 
 
