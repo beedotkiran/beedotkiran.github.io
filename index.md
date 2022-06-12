@@ -39,5 +39,4 @@ Technical Lead, Machine learning, Navya
 - Workshop Co-Organizer : [3D-DLAD workshop](https://sites.google.com/view/dlad-bp-itsc2019/home) at IV 2019 Paris, France
 
 ## Reviewer
-[Transaction-ITS](https://ieee-itss.org/pub/t-its/) 2020-22, [PR](https://www.journals.elsevier.com/pattern-recognition) & [PRL](https://www.journals.elsevier.com/pattern-recognition-letters) 2013-21, [ITSC](https://www.ieee-itsc2022.org/#/) 2016-2022, ISMM 2013-19, [ML4AD](https://ml4ad.github.io/) 2019-2022, [ICRA-AV workshop](https://www.icra2022av.org/) 2022, others
-IROS 2017, TIP 2017, ICVES 2017, ICIP 2014,
+[Transaction-ITS](https://ieee-itss.org/pub/t-its/) 2020-22, [PR](https://www.journals.elsevier.com/pattern-recognition) & [PRL](https://www.journals.elsevier.com/pattern-recognition-letters) 2013-21, [ITSC](https://www.ieee-itsc2022.org/#/) 2016-2022, ISMM 2013-19, [ML4AD](https://ml4ad.github.io/) 2019-2022, [ICRA-AV workshop](https://www.icra2022av.org/) 2022, IROS 2017, TIP 2017, ICVES 2017, ICIP 2014,
