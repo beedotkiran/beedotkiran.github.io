@@ -1,15 +1,15 @@
 # B Ravi Kiran
 Technical Lead, Machine learning, Navya
-- 4+ years Deep learning for Camera perception pipeline, Large scale pointcloud processing 
-- 11 years working on computer vision, ML/DL applications with broad exposure to different application domains 
-- Email : (beedotkiran AT gmail.com)
+- 5+ years Deep learning for Camera perception pipeline, Large scale pointcloud processing 
+- 12 years working on computer vision, ML/DL applications with broad exposure to different application domains 
+- Email : (beedotkiran AT gmail DOT com)
 - [LinkedIn](https://www.linkedin.com/in/b-ravi-kiran-b246968/), [Twitter](https://twitter.com/beedotkiran), [Scholar](http://scholar.google.co.in/citations?user=qvXusvwAAAAJ)
-- CVs [1page](https://beedotkiran.github.io/files/cvRaviKiran_1page.pdf), [EN](https://beedotkiran.github.io/files/cvRaviKiran.pdf), [FR](https://beedotkiran.github.io/files/cvRaviKiran_fr.pdf)
+- CVs [1page](https://beedotkiran.github.io/cvRaviKiran_1page.pdf), [EN](https://beedotkiran.github.io/cvRaviKiran.pdf), [FR](https://beedotkiran.github.io/cvRaviKiran_fr.pdf)
 
 ## Experience
 | Academia (7 years)                                             	| Industry (6 years)                                                               	|
 |---------------------------------------------------------------	|---------------------------------------------------------------------------------	|
-| Oct’16-Aug’17 : ATER Université Lille 3 & CRISTAL,            	| Nov’18 - Now : ML/DL for perception Technical Lead, Navya                       	|
+| Oct’16-Aug’17 : ATER Université Lille 3 & CRISTAL,            	| Nov’18-Now    : ML/DL for perception Technical Lead, Navya                       	|
 | Dec’15-Nov’16 : Post-doc DATA-ENS Paris & ThalesAlenia Space, 	| Jan’18-Oct’18 : R&D Engineer, Autonomous Systems, AKKA Technologies             	|
 | Nov’14-Nov’15 : Post-Doc CAOR Mines ParisTech & Helicoid      	| May’17-Dec’17 : Vision & deep learning consultant Uncanny Vision                	|
 | Oct’11-Oct’14 : PhD A3SI-LIGM, Univ. Paris-Est                	| Aug’08-Feb’10 : Embedded Software Engineer, Texas Instruments, Bangalore, India 	|
