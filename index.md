@@ -1,5 +1,6 @@
 # B Ravi Kiran
-Technical Lead, Machine learning, Navya
+Multi-modal perception, Staff Engineer, Qualcomm since Nov 2022.
+
 - 5+ years Deep learning for Camera perception pipeline, Large scale pointcloud processing 
 - 12 years working on computer vision, ML/DL applications with broad exposure to different application domains 
 - Email : (beedotkiran AT gmail DOT com)
@@ -9,7 +10,7 @@ Technical Lead, Machine learning, Navya
 ## Experience
 | Academia (7 years)                                             	| Industry (6 years)                                                               	|
 |---------------------------------------------------------------	|---------------------------------------------------------------------------------	|
-| Oct’16-Aug’17 : ATER Université Lille 3 & CRISTAL,            	| Nov’18-Now    : ML/DL for perception Technical Lead, Navya                       	|
+| Oct’16-Aug’17 : ATER Université Lille 3 & CRISTAL,            	| Nov’18-Oct’22 : ML/DL for perception Technical Lead, Navya                       	|
 | Dec’15-Nov’16 : Post-doc DATA-ENS Paris & ThalesAlenia Space, 	| Jan’18-Oct’18 : R&D Engineer, Autonomous Systems, AKKA Technologies             	|
 | Nov’14-Nov’15 : Post-Doc CAOR Mines ParisTech & Helicoid      	| May’17-Dec’17 : Vision & deep learning consultant Uncanny Vision                	|
 | Oct’11-Oct’14 : PhD A3SI-LIGM, Univ. Paris-Est                	| Aug’08-Feb’10 : Embedded Software Engineer, Texas Instruments, Bangalore, India 	|
@@ -25,18 +26,20 @@ Technical Lead, Machine learning, Navya
 - Building better understanding of perception-planning interface in AD pipeline
 
 
-## Recent Talks
+## Recent work
+- Navya3DSeg Dataset [paper](https://arxiv.org/abs/2302.08292) Feb 2023, presentation at 3D-DLAD IV Aug 2022 [talk](https://www.youtube.com/watch?v=5m6ALIs-s20)
 - Point cloud representations for deep learning on Pointclouds, [course presentation](Cours_ENSTA_PointcloudDL_Introduction.pdf) ENSTA Paris 2022
 - Real world data augmentations for perception tasks in autonomous driving [Speaker Auto.AI 2021](https://www.auto-ai.eu/speaker) Berlin, [Slides](Navya_Auto_AI_Sept_2021.pdf)
 - Exploring real-world reinforcement learning for Autonomous Driving Speaker Cognitive Vehicles 2019 [Slides](DRLAD_ExploringApplicationsTalk2019_CognitiveVehicles.pdf)
 
 ## Deep Learning for AD Workshops Series YouTube [Channel](https://www.youtube.com/channel/UCRJxcVElG-p_VgoqOiGe-Rw/videos)
-- Workshop Co-Organizer [3D-DLAD-v4 2022 workshop](https://sites.google.com/view/3d-dlad-v4-iv2022/schedule), [IV 2022](https://iv2022.com/) Aachen, Germany.
+- Workshop Co-Organizer [3D-DLAD-v5 2023 workshop](https://sites.google.com/view/3d-dlad-v5-iv2023/home), IV 2023 Anchorage, Canada.
+- Workshop Co-Organizer [3D-DLAD-v4 2022 workshop](https://sites.google.com/view/3d-dlad-v4-iv2022/schedule), IV 2022 Aachen, Germany.
 - Workshop Co-Organizer [3D-DLAD 2021 workshop](https://sites.google.com/view/3d-dlad-v3-iv2021/home) IV 2021 Nagoya, Japan.
 - Workshop Co-Organizer [CoFED-DLAD 2020 workshop](https://sites.google.com/view/cofed-dlad-2020/home) ITSC 2020 Rhodes, Greece.
 - Workshop Co-Organizer [2nd 3D-DLAD workshop](https://sites.google.com/view/3d-dlad-v2-iv2020/home) IV 2020 Las Vegas, US.
 - Workshop Co-Organizer [DLAD-BP Workshop](https://sites.google.com/view/dlad-bp-itsc2019/home) at ITSC 2019, Auckland, NewZealand.
-- Workshop Co-Organizer : [3D-DLAD workshop](https://sites.google.com/view/dlad-bp-itsc2019/home) at IV 2019 Paris, France
+- Workshop Co-Organizer [3D-DLAD workshop](https://sites.google.com/view/dlad-bp-itsc2019/home) at IV 2019 Paris, France
 
 ## Reviewer
 [Transaction-ITS](https://ieee-itss.org/pub/t-its/) 2020-22, [PR](https://www.journals.elsevier.com/pattern-recognition) & [PRL](https://www.journals.elsevier.com/pattern-recognition-letters) 2013-21, [ITSC](https://www.ieee-itsc2022.org/#/) 2016-2022, ISMM 2013-19, [ML4AD](https://ml4ad.github.io/) 2019-2022, [ICRA-AV workshop](https://www.icra2022av.org/) 2022, IROS 2017, TIP 2017, ICVES 2017, ICIP 2014,
